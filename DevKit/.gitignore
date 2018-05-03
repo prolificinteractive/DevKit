@@ -299,7 +299,3 @@ fastlane*
 fastlane/
 Tools/
 .gitmodules
-
-### Jazzy ###
-
-Docs/
