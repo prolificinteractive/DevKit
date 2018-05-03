@@ -9,8 +9,17 @@
 import UIKit
 
 struct ShadowOptions {
+
+    /// Color of the shadow.
     let color: CGColor
+
+    /// Offset of the shadow.
     let offset: CGSize
+
+    /// Radius of the shadow.
     let radius: CGFloat
+
+    /// Opacity of the shadow.
     let opacity: Float
+    
 }

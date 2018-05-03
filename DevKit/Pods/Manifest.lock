@@ -1,20 +1,24 @@
 PODS:
   - Marker (1.1.0)
+  - Moulinette (0.1.0)
   - PureLayout (3.0.2)
 
 DEPENDENCIES:
   - Marker (= 1.1.0)
+  - Moulinette (= 0.1.0)
   - PureLayout (= 3.0.2)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Marker
+    - Moulinette
     - PureLayout
 
 SPEC CHECKSUMS:
   Marker: f35e0b5d9c97d6997d6b89b23f189e0e4cc127c7
+  Moulinette: cbd1bc254840dd218446569618e32172447268d5
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
 
-PODFILE CHECKSUM: 76e596d8dafd8f887deb642b86de1f8f820a97ce
+PODFILE CHECKSUM: 2da7a07a592fc91ac9d4a9714894dce7ac88e262
 
 COCOAPODS: 1.5.0

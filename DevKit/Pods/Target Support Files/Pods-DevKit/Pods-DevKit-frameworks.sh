@@ -144,10 +144,12 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Marker/Marker.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Moulinette/Moulinette.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Marker/Marker.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Moulinette/Moulinette.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

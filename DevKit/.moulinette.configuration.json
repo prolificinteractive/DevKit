@@ -1,0 +1,7 @@
+{
+    "excludedRules" : [
+        "empty_icons",
+        "mark_usage",
+        "git_branches"
+    ]
+}

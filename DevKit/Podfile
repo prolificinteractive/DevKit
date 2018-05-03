@@ -11,6 +11,9 @@ target 'DevKit' do
   # https://github.com/prolificinteractive/Marker/releases
   pod 'Marker', '1.1.0'
 
+  # https://github.com/prolificinteractive/Moulinette
+  pod 'Moulinette', '0.1.0'
+
   target 'DevKitTests' do
     inherit! :search_paths
     # Pods for testing

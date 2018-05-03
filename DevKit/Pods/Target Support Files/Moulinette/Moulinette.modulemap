@@ -1,0 +1,6 @@
+framework module Moulinette {
+  umbrella header "Moulinette-umbrella.h"
+
+  export *
+  module * { export * }
+}
