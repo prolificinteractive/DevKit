@@ -1,5 +1,4 @@
 import XCTest
-import DevKit
 
 class Tests: XCTestCase {
     

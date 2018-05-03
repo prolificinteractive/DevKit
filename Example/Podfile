@@ -7,8 +7,13 @@ use_frameworks!
 inhibit_all_warnings!
 
 target 'DevKit_Example' do
-  pod 'DevKit/CalendarPermissionsValidator', :path => '../'
-  pod 'DevKit/TransitioningNavigationView', :path => '../'
+
+  pod 'DevKit', :path => '../', :subspecs => ['TransitioningNavigationView']
+  pod 'DevKit', :path => '../', :subspecs => ['CalendarPermissionsValidator']
+
+  pod 'DevKit', :path => '../', :subspecs => ['Protocols/KeyboardObserver']
+  pod 'DevKit', :path => '../', :subspecs => ['Protocols/ReusableCell']
+
 
   target 'DevKit_Tests' do
     inherit! :search_paths

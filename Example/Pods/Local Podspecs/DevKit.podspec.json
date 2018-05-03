@@ -21,10 +21,6 @@
   "source_files": "DevKit/DevKit/Classes/**/*",
   "subspecs": [
     {
-      "name": "CalendarPermissionsValidator",
-      "source_files": "DevKit/DevKit/Classes/CalendarPermissionsValidator/*"
-    },
-    {
       "name": "TransitioningNavigationView",
       "dependencies": {
         "DevKit/SharedOptions/ShadowOptions": [
@@ -37,7 +33,64 @@
           "~> 1.1.0"
         ]
       },
-      "source_files": "DevKit/DevKit/Classes/TransitioningNavigationView/*"
+      "source_files": "DevKit/DevKit/Classes/Views/TransitioningNavigationView/*"
+    },
+    {
+      "name": "CalendarPermissionsValidator",
+      "dependencies": {
+        "DevKit/Extensions/StringExtension": [
+
+        ],
+        "DevKit/Extensions/UIAlertControllerExtension": [
+
+        ],
+        "DevKit/Extensions/UIApplicationExtension": [
+
+        ]
+      },
+      "source_files": "DevKit/DevKit/Classes/Utility/Validators/CalendarPermissionsValidator/*"
+    },
+    {
+      "name": "ImagePickerValidator",
+      "dependencies": {
+        "DevKit/Extensions/StringExtension": [
+
+        ]
+      },
+      "source_files": "DevKit/DevKit/Classes/Utility/Validators/ImagePickerValidator/*"
+    },
+    {
+      "name": "Protocols",
+      "subspecs": [
+        {
+          "name": "KeyboardObserver",
+          "source_files": "DevKit/DevKit/Classes/Protocols/KeyboardObserver/*"
+        },
+        {
+          "name": "ReusableCell",
+          "source_files": "DevKit/DevKit/Classes/Protocols/ReusableCell/*"
+        }
+      ]
+    },
+    {
+      "name": "Extensions",
+      "subspecs": [
+        {
+          "name": "StringExtension",
+          "source_files": "DevKit/DevKit/Classes/Extensions/StringExtension/*"
+        },
+        {
+          "name": "UIAlertControllerExtension",
+          "source_files": "DevKit/DevKit/Classes/Extensions/UIAlertControllerExtension/*"
+        },
+        {
+          "name": "UIApplicationExtension",
+          "platforms": {
+            "ios": "11.0"
+          },
+          "source_files": "DevKit/DevKit/Classes/Extensions/UIApplicationExtension/*"
+        }
+      ]
     },
     {
       "name": "SharedOptions",
