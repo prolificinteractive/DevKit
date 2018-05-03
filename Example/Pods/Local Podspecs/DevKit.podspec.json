@@ -23,6 +23,24 @@
     {
       "name": "CalendarPermissionsValidator",
       "source_files": "DevKit/DevKit/Classes/CalendarPermissionsValidator/*"
+    },
+    {
+      "name": "TransitioningNavigationView",
+      "dependencies": {
+        "DevKit/SharedOptions/ShadowOptions": [
+
+        ]
+      },
+      "source_files": "DevKit/DevKit/Classes/TransitioningNavigationView/*"
+    },
+    {
+      "name": "SharedOptions",
+      "subspecs": [
+        {
+          "name": "ShadowOptions",
+          "source_files": "DevKit/DevKit/Classes/SharedOptions/ShadowOptions.swift"
+        }
+      ]
     }
   ]
 }

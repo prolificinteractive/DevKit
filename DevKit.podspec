@@ -30,8 +30,27 @@ Collection of commonly used swift code.
 
   s.source_files = 'DevKit/DevKit/Classes/**/*'
 
+# CalendarPermissionsValidator
+
   s.subspec 'CalendarPermissionsValidator' do |sp|
     sp.source_files = 'DevKit/DevKit/Classes/CalendarPermissionsValidator/*'
   end
-  
+
+# TransitioningNavigationView
+
+  s.subspec 'TransitioningNavigationView' do |sp|
+    sp.dependency 'DevKit/SharedOptions/ShadowOptions'
+    sp.source_files = 'DevKit/DevKit/Classes/TransitioningNavigationView/*'
+  end
+
+# Shared Options
+
+  s.subspec 'SharedOptions' do |sp|
+
+    sp.subspec 'ShadowOptions' do |ssp|
+        ssp.source_files = 'DevKit/DevKit/Classes/SharedOptions/ShadowOptions.swift'
+    end
+
+  end
+
 end
