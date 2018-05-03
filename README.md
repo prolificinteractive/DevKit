@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/DevKit.svg?style=flat)](https://cocoapods.org/pods/DevKit)
 [![Platform](https://img.shields.io/cocoapods/p/DevKit.svg?style=flat)](https://cocoapods.org/pods/DevKit)
 
+Collection of commonly used swift code
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
