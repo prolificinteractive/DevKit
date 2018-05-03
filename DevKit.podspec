@@ -28,10 +28,10 @@ Collection of commonly used swift code.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'DevKit/Classes/**/*'
+  s.source_files = 'DevKit/DevKit/Classes/**/*'
 
-  subspec 'CalendarPermissionsValidator' do |sp|
-    sp.source_files = 'Classes/CalendarPermissionsValidator'
+  s.subspec 'CalendarPermissionsValidator' do |sp|
+    sp.source_files = 'DevKit/DevKit/Classes/CalendarPermissionsValidator/*'
   end
   
 end

@@ -2,8 +2,8 @@
   "name": "DevKit",
   "version": "0.1.0",
   "summary": "A short description of DevKit.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/jgsamudio/DevKit",
+  "description": "Collection of commonly used swift code.",
+  "homepage": "https://github.com/prolificinteractive/DevKit",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,17 @@
     "jgsamudio": "jonathan2457@gmail.com"
   },
   "source": {
-    "git": "https://github.com/jgsamudio/DevKit.git",
+    "git": "https://github.com/prolificinteractive/DevKit.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "DevKit/Classes/**/*"
+  "source_files": "DevKit/DevKit/Classes/**/*",
+  "subspecs": [
+    {
+      "name": "CalendarPermissionsValidator",
+      "source_files": "DevKit/DevKit/Classes/CalendarPermissionsValidator/*"
+    }
+  ]
 }

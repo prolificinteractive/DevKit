@@ -9,16 +9,16 @@
 /* Begin PBXBuildFile section */
 		026629F5AED204E60BCDCF8BC9B3C50F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		28E7D1B4F75A2D4055120061D97FEB18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		50F94FE25EBDD8B5B7E0AF9EE0238B5E /* DevKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F626A14C3D15C833AE899DFE24A98CE8 /* DevKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50F94FE25EBDD8B5B7E0AF9EE0238B5E /* DevKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 75BC2072F91248170D44E28537562191 /* DevKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59C014C6D5863721E36C45419677C963 /* Pods-DevKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB95471DBB15D38128556345FD7A8E15 /* Pods-DevKit_Example-dummy.m */; };
 		64EEE40CD89CA12BF76C6B3D89B00C4D /* Pods-DevKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F7B5B3FEC18F1FBB537B2A8927F7E /* Pods-DevKit_Tests-dummy.m */; };
 		6E691FC9F6F2BB7705605E395E92004D /* Pods-DevKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B44D96D95EFCAC7F4763236561DC03 /* Pods-DevKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		75490BE9D94F591ACDF16BFDC7EF1479 /* CalendarPermissionsValidatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFDE263F03FF36994CE30F0F7D6D1D4 /* CalendarPermissionsValidatorDelegate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		8004706326C00931C81147BE1D8A9396 /* CalendarPermissionsValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1C133325C73EFB256DA8A612ABA4C4 /* CalendarPermissionsValidator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7B34E8073B701DAFBEA8559A0D7B401C /* CalendarPermissionsValidatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DFF7AB0648C77D075D5EF12322C7FF /* CalendarPermissionsValidatorDelegate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8320EBF18201AA9CC3D6D346715CAE9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		99D263F97F4492CBD262AAD7F614C10F /* Pods-DevKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE08C56E96CC0CF0384C518501E0EC18 /* Pods-DevKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA96706180E54F2144A52FF47FB87C38 /* EventCalendarInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C204CE7BB526DBFECB3327FE91691075 /* EventCalendarInfo.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		EBCFFCBE30E882342CD3BFD50BF3285D /* DevKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAB56D2AA8A14D728769FE866C3246B /* DevKit-dummy.m */; };
+		B599D0E7609BEFDC7995E761258D5E63 /* EventCalendarInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF147C0A8E6F0EEC589D8169B2758633 /* EventCalendarInfo.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CEA56BC3DF88026C1D5EA1EB664F1366 /* CalendarPermissionsValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD4CE5C6AE0F5C3E19E3C8886AC6DFE /* CalendarPermissionsValidator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EBCFFCBE30E882342CD3BFD50BF3285D /* DevKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 363088DA11828BE5A86AED93E0D92FED /* DevKit-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,42 +32,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		11E81114CFBDAAFA8F7FFA9235B33E4B /* DevKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = DevKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		279508282D03F328A9D68261303CE852 /* DevKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DevKit.modulemap; sourceTree = "<group>"; };
+		0CA73BE6A7CDEF4F955765FF44AF5222 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		19DFF7AB0648C77D075D5EF12322C7FF /* CalendarPermissionsValidatorDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarPermissionsValidatorDelegate.swift; path = DevKit/DevKit/Classes/CalendarPermissionsValidator/CalendarPermissionsValidatorDelegate.swift; sourceTree = "<group>"; };
+		1FD4CE5C6AE0F5C3E19E3C8886AC6DFE /* CalendarPermissionsValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarPermissionsValidator.swift; path = DevKit/DevKit/Classes/CalendarPermissionsValidator/CalendarPermissionsValidator.swift; sourceTree = "<group>"; };
 		32B44D96D95EFCAC7F4763236561DC03 /* Pods-DevKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DevKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		3620E9FF281C6BD3BAA54E9DA56DB3D4 /* Pods-DevKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DevKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		363088DA11828BE5A86AED93E0D92FED /* DevKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DevKit-dummy.m"; sourceTree = "<group>"; };
 		364F660AC3B3EC37A020CD98A1146260 /* Pods-DevKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DevKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3BE01189C89E443BA58C967CC1F4FB10 /* DevKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DevKit-prefix.pch"; sourceTree = "<group>"; };
 		3EFF06C22808800CE49F50F50E608942 /* Pods-DevKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DevKit_Example.modulemap"; sourceTree = "<group>"; };
 		56F7991818CDC47C6BEEF981BF7EE8FD /* Pods-DevKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DevKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6153D4D50C5AEC0E09EB18FD50412622 /* Pods-DevKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DevKit_Tests.modulemap"; sourceTree = "<group>"; };
 		61AFB585C8DD4A612AD0E876D1F3577F /* Pods-DevKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DevKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		68669F035F7E2CB713BEA475EE86B706 /* Pods-DevKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DevKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		6AC75458B64B9C71B887C5E115D7D24E /* DevKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DevKit-prefix.pch"; sourceTree = "<group>"; };
+		75BC2072F91248170D44E28537562191 /* DevKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DevKit-umbrella.h"; sourceTree = "<group>"; };
 		7CE4A56AAD88AD05223983591DBE9E52 /* Pods-DevKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DevKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		849733198F68419B67A829CF11CBC6CD /* Pods-DevKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DevKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8526982D0F067E03C05FB80D45EA4583 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91256D338A8F938FEC2B4170A09F4B4D /* Pods-DevKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DevKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		927B7FA0C6ED7347BBF0A43CDB681A18 /* DevKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DevKit.xcconfig; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F75BBB8F3957D11319883E365D5DC41 /* DevKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DevKit.framework; path = DevKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7FBFA2BC4E7037DF0BC82B86C4D0683 /* Pods-DevKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DevKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		ACFDE263F03FF36994CE30F0F7D6D1D4 /* CalendarPermissionsValidatorDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarPermissionsValidatorDelegate.swift; path = DevKit/Classes/CalendarPermissionsValidator/CalendarPermissionsValidatorDelegate.swift; sourceTree = "<group>"; };
+		B0F5DDFE0E20D76AD7ABF3626849C659 /* DevKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DevKit.modulemap; sourceTree = "<group>"; };
+		B850ED5E2BBC8D9D5AEE84C45E8DFFD8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8D5880D887EE30C29E4C71629BB85AE /* Pods-DevKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DevKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C17AA604142FF5A972243E8415100034 /* Pods-DevKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DevKit_Tests-resources.sh"; sourceTree = "<group>"; };
-		C204CE7BB526DBFECB3327FE91691075 /* EventCalendarInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventCalendarInfo.swift; path = DevKit/Classes/CalendarPermissionsValidator/EventCalendarInfo.swift; sourceTree = "<group>"; };
-		C7A14250C772F907B1D167F94D15ABDA /* DevKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DevKit.xcconfig; sourceTree = "<group>"; };
 		CC0AD991B9F5D68737DA137C37315588 /* Pods-DevKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DevKit_Example-resources.sh"; sourceTree = "<group>"; };
-		CCA5BF7A25FEB62BD67DB01A9564C50C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1DD51D7ADBF85F381FBCA1A9D85EA25 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		D4D3C15C3DFE9593E1BD73C54E113976 /* Pods_DevKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DevKit_Tests.framework; path = "Pods-DevKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAA6E53C3DC405C164775A7510409C8D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		DB57734CB7823C834011088B27AAD71D /* Pods_DevKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DevKit_Example.framework; path = "Pods-DevKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE08C56E96CC0CF0384C518501E0EC18 /* Pods-DevKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DevKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		DE6442A74F3C91340B582D1D703549C1 /* DevKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = DevKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DF5F7B5B3FEC18F1FBB537B2A8927F7E /* Pods-DevKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DevKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		DF7A2E97DF6AA108C10439DDA46F9693 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9E7C0CB8794A1B2FAC7E2BBBE2953A7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		EBAB56D2AA8A14D728769FE866C3246B /* DevKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DevKit-dummy.m"; sourceTree = "<group>"; };
-		EF1C133325C73EFB256DA8A612ABA4C4 /* CalendarPermissionsValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarPermissionsValidator.swift; path = DevKit/Classes/CalendarPermissionsValidator/CalendarPermissionsValidator.swift; sourceTree = "<group>"; };
-		F626A14C3D15C833AE899DFE24A98CE8 /* DevKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DevKit-umbrella.h"; sourceTree = "<group>"; };
+		EF147C0A8E6F0EEC589D8169B2758633 /* EventCalendarInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventCalendarInfo.swift; path = DevKit/DevKit/Classes/CalendarPermissionsValidator/EventCalendarInfo.swift; sourceTree = "<group>"; };
 		FB95471DBB15D38128556345FD7A8E15 /* Pods-DevKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DevKit_Example-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,10 +99,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		26D508DAB88D804E1EC5BF9CF22D4D5C /* Development Pods */ = {
+		37DE20BFD822552307607FCDBA1D6F45 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8546C28122C13BA5402469587B64E217 /* DevKit */,
+				94260B8361370C8D25204E42468AF919 /* DevKit */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -139,34 +139,32 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				26D508DAB88D804E1EC5BF9CF22D4D5C /* Development Pods */,
+				37DE20BFD822552307607FCDBA1D6F45 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				476AD479084E28E4FD7EB4FAC87AF668 /* Products */,
 				FEC49ED66981A28F927F7DCFDF1CAE97 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8546C28122C13BA5402469587B64E217 /* DevKit */ = {
+		8B3B96A95C8224422278DEAC081F146B /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				EF1C133325C73EFB256DA8A612ABA4C4 /* CalendarPermissionsValidator.swift */,
-				ACFDE263F03FF36994CE30F0F7D6D1D4 /* CalendarPermissionsValidatorDelegate.swift */,
-				C204CE7BB526DBFECB3327FE91691075 /* EventCalendarInfo.swift */,
-				B642A309C14D1189A3520AEF68026494 /* Pod */,
-				BD8DA248C6AE77D24533157D92F48DEB /* Support Files */,
+				DE6442A74F3C91340B582D1D703549C1 /* DevKit.podspec */,
+				0CA73BE6A7CDEF4F955765FF44AF5222 /* LICENSE */,
+				D1DD51D7ADBF85F381FBCA1A9D85EA25 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		94260B8361370C8D25204E42468AF919 /* DevKit */ = {
+			isa = PBXGroup;
+			children = (
+				BDC9F6E9EA002544CF066CEC393F5563 /* CalendarPermissionsValidator */,
+				8B3B96A95C8224422278DEAC081F146B /* Pod */,
+				F6B39E57627A7ECF91B867185B54FD78 /* Support Files */,
 			);
 			name = DevKit;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		B642A309C14D1189A3520AEF68026494 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				11E81114CFBDAAFA8F7FFA9235B33E4B /* DevKit.podspec */,
-				E9E7C0CB8794A1B2FAC7E2BBBE2953A7 /* LICENSE */,
-				DAA6E53C3DC405C164775A7510409C8D /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -177,18 +175,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BD8DA248C6AE77D24533157D92F48DEB /* Support Files */ = {
+		BDC9F6E9EA002544CF066CEC393F5563 /* CalendarPermissionsValidator */ = {
 			isa = PBXGroup;
 			children = (
-				279508282D03F328A9D68261303CE852 /* DevKit.modulemap */,
-				C7A14250C772F907B1D167F94D15ABDA /* DevKit.xcconfig */,
-				EBAB56D2AA8A14D728769FE866C3246B /* DevKit-dummy.m */,
-				6AC75458B64B9C71B887C5E115D7D24E /* DevKit-prefix.pch */,
-				F626A14C3D15C833AE899DFE24A98CE8 /* DevKit-umbrella.h */,
-				CCA5BF7A25FEB62BD67DB01A9564C50C /* Info.plist */,
+				1FD4CE5C6AE0F5C3E19E3C8886AC6DFE /* CalendarPermissionsValidator.swift */,
+				19DFF7AB0648C77D075D5EF12322C7FF /* CalendarPermissionsValidatorDelegate.swift */,
+				EF147C0A8E6F0EEC589D8169B2758633 /* EventCalendarInfo.swift */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/DevKit";
+			name = CalendarPermissionsValidator;
 			sourceTree = "<group>";
 		};
 		C462EEF8CED6690F56E13CA4A1E358BB /* Pods-DevKit_Tests */ = {
@@ -215,6 +209,20 @@
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		F6B39E57627A7ECF91B867185B54FD78 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0F5DDFE0E20D76AD7ABF3626849C659 /* DevKit.modulemap */,
+				927B7FA0C6ED7347BBF0A43CDB681A18 /* DevKit.xcconfig */,
+				363088DA11828BE5A86AED93E0D92FED /* DevKit-dummy.m */,
+				3BE01189C89E443BA58C967CC1F4FB10 /* DevKit-prefix.pch */,
+				75BC2072F91248170D44E28537562191 /* DevKit-umbrella.h */,
+				B850ED5E2BBC8D9D5AEE84C45E8DFFD8 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DevKit";
 			sourceTree = "<group>";
 		};
 		FEC49ED66981A28F927F7DCFDF1CAE97 /* Targets Support Files */ = {
@@ -341,10 +349,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8004706326C00931C81147BE1D8A9396 /* CalendarPermissionsValidator.swift in Sources */,
-				75490BE9D94F591ACDF16BFDC7EF1479 /* CalendarPermissionsValidatorDelegate.swift in Sources */,
+				CEA56BC3DF88026C1D5EA1EB664F1366 /* CalendarPermissionsValidator.swift in Sources */,
+				7B34E8073B701DAFBEA8559A0D7B401C /* CalendarPermissionsValidatorDelegate.swift in Sources */,
 				EBCFFCBE30E882342CD3BFD50BF3285D /* DevKit-dummy.m in Sources */,
-				AA96706180E54F2144A52FF47FB87C38 /* EventCalendarInfo.swift in Sources */,
+				B599D0E7609BEFDC7995E761258D5E63 /* EventCalendarInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +386,7 @@
 /* Begin XCBuildConfiguration section */
 		2683BFD7C7AF707DB31BA7FCFBC71AF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7A14250C772F907B1D167F94D15ABDA /* DevKit.xcconfig */;
+			baseConfigurationReference = 927B7FA0C6ED7347BBF0A43CDB681A18 /* DevKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -589,7 +597,7 @@
 		};
 		9FBA8B42FB9AF06F768F40BF0140B3EF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7A14250C772F907B1D167F94D15ABDA /* DevKit.xcconfig */;
+			baseConfigurationReference = 927B7FA0C6ED7347BBF0A43CDB681A18 /* DevKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

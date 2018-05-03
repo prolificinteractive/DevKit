@@ -1,16 +1,16 @@
 PODS:
-  - DevKit (0.1.0)
+  - DevKit/CalendarPermissionsValidator (0.1.0)
 
 DEPENDENCIES:
-  - DevKit (from `../`)
+  - DevKit/CalendarPermissionsValidator (from `../`)
 
 EXTERNAL SOURCES:
   DevKit:
     :path: ../
 
 SPEC CHECKSUMS:
-  DevKit: 0c078f3ce946817cfda38a41ec7f9ee5340173bd
+  DevKit: d3b794c40428c6b2e56aa6a268a1704b1e952a28
 
-PODFILE CHECKSUM: fd341027deb674fc1ee8cf5412102314d95d8b36
+PODFILE CHECKSUM: 5d7b068c319a51727756cc7b8f0bc101ac6c2a93
 
 COCOAPODS: 1.4.0
