@@ -10,10 +10,23 @@ import UIKit
 import Marker
 
 struct TransitioningNavigationViewOptions {
+
+    /// Background color of the navigation view.
     let backgroundColor: UIColor
+
+    /// Shadow options for the navigation view.
     let shadowOptions: ShadowOptions
+
+    /// Title textstyle.
     let titleTextStyle: TextStyle
+
+    /// Navigation bar threshold.
     let navigationBarThreshold: CGFloat
+
+    /// Leading offset for back button.
     let backButtonLeadingOffset: CGFloat
+
+    /// Trailing offset for the bar button.
     let barButtonTrailingOffset: CGFloat
+    
 }
