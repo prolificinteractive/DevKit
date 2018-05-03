@@ -205,8 +205,9 @@
 			isa = PBXGroup;
 			children = (
 				20524718209BB2BC0067A328 /* Views */,
-				20524704209BA9440067A328 /* Protocols */,
 				2052471A209BB2F30067A328 /* Utility */,
+				20524704209BA9440067A328 /* Protocols */,
+				205246DA209BA86F0067A328 /* Extensions */,
 				205246D6209BA3350067A328 /* SharedOptions */,
 			);
 			path = Classes;
@@ -464,7 +465,6 @@
 		2052471A209BB2F30067A328 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				205246DA209BA86F0067A328 /* Extensions */,
 				20524719209BB2D20067A328 /* Validators */,
 			);
 			path = Utility;

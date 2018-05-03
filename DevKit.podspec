@@ -30,29 +30,77 @@ Collection of commonly used swift code.
 
   s.source_files = 'DevKit/DevKit/Classes/**/*'
 
-# CalendarPermissionsValidator
+# ==== Views ================================================================================================================
 
-  s.subspec 'CalendarPermissionsValidator' do |sp|
-    sp.source_files = 'DevKit/DevKit/Classes/CalendarPermissionsValidator/*'
-  end
-
-# TransitioningNavigationView
-
+  # TransitioningNavigationView
   s.subspec 'TransitioningNavigationView' do |sp|
     sp.dependency 'DevKit/SharedOptions/ShadowOptions'
     sp.dependency 'PureLayout', '~> 3.0.2'
     sp.dependency 'Marker', '~> 1.1.0'
-    sp.source_files = 'DevKit/DevKit/Classes/TransitioningNavigationView/*'
+    sp.source_files = 'DevKit/DevKit/Classes/Views/TransitioningNavigationView/*'
   end
 
-# Shared Options
+# ==== Utility ==============================================================================================================
+
+  # CalendarPermissionsValidator
+  s.subspec 'CalendarPermissionsValidator' do |sp|
+    sp.dependency 'DevKit/Extensions/StringExtension'
+    sp.dependency 'DevKit/Extensions/UIAlertControllerExtension'
+    sp.dependency 'DevKit/Extensions/UIApplicationExtension'
+    sp.source_files = 'DevKit/DevKit/Classes/Utility/Validators/CalendarPermissionsValidator/*'
+  end
+
+  # ImagePickerValidator
+  s.subspec 'ImagePickerValidator' do |sp|
+    sp.dependency 'DevKit/Extensions/StringExtension'
+    sp.source_files = 'DevKit/DevKit/Classes/Utility/Validators/ImagePickerValidator/*'
+  end
+
+# ==== Protocols ============================================================================================================
+
+  # Validators
+  s.subspec 'Protocols' do |sp|
+
+    # KeyboardObserver
+    sp.subspec 'KeyboardObserver' do |ssp|
+      ssp.source_files = 'DevKit/DevKit/Classes/Protocols/KeyboardObserver/*'
+    end
+
+      # ReusableCell
+    sp.subspec 'ReusableCell' do |ssp|
+      ssp.source_files = 'DevKit/DevKit/Classes/Protocols/ReusableCell/*'
+    end
+  end
+
+# ==== Extensions ===========================================================================================================
+
+  s.subspec 'Extensions' do |sp|
+
+    # String Extension
+    sp.subspec 'StringExtension' do |ssp|
+        ssp.source_files = 'DevKit/DevKit/Classes/Extensions/StringExtension/*'
+    end
+
+    # UIAlertController Extension
+    sp.subspec 'UIAlertControllerExtension' do |ssp|
+        ssp.source_files = 'DevKit/DevKit/Classes/Extensions/UIAlertControllerExtension/*'
+    end
+
+    # UIApplication Extension
+    sp.subspec 'UIApplicationExtension' do |ssp|
+        ssp.ios.deployment_target = '11.0'
+        ssp.source_files = 'DevKit/DevKit/Classes/Extensions/UIApplicationExtension/*'
+    end
+  end
+
+# ==== Shared Options =======================================================================================================
 
   s.subspec 'SharedOptions' do |sp|
 
+    # Shadow Options
     sp.subspec 'ShadowOptions' do |ssp|
         ssp.source_files = 'DevKit/DevKit/Classes/SharedOptions/ShadowOptions.swift'
     end
-
   end
 
 end
