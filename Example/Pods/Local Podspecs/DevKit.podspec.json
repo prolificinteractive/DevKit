@@ -16,7 +16,7 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "source_files": "DevKit/DevKit/Classes/**/*",
   "subspecs": [
@@ -29,6 +29,12 @@
       "dependencies": {
         "DevKit/SharedOptions/ShadowOptions": [
 
+        ],
+        "PureLayout": [
+          "~> 3.0.2"
+        ],
+        "Marker": [
+          "~> 1.1.0"
         ]
       },
       "source_files": "DevKit/DevKit/Classes/TransitioningNavigationView/*"

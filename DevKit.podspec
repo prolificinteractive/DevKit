@@ -26,7 +26,7 @@ Collection of commonly used swift code.
   s.author           = { 'jgsamudio' => 'jonathan2457@gmail.com' }
   s.source           = { :git => 'https://github.com/prolificinteractive/DevKit.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'DevKit/DevKit/Classes/**/*'
 
@@ -40,6 +40,8 @@ Collection of commonly used swift code.
 
   s.subspec 'TransitioningNavigationView' do |sp|
     sp.dependency 'DevKit/SharedOptions/ShadowOptions'
+    sp.dependency 'PureLayout', '~> 3.0.2'
+    sp.dependency 'Marker', '~> 1.1.0'
     sp.source_files = 'DevKit/DevKit/Classes/TransitioningNavigationView/*'
   end
 

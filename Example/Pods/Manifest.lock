@@ -3,17 +3,28 @@ PODS:
   - DevKit/SharedOptions/ShadowOptions (0.1.0)
   - DevKit/TransitioningNavigationView (0.1.0):
     - DevKit/SharedOptions/ShadowOptions
+    - Marker (~> 1.1.0)
+    - PureLayout (~> 3.0.2)
+  - Marker (1.1.0)
+  - PureLayout (3.0.2)
 
 DEPENDENCIES:
   - DevKit/CalendarPermissionsValidator (from `../`)
   - DevKit/TransitioningNavigationView (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Marker
+    - PureLayout
 
 EXTERNAL SOURCES:
   DevKit:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DevKit: 49500301c6f33561c6af7324e28280a6af5a55a5
+  DevKit: c22c0fd659633e483b017846da1f2be6b4c9314a
+  Marker: f35e0b5d9c97d6997d6b89b23f189e0e4cc127c7
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
 
 PODFILE CHECKSUM: c1415d0931ff5b88e93bb8a45f04471a34485bd3
 

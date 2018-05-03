@@ -21,6 +21,30 @@
 		205246D3209B9E8F0067A328 /* TransitioningNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246D2209B9E8F0067A328 /* TransitioningNavigationView.swift */; };
 		205246D5209BA3200067A328 /* TransitioningNavigationViewOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246D4209BA3200067A328 /* TransitioningNavigationViewOptions.swift */; };
 		205246D8209BA3480067A328 /* ShadowOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246D7209BA3480067A328 /* ShadowOptions.swift */; };
+		205246EE209BA8B40067A328 /* UICollectionViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246DC209BA8B30067A328 /* UICollectionViewCellExtension.swift */; };
+		205246EF209BA8B40067A328 /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246DD209BA8B30067A328 /* UIScrollViewExtension.swift */; };
+		205246F0209BA8B40067A328 /* UIScreenExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246DE209BA8B30067A328 /* UIScreenExtension.swift */; };
+		205246F1209BA8B40067A328 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246DF209BA8B30067A328 /* UIApplicationExtension.swift */; };
+		205246F2209BA8B40067A328 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246E0209BA8B30067A328 /* UIFontExtension.swift */; };
+		205246F3209BA8B40067A328 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246E1209BA8B30067A328 /* UIViewControllerExtension.swift */; };
+		205246F4209BA8B40067A328 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246E2209BA8B30067A328 /* UIViewExtension.swift */; };
+		205246F5209BA8B40067A328 /* UITableViewHeaderFooterViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246E3209BA8B30067A328 /* UITableViewHeaderFooterViewExtension.swift */; };
+		205246F6209BA8B40067A328 /* UIBarButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246E4209BA8B30067A328 /* UIBarButtonExtension.swift */; };
+		205246F7209BA8B40067A328 /* UIStackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246E5209BA8B30067A328 /* UIStackViewExtension.swift */; };
+		205246F8209BA8B40067A328 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246E6209BA8B30067A328 /* UIImageExtension.swift */; };
+		205246F9209BA8B40067A328 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246E7209BA8B30067A328 /* UICollectionViewExtension.swift */; };
+		205246FA209BA8B40067A328 /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246E8209BA8B30067A328 /* UIAlertControllerExtension.swift */; };
+		205246FB209BA8B40067A328 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246E9209BA8B30067A328 /* UITableViewExtension.swift */; };
+		205246FC209BA8B40067A328 /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246EA209BA8B30067A328 /* UINavigationControllerExtension.swift */; };
+		205246FD209BA8B40067A328 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246EB209BA8B30067A328 /* UIColorExtension.swift */; };
+		205246FE209BA8B40067A328 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246EC209BA8B40067A328 /* UITableViewCellExtension.swift */; };
+		205246FF209BA8B40067A328 /* UISearchBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246ED209BA8B40067A328 /* UISearchBarExtension.swift */; };
+		20524707209BA9620067A328 /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20524706209BA9620067A328 /* ReusableCell.swift */; };
+		20524715209BAA820067A328 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20524714209BAA820067A328 /* KeyboardObserver.swift */; };
+		2052471F209BB3240067A328 /* ImagePickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052471C209BB3240067A328 /* ImagePickerDelegate.swift */; };
+		20524720209BB3240067A328 /* CameraPhotoLibraryPermissionsValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052471D209BB3240067A328 /* CameraPhotoLibraryPermissionsValidator.swift */; };
+		20524721209BB3240067A328 /* ImagePickerValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052471E209BB3240067A328 /* ImagePickerValidator.swift */; };
+		20524724209BB3550067A328 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20524723209BB3550067A328 /* StringExtension.swift */; };
 		329452415E472FA3C293B641 /* Pods_DevKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC5340BFE3332A9CE19D779 /* Pods_DevKit.framework */; };
 		D7C6243C4F18537B1510C7A1 /* Pods_DevKitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3939CE1C2FCEB6AE9D5E4974 /* Pods_DevKitUITests.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +86,30 @@
 		205246D2209B9E8F0067A328 /* TransitioningNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitioningNavigationView.swift; sourceTree = "<group>"; };
 		205246D4209BA3200067A328 /* TransitioningNavigationViewOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitioningNavigationViewOptions.swift; sourceTree = "<group>"; };
 		205246D7209BA3480067A328 /* ShadowOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowOptions.swift; sourceTree = "<group>"; };
+		205246DC209BA8B30067A328 /* UICollectionViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewCellExtension.swift; sourceTree = "<group>"; };
+		205246DD209BA8B30067A328 /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
+		205246DE209BA8B30067A328 /* UIScreenExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScreenExtension.swift; sourceTree = "<group>"; };
+		205246DF209BA8B30067A328 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		205246E0209BA8B30067A328 /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		205246E1209BA8B30067A328 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		205246E2209BA8B30067A328 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		205246E3209BA8B30067A328 /* UITableViewHeaderFooterViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewHeaderFooterViewExtension.swift; sourceTree = "<group>"; };
+		205246E4209BA8B30067A328 /* UIBarButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonExtension.swift; sourceTree = "<group>"; };
+		205246E5209BA8B30067A328 /* UIStackViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackViewExtension.swift; sourceTree = "<group>"; };
+		205246E6209BA8B30067A328 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		205246E7209BA8B30067A328 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		205246E8209BA8B30067A328 /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
+		205246E9209BA8B30067A328 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		205246EA209BA8B30067A328 /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
+		205246EB209BA8B30067A328 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		205246EC209BA8B40067A328 /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
+		205246ED209BA8B40067A328 /* UISearchBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISearchBarExtension.swift; sourceTree = "<group>"; };
+		20524706209BA9620067A328 /* ReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
+		20524714209BAA820067A328 /* KeyboardObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
+		2052471C209BB3240067A328 /* ImagePickerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerDelegate.swift; sourceTree = "<group>"; };
+		2052471D209BB3240067A328 /* CameraPhotoLibraryPermissionsValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPhotoLibraryPermissionsValidator.swift; sourceTree = "<group>"; };
+		2052471E209BB3240067A328 /* ImagePickerValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerValidator.swift; sourceTree = "<group>"; };
+		20524723209BB3550067A328 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		3939CE1C2FCEB6AE9D5E4974 /* Pods_DevKitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevKitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		439C165EDA375DDFA28D0AB6 /* Pods-DevKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevKit/Pods-DevKit.release.xcconfig"; sourceTree = "<group>"; };
 		4DC5340BFE3332A9CE19D779 /* Pods_DevKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,8 +204,9 @@
 		205246C4209B9D2B0067A328 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				205246D1209B9E7B0067A328 /* TransitioningNavigationView */,
-				205246C6209B9D2B0067A328 /* CalendarPermissionsValidator */,
+				20524718209BB2BC0067A328 /* Views */,
+				20524704209BA9440067A328 /* Protocols */,
+				2052471A209BB2F30067A328 /* Utility */,
 				205246D6209BA3350067A328 /* SharedOptions */,
 			);
 			path = Classes;
@@ -214,6 +263,237 @@
 				205246D7209BA3480067A328 /* ShadowOptions.swift */,
 			);
 			path = SharedOptions;
+			sourceTree = "<group>";
+		};
+		205246DA209BA86F0067A328 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				20524722209BB33E0067A328 /* StringExtension */,
+				20524700209BA8E20067A328 /* UIAlertControllerExtension */,
+				20524701209BA9020067A328 /* UIApplicationExtension */,
+				20524702209BA9090067A328 /* UIBarButtonExtension */,
+				20524703209BA91F0067A328 /* UICollectionViewExtension */,
+				20524708209BA9740067A328 /* UIColorExtension */,
+				20524709209BA9810067A328 /* UIFontExtension */,
+				2052470A209BA9890067A328 /* UIImageExtension */,
+				2052470B209BA9930067A328 /* UINavigationControllerExtension */,
+				2052470C209BA9AE0067A328 /* UIScreenExtension */,
+				2052470D209BA9B80067A328 /* UIScrollViewExtension */,
+				2052470E209BA9BE0067A328 /* UISearchBarExtension */,
+				2052470F209BA9C60067A328 /* UIStackViewExtension */,
+				20524710209BA9CD0067A328 /* UITableViewCellExtension */,
+				20524711209BA9E20067A328 /* UITableViewExtension */,
+				20524712209BAA0A0067A328 /* UITableViewHeaderFooterViewExtension */,
+				20524725209BB3600067A328 /* UIViewControllerExtension */,
+				20524713209BAA380067A328 /* UIViewExtension */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		20524700209BA8E20067A328 /* UIAlertControllerExtension */ = {
+			isa = PBXGroup;
+			children = (
+				205246E8209BA8B30067A328 /* UIAlertControllerExtension.swift */,
+			);
+			path = UIAlertControllerExtension;
+			sourceTree = "<group>";
+		};
+		20524701209BA9020067A328 /* UIApplicationExtension */ = {
+			isa = PBXGroup;
+			children = (
+				205246DF209BA8B30067A328 /* UIApplicationExtension.swift */,
+			);
+			path = UIApplicationExtension;
+			sourceTree = "<group>";
+		};
+		20524702209BA9090067A328 /* UIBarButtonExtension */ = {
+			isa = PBXGroup;
+			children = (
+				205246E4209BA8B30067A328 /* UIBarButtonExtension.swift */,
+			);
+			path = UIBarButtonExtension;
+			sourceTree = "<group>";
+		};
+		20524703209BA91F0067A328 /* UICollectionViewExtension */ = {
+			isa = PBXGroup;
+			children = (
+				205246DC209BA8B30067A328 /* UICollectionViewCellExtension.swift */,
+				205246E7209BA8B30067A328 /* UICollectionViewExtension.swift */,
+			);
+			path = UICollectionViewExtension;
+			sourceTree = "<group>";
+		};
+		20524704209BA9440067A328 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				20524716209BAA940067A328 /* KeyboardObserver */,
+				20524705209BA94A0067A328 /* ReusableCell */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		20524705209BA94A0067A328 /* ReusableCell */ = {
+			isa = PBXGroup;
+			children = (
+				20524706209BA9620067A328 /* ReusableCell.swift */,
+			);
+			path = ReusableCell;
+			sourceTree = "<group>";
+		};
+		20524708209BA9740067A328 /* UIColorExtension */ = {
+			isa = PBXGroup;
+			children = (
+				205246EB209BA8B30067A328 /* UIColorExtension.swift */,
+			);
+			path = UIColorExtension;
+			sourceTree = "<group>";
+		};
+		20524709209BA9810067A328 /* UIFontExtension */ = {
+			isa = PBXGroup;
+			children = (
+				205246E0209BA8B30067A328 /* UIFontExtension.swift */,
+			);
+			path = UIFontExtension;
+			sourceTree = "<group>";
+		};
+		2052470A209BA9890067A328 /* UIImageExtension */ = {
+			isa = PBXGroup;
+			children = (
+				205246E6209BA8B30067A328 /* UIImageExtension.swift */,
+			);
+			path = UIImageExtension;
+			sourceTree = "<group>";
+		};
+		2052470B209BA9930067A328 /* UINavigationControllerExtension */ = {
+			isa = PBXGroup;
+			children = (
+				205246EA209BA8B30067A328 /* UINavigationControllerExtension.swift */,
+			);
+			path = UINavigationControllerExtension;
+			sourceTree = "<group>";
+		};
+		2052470C209BA9AE0067A328 /* UIScreenExtension */ = {
+			isa = PBXGroup;
+			children = (
+				205246DE209BA8B30067A328 /* UIScreenExtension.swift */,
+			);
+			path = UIScreenExtension;
+			sourceTree = "<group>";
+		};
+		2052470D209BA9B80067A328 /* UIScrollViewExtension */ = {
+			isa = PBXGroup;
+			children = (
+				205246DD209BA8B30067A328 /* UIScrollViewExtension.swift */,
+			);
+			path = UIScrollViewExtension;
+			sourceTree = "<group>";
+		};
+		2052470E209BA9BE0067A328 /* UISearchBarExtension */ = {
+			isa = PBXGroup;
+			children = (
+				205246ED209BA8B40067A328 /* UISearchBarExtension.swift */,
+			);
+			path = UISearchBarExtension;
+			sourceTree = "<group>";
+		};
+		2052470F209BA9C60067A328 /* UIStackViewExtension */ = {
+			isa = PBXGroup;
+			children = (
+				205246E5209BA8B30067A328 /* UIStackViewExtension.swift */,
+			);
+			path = UIStackViewExtension;
+			sourceTree = "<group>";
+		};
+		20524710209BA9CD0067A328 /* UITableViewCellExtension */ = {
+			isa = PBXGroup;
+			children = (
+				205246EC209BA8B40067A328 /* UITableViewCellExtension.swift */,
+			);
+			path = UITableViewCellExtension;
+			sourceTree = "<group>";
+		};
+		20524711209BA9E20067A328 /* UITableViewExtension */ = {
+			isa = PBXGroup;
+			children = (
+				205246E9209BA8B30067A328 /* UITableViewExtension.swift */,
+			);
+			path = UITableViewExtension;
+			sourceTree = "<group>";
+		};
+		20524712209BAA0A0067A328 /* UITableViewHeaderFooterViewExtension */ = {
+			isa = PBXGroup;
+			children = (
+				205246E3209BA8B30067A328 /* UITableViewHeaderFooterViewExtension.swift */,
+			);
+			path = UITableViewHeaderFooterViewExtension;
+			sourceTree = "<group>";
+		};
+		20524713209BAA380067A328 /* UIViewExtension */ = {
+			isa = PBXGroup;
+			children = (
+				205246E2209BA8B30067A328 /* UIViewExtension.swift */,
+			);
+			path = UIViewExtension;
+			sourceTree = "<group>";
+		};
+		20524716209BAA940067A328 /* KeyboardObserver */ = {
+			isa = PBXGroup;
+			children = (
+				20524714209BAA820067A328 /* KeyboardObserver.swift */,
+			);
+			path = KeyboardObserver;
+			sourceTree = "<group>";
+		};
+		20524718209BB2BC0067A328 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				205246D1209B9E7B0067A328 /* TransitioningNavigationView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		20524719209BB2D20067A328 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				2052471B209BB3090067A328 /* ImagePickerValidator */,
+				205246C6209B9D2B0067A328 /* CalendarPermissionsValidator */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		2052471A209BB2F30067A328 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				205246DA209BA86F0067A328 /* Extensions */,
+				20524719209BB2D20067A328 /* Validators */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		2052471B209BB3090067A328 /* ImagePickerValidator */ = {
+			isa = PBXGroup;
+			children = (
+				2052471D209BB3240067A328 /* CameraPhotoLibraryPermissionsValidator.swift */,
+				2052471C209BB3240067A328 /* ImagePickerDelegate.swift */,
+				2052471E209BB3240067A328 /* ImagePickerValidator.swift */,
+			);
+			path = ImagePickerValidator;
+			sourceTree = "<group>";
+		};
+		20524722209BB33E0067A328 /* StringExtension */ = {
+			isa = PBXGroup;
+			children = (
+				20524723209BB3550067A328 /* StringExtension.swift */,
+			);
+			path = StringExtension;
+			sourceTree = "<group>";
+		};
+		20524725209BB3600067A328 /* UIViewControllerExtension */ = {
+			isa = PBXGroup;
+			children = (
+				205246E1209BA8B30067A328 /* UIViewControllerExtension.swift */,
+			);
+			path = UIViewControllerExtension;
 			sourceTree = "<group>";
 		};
 		75AF81F4E3DEE96B43CF7CBC /* Pods */ = {
@@ -468,14 +748,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				205246F4209BA8B40067A328 /* UIViewExtension.swift in Sources */,
 				205246D8209BA3480067A328 /* ShadowOptions.swift in Sources */,
+				20524715209BAA820067A328 /* KeyboardObserver.swift in Sources */,
 				205246CC209B9D2B0067A328 /* CalendarPermissionsValidatorDelegate.swift in Sources */,
+				20524724209BB3550067A328 /* StringExtension.swift in Sources */,
+				205246F0209BA8B40067A328 /* UIScreenExtension.swift in Sources */,
+				205246F9209BA8B40067A328 /* UICollectionViewExtension.swift in Sources */,
+				205246FB209BA8B40067A328 /* UITableViewExtension.swift in Sources */,
+				205246FA209BA8B40067A328 /* UIAlertControllerExtension.swift in Sources */,
 				205246CD209B9D2B0067A328 /* EventCalendarInfo.swift in Sources */,
 				20524699209B9C250067A328 /* ViewController.swift in Sources */,
+				205246F6209BA8B40067A328 /* UIBarButtonExtension.swift in Sources */,
+				205246FC209BA8B40067A328 /* UINavigationControllerExtension.swift in Sources */,
+				205246FD209BA8B40067A328 /* UIColorExtension.swift in Sources */,
+				205246F7209BA8B40067A328 /* UIStackViewExtension.swift in Sources */,
+				205246FF209BA8B40067A328 /* UISearchBarExtension.swift in Sources */,
+				20524721209BB3240067A328 /* ImagePickerValidator.swift in Sources */,
+				205246F5209BA8B40067A328 /* UITableViewHeaderFooterViewExtension.swift in Sources */,
 				205246CB209B9D2B0067A328 /* CalendarPermissionsValidator.swift in Sources */,
+				2052471F209BB3240067A328 /* ImagePickerDelegate.swift in Sources */,
+				205246F1209BA8B40067A328 /* UIApplicationExtension.swift in Sources */,
+				205246EF209BA8B40067A328 /* UIScrollViewExtension.swift in Sources */,
+				205246EE209BA8B40067A328 /* UICollectionViewCellExtension.swift in Sources */,
+				205246F8209BA8B40067A328 /* UIImageExtension.swift in Sources */,
 				205246D5209BA3200067A328 /* TransitioningNavigationViewOptions.swift in Sources */,
 				205246D3209B9E8F0067A328 /* TransitioningNavigationView.swift in Sources */,
 				20524697209B9C250067A328 /* AppDelegate.swift in Sources */,
+				20524720209BB3240067A328 /* CameraPhotoLibraryPermissionsValidator.swift in Sources */,
+				205246FE209BA8B40067A328 /* UITableViewCellExtension.swift in Sources */,
+				205246F3209BA8B40067A328 /* UIViewControllerExtension.swift in Sources */,
+				205246F2209BA8B40067A328 /* UIFontExtension.swift in Sources */,
+				20524707209BA9620067A328 /* ReusableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,7 +955,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "DevKit/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.prolificinteractive.DevKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -666,7 +973,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "DevKit/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.prolificinteractive.DevKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -682,7 +992,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DevKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.prolificinteractive.DevKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -699,7 +1013,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DevKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.prolificinteractive.DevKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -715,7 +1033,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DevKitUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.prolificinteractive.DevKitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -731,7 +1053,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DevKitUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.prolificinteractive.DevKitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
