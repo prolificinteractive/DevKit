@@ -29,12 +29,9 @@ Collection of commonly used swift code.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'DevKit/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'DevKit' => ['DevKit/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  subspec 'CalendarPermissionsValidator' do |sp|
+    sp.source_files = 'Classes/CalendarPermissionsValidator'
+  end
+  
 end
