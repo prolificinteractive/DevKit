@@ -14,7 +14,7 @@ extension UIView {
     ///
     /// - Parameter width: Width.
     /// - Returns: Height.
-    func heightForWidth(_ width: CGFloat) -> CGFloat {
+    public func heightForWidth(_ width: CGFloat) -> CGFloat {
         return sizeThatFits(CGSize(width: width, height: CGFloat.greatestFiniteMagnitude)).height
     }
     
@@ -24,7 +24,7 @@ extension UIView {
     ///   - height: Height of the divder view.
     ///   - leadingOffset: Leading offset of the divider view.
     ///   - color: Color of the divider view.
-    func addDividerView(height: CGFloat = 1, leadingOffset: CGFloat = 0, color: UIColor) {
+    public func addDividerView(height: CGFloat = 1, leadingOffset: CGFloat = 0, color: UIColor) {
         let dividerView = UIView()
         dividerView.backgroundColor = color
         addSubview(dividerView)
@@ -41,7 +41,7 @@ extension UIView {
     ///   - height: Height.
     ///   - color: Background color.
     /// - Returns: UIView.
-    static func dividerView(width: CGFloat? = nil,
+    public static func dividerView(width: CGFloat? = nil,
                             height: CGFloat? = nil,
                             color: UIColor = UIColor.clear) -> UIView {
         let divider = UIView()

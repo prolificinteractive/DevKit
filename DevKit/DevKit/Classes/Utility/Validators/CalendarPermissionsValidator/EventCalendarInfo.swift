@@ -8,18 +8,25 @@
 
 import Foundation
 
-struct EventCalendarInfo {
+public struct EventCalendarInfo {
 
     /// Title of the event.
-    let title: String
+    public let title: String
 
     /// Optional notes to add to the event.
-    let notes: String?
+    public let notes: String?
 
     /// Start date of the event.
-    let startDate: Date
+    public let startDate: Date
 
     /// End date of the event.
-    let endDate: Date
+    public let endDate: Date
+
+    public init(title: String, notes: String?, startDate: Date, endDate: Date) {
+        self.title = title
+        self.notes = notes
+        self.startDate = startDate
+        self.endDate = endDate
+    }
     
 }

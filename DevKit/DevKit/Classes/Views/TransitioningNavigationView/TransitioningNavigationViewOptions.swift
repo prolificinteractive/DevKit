@@ -9,7 +9,7 @@
 import UIKit
 import Marker
 
-struct TransitioningNavigationViewOptions {
+public struct TransitioningNavigationViewOptions {
 
     /// Background color of the navigation view.
     let backgroundColor: UIColor

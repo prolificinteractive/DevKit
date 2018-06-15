@@ -14,7 +14,7 @@ extension UIColor {
     /// Initialize and return a UIColor object that corresponds to the given hex string
     ///
     /// - Parameter hexString: 6 digits color hex string
-    convenience init(hexString: String) {
+    public convenience init(hexString: String) {
         assert(hexString.hasPrefix("#"), "Hex color string should start with \"#\"")
 
         let hexColor = hexString.replacingOccurrences(of: "#", with: "")
@@ -34,7 +34,7 @@ extension UIColor {
     ///
     /// - Parameter weight: Proportional weight that should be given to blend color, specified as value from 0.0 to 1.0.
     /// - Returns: Darkened color.
-    func darken(by weight: CGFloat) -> UIColor {
+    public func darken(by weight: CGFloat) -> UIColor {
         return blend(with: .black, weight: weight)
     }
 
@@ -42,7 +42,7 @@ extension UIColor {
     ///
     /// - Parameter weight: Proportional weight that should be given to blend color, specified as value from 0.0 to 1.0.
     /// - Returns: Brightened color.
-    func brighten(by weight: CGFloat) -> UIColor {
+    public func brighten(by weight: CGFloat) -> UIColor {
         return blend(with: .white, weight: weight)
     }
 
@@ -52,7 +52,7 @@ extension UIColor {
     ///   - targetColor: Target color to transition to.
     ///   - percent: Percent of the fade.
     /// - Returns: The faded color.
-    func fadeColor(targetColor: UIColor, percent: CGFloat) -> UIColor {
+    public func fadeColor(targetColor: UIColor, percent: CGFloat) -> UIColor {
         let initialCI = CIColor(color: self)
         let targetCI = CIColor(color: targetColor)
 
@@ -69,7 +69,7 @@ extension UIColor {
     ///   - blendColor: Color to blend with.
     ///   - weight: Proportional weight that should be given to blend color, specified as value from 0.0 to 1.0.
     /// - Returns: Blended color.
-    private func blend(with blendColor: UIColor, weight: CGFloat) -> UIColor {
+    public func blend(with blendColor: UIColor, weight: CGFloat) -> UIColor {
         var rgbaValues = Array(repeating: CGFloat(0.0), count: 4)
         var blendRgbaValues = Array(repeating: CGFloat(0.0), count: 4)
 

@@ -9,7 +9,7 @@
 import UIKit
 
 /// Image Picker Delegate that adopts both UIImagePickerControllerDelegate and UINavigationControllerDelegate.
-protocol ImagePickerDelegate: class, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+public protocol ImagePickerDelegate: class, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
 }
 

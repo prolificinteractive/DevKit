@@ -16,7 +16,7 @@ extension UISearchBar {
     /// Sets the text field's background color with a color of choice.
     ///
     /// - Parameter color: The color to apply.
-    func setTextFieldColor(color: UIColor) {
+    public func setTextFieldColor(color: UIColor) {
         if let textField = getViewElement(type: UITextField.self) {
             switch searchBarStyle {
             case .minimal:
@@ -30,7 +30,7 @@ extension UISearchBar {
     /// Sets search bar's cancel button text style.
     ///
     /// - Parameter textStyle: The text style to apply.
-    func setCancelButton(textStyle: TextStyle) {
+    public func setCancelButton(textStyle: TextStyle) {
         if let cancelButton = getViewElement(type: UIButton.self) {
             cancelButton.setTitleText("CANCEL_TITLE".localized(comment: "Cancel"), using: textStyle)
         }

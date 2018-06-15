@@ -14,7 +14,7 @@ extension String {
     ///
     /// - Parameter comment: Comment for the localized string.
     /// - Returns: String that is localized.
-    func localized(comment: String) -> String {
+    public func localized(comment: String) -> String {
         return NSLocalizedString(self, comment: comment)
     }
     
@@ -22,7 +22,7 @@ extension String {
     ///
     /// - Parameter token: Token to search for.
     /// - Returns: String of the removed trailing string. Includes removing the token.
-    func removeTrailing(startWith token: String) -> String {
+    public func removeTrailing(startWith token: String) -> String {
         if let token = range(of: token) {
             var newString = self
             newString.removeSubrange(token.lowerBound..<endIndex)
@@ -34,7 +34,7 @@ extension String {
     /// Returns a string with leading and trailing whitespace trimmed.
     ///
     /// - Returns: String.
-    func whitespaceTrimmed() -> String {
+    public func whitespaceTrimmed() -> String {
         return self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
     }
     
@@ -47,15 +47,15 @@ extension String {
     ///
     /// - Parameter input: String.
     /// - Returns: True, if not empty, false otherwise.
-    static func isValidInput(_ input: String) -> Bool {
-        return !input.whitespaceTrimmed().isEmpty
+    public static func isValidInput(_ input: String?) -> Bool {
+        return !(input?.whitespaceTrimmed().isEmpty ?? true)
     }
     
     /// Determines if input string is a valid email address.
     ///
     /// - Parameter email: Email address.
     /// - Returns: True, if valid email, false otherwise.
-    static func validateEmail(_ email: String) -> Bool {
+    public static func validateEmail(_ email: String) -> Bool {
         let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         return NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: email)
     }
@@ -64,7 +64,7 @@ extension String {
     ///
     /// - Parameter password: Password.
     /// - Returns: True, if valid password, false otherwise.
-    static func validatePassword(_ password: String) -> Bool {
+    public static func validatePassword(_ password: String) -> Bool {
         return password.count > 0
     }
 
@@ -72,10 +72,11 @@ extension String {
 
 // MARK: - Social Media URLs
 extension String {
+
     /// Extracts username from given url string.
     ///
     /// - Returns: Username if included in path.
-    func extractedUserName() -> String {
+    public func extractedUserName() -> String {
         guard let url = URL(string: self) else {
             return ""
         }
@@ -86,7 +87,7 @@ extension String {
     ///
     /// - Parameter username: Twitter handle.
     /// - Returns: URL string if handle given, nil otherwise.
-    static func twitterURL(with username: String?) -> String? {
+    public static func twitterURL(with username: String?) -> String? {
         guard let username = username else {
             return nil
         }
@@ -102,7 +103,7 @@ extension String {
     ///
     /// - Parameter username: Facebook username.
     /// - Returns: URL string if handle given, nil otherwise.
-    static func facebookURL(with username: String?) -> String? {
+    public static func facebookURL(with username: String?) -> String? {
         guard let username = username else {
             return nil
         }
@@ -118,7 +119,7 @@ extension String {
     ///
     /// - Parameter username: Instagram username.
     /// - Returns: URL string if handle given, nil otherwise.
-    static func instagramURL(with username: String?) -> String? {
+    public static func instagramURL(with username: String?) -> String? {
         guard let username = username else {
             return nil
         }

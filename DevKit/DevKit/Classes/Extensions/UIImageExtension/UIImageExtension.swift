@@ -14,7 +14,7 @@ extension UIImage {
     ///
     /// - Parameter color: The color to use.
     /// - Returns: UIImage.
-    static func imageWithColor(color: UIColor) -> UIImage {
+    public static func imageWithColor(color: UIColor) -> UIImage {
         let size = CGSize(width: 1, height: 1)
         let rect = CGRect(origin: .zero, size: size)
         

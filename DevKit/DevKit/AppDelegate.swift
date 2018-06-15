@@ -9,7 +9,7 @@
 import UIKit
 
 @UIApplicationMain
-final class AppDelegate: UIResponder, UIApplicationDelegate {
+public class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Public Properties
 

@@ -16,7 +16,7 @@ extension UIBarButtonItem {
     /// - Parameters:
     ///   - textStyle: Text style.
     ///   - controlState: Control state.
-    func setTitleTextStyle(with textStyle: TextStyle, for controlState: UIControlState) {
+    public func setTitleTextStyle(with textStyle: TextStyle, for controlState: UIControlState) {
         let textAttributes = textStyle.attributes
         setTitleTextAttributes(textAttributes, for: controlState)
     }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class ViewController: UIViewController {
+public class ViewController: UIViewController {
 
     // MARK: - Public Functions
 

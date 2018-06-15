@@ -16,7 +16,7 @@ extension UIFont {
     ///   - name: Name of the font.
     ///   - fontSize: Size of the font.
     /// - Returns: UIFont of the name and size provided and defaults to system font if font it not found.
-    static func font(name: String, fontSize: CGFloat) -> UIFont {
+    public static func font(name: String, fontSize: CGFloat) -> UIFont {
         guard let font = UIFont(name: name, size: fontSize) else {
             assert(false, "Can't find font \(name)")
             return UIFont.systemFont(ofSize: fontSize)

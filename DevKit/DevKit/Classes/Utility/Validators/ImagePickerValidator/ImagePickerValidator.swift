@@ -9,7 +9,7 @@
 import UIKit
 
 /// The image picker validator.
-final class ImagePickerValidator {
+public class ImagePickerValidator {
     
     // MARK: - Private Properties
     

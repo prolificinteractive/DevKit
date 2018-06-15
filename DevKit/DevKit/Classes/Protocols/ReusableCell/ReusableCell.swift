@@ -9,7 +9,7 @@
 import Foundation
 
 /// Defines a reusable collection or table view cell.
-protocol ReusableCell: class {
+public protocol ReusableCell: class {
     
     /// Default reuse identifier is set with the class name.
     static var reuseIdentifier: String { get }
@@ -18,7 +18,7 @@ protocol ReusableCell: class {
 
 extension ReusableCell {
     
-    static var reuseIdentifier: String {
+    public static var reuseIdentifier: String {
         return String(describing: self)
     }
     

@@ -9,7 +9,7 @@
 import UIKit
 
 /// Keyboard notifications observer.
-protocol KeyboardObserver {
+public protocol KeyboardObserver {
     
     /// Adds keybaord observers to element.
     func addKeyboardObservers()
@@ -33,32 +33,32 @@ protocol KeyboardObserver {
 extension UIViewController: KeyboardObserver {
 
     /// Dismiss keyboard action.
-    @objc func dismissKeyboard() {
+    @objc public func dismissKeyboard() {
         view.endEditing(true)
     }
 
     /// Handler for keyboard will show.
     ///
     /// - Parameter notification: Keyboard will show notification.
-    @objc func keyboardWillShow(notification: Notification) {
+    @objc public func keyboardWillShow(notification: Notification) {
         // Will be overridden
     }
 
     /// Handler for keyboard will hide.
     ///
     /// - Parameter notification: Keyboard will hide notification.
-    @objc func keyboardWillHide(notification: Notification) {
+    @objc public func keyboardWillHide(notification: Notification) {
         // Will be overridden
     }
 
     /// Hides keyboard if tapped outside responder.
-    func addRecognizerForKeyboardDismissal() {
+    public func addRecognizerForKeyboardDismissal() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
         tapGesture.cancelsTouchesInView = false
         view.addGestureRecognizer(tapGesture)
     }
 
-    func addKeyboardObservers() {
+    public func addKeyboardObservers() {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(keyboardWillShow),
                                                name: .UIKeyboardWillShow,
@@ -73,7 +73,7 @@ extension UIViewController: KeyboardObserver {
                                                object: nil)
     }
 
-    func removeKeyboardObservers() {
+    public func removeKeyboardObservers() {
         NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillShow, object: nil)
         NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillHide, object: nil)
         NotificationCenter.default.removeObserver(self, name: .UIApplicationWillResignActive, object: nil)

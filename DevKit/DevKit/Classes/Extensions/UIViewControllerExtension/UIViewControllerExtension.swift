@@ -14,7 +14,7 @@ extension UIViewController {
     /// Opens url from current view controller.
     ///
     /// - Parameter url: URL.
-    func open(_ url: URL) {
+    public func open(_ url: URL) {
         let webViewController = SFSafariViewController(url: url)
         present(webViewController, animated: true, completion: nil)
     }

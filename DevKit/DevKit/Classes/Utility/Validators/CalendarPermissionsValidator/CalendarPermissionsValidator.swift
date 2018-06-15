@@ -9,11 +9,11 @@
 import Foundation
 import EventKit
 
-final class CalendarPermissionsValidator {
+public class CalendarPermissionsValidator {
 
     // MARK: - Public Properties
 
-    weak var delegate: CalendarPermissionsValidatorDelegate?
+    public weak var delegate: CalendarPermissionsValidatorDelegate?
 
     // MARK: - Private Properties
 
@@ -24,11 +24,13 @@ final class CalendarPermissionsValidator {
     /// Attempts to add a event to the calendar.
     ///
     /// - Parameter eventInfo: Event info to add.
-    func addEventToCalendar(eventInfo: EventCalendarInfo) {
+    public func addEventToCalendar(eventInfo: EventCalendarInfo) {
         let authorizationStatus = EKEventStore.authorizationStatus(for: EKEntityType.event)
         checkCalendarPermissions(status: authorizationStatus, eventInfo: eventInfo)
     }
 
+    public init() { }
+    
 }
 
 // MARK: - Private Functions

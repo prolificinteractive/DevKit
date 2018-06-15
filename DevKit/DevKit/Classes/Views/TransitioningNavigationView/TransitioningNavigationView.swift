@@ -10,7 +10,7 @@ import UIKit
 import PureLayout
 import Marker
 
-final class TransitioningNavigationView: UIView {
+public class TransitioningNavigationView: UIView {
 
     // MARK: - Private Properties
 
@@ -60,7 +60,7 @@ final class TransitioningNavigationView: UIView {
 
     // MARK: - Initialization
 
-    init(options: TransitioningNavigationViewOptions, backButton: UIButton, barButtons: [UIButton]) {
+    public init(options: TransitioningNavigationViewOptions, backButton: UIButton, barButtons: [UIButton]) {
         self.backButton = backButton
         self.options = options
         super.init(frame: .zero)
@@ -68,7 +68,7 @@ final class TransitioningNavigationView: UIView {
         setupDesign()
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 

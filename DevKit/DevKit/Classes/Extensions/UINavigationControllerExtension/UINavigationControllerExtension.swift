@@ -14,7 +14,7 @@ extension UINavigationController {
     /// Sets the navigation bar to be transparent.
     ///
     /// - Parameter barStyle: Bar style to set.
-    func transparentNavigationBar(barStyle: UIBarStyle = .default) {
+    public func transparentNavigationBar(barStyle: UIBarStyle = .default) {
         removeNavigationBarBorder()
         navigationBar.isTranslucent = true
         view.backgroundColor = .clear
@@ -27,7 +27,7 @@ extension UINavigationController {
     ///   - backgroundColor: Background color.
     ///   - tintColor: Navigation items tint color.
     ///   - textStyle: Text style for title.
-    func setNavigationBar(backgroundColor: UIColor? = nil, tintColor: UIColor? = nil, textStyle: TextStyle? = nil) {
+    public func setNavigationBar(backgroundColor: UIColor? = nil, tintColor: UIColor? = nil, textStyle: TextStyle? = nil) {
         navigationBar.titleTextAttributes = textStyle?.attributes
         navigationBar.tintColor = tintColor
         
@@ -41,7 +41,7 @@ extension UINavigationController {
     }
     
     /// Removes the navigation bar border
-    func removeNavigationBarBorder() {
+    public func removeNavigationBarBorder() {
         navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationBar.shadowImage = UIImage()
     }
@@ -53,7 +53,7 @@ extension UINavigationController {
     ///   - offset: Shadow offset.
     ///   - radius: Shadow radius.
     ///   - opacity: Shadow opacity.
-    func addDropShadow(color: UIColor = .clear, offset: CGSize = .zero, radius: CGFloat = 0, opacity: Float = 0) {
+    public func addDropShadow(color: UIColor = .clear, offset: CGSize = .zero, radius: CGFloat = 0, opacity: Float = 0) {
         navigationBar.layer.shadowColor = color.cgColor
         navigationBar.layer.shadowOffset = offset
         navigationBar.layer.shadowRadius = radius

@@ -10,7 +10,7 @@ import UIKit
 import Photos
 
 /// The Camera & Photo Library Permissions Validator.
-final class CameraPhotoLibraryPermissionsValidator {
+public class CameraPhotoLibraryPermissionsValidator {
     
     // MARK: - Private Properties
     
@@ -73,8 +73,7 @@ private extension CameraPhotoLibraryPermissionsValidator {
     }
     
     func presentImagePicker(_ sourceType: UIImagePickerControllerSourceType) {
-        guard
-            let viewController = viewController as?
+        guard let viewController = viewController as?
                 UIViewController &
                 UIImagePickerControllerDelegate &
                 UINavigationControllerDelegate else {
