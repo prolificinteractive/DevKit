@@ -22,10 +22,34 @@ it, simply add the following line to your Podfile:
 pod 'DevKit'
 ```
 
-## Author
+## DevKit Subspecs
 
-jgsamudio, jonathan2457@gmail.com
+* [Protocols]()
+* [Extensions]()
+
+## Contributing to DevKit
+
+Adding new classes to DevKit should be added to the appropriate subspec section. Unique subspecs should include the source files, any limiting deployment targets and necessary dependencies. 
+
+```
+  # CalendarPermissionsValidator
+  s.subspec 'CalendarPermissionsValidator' do |sp|
+    sp.ios.deployment_target = '11.0'
+    sp.dependency 'DevKit/Extensions/StringExtension'
+    sp.dependency 'DevKit/Extensions/UIAlertControllerExtension'
+    sp.dependency 'DevKit/Extensions/UIApplicationExtension'
+    sp.source_files = 'DevKit/DevKit/Classes/Utility/Validators/CalendarPermissionsValidator/*'
+  end
+```
+
+All new additions should be code reviewed before merging into master.
 
 ## License
 
-DevKit is available under the MIT license. See the LICENSE file for more info.
+![prolific](https://s3.amazonaws.com/prolificsitestaging/logos/Prolific_Logo_Full_Color.png)
+
+Copyright (c) 2017 Prolific Interactive
+
+DevKit is maintained and sponsored by Prolific Interactive. It may be redistributed under the terms specified in the [LICENSE] file.
+
+[LICENSE]: ./LICENSE
