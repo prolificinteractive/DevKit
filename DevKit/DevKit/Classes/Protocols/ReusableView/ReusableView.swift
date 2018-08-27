@@ -1,5 +1,5 @@
 //
-//  ReusableCell.swift
+//  ReusableView.swift
 //  TheWing
 //
 //  Created by Luna An on 3/31/18.
@@ -9,17 +9,17 @@
 import Foundation
 
 /// Defines a reusable collection or table view cell.
-public protocol ReusableCell: class {
-    
+public protocol ReusableView: class {
+
     /// Default reuse identifier is set with the class name.
     static var reuseIdentifier: String { get }
-    
+
 }
 
-extension ReusableCell {
-    
+extension ReusableView {
+
     public static var reuseIdentifier: String {
         return String(describing: self)
     }
-    
+
 }

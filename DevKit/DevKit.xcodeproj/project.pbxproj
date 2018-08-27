@@ -39,7 +39,7 @@
 		205246FD209BA8B40067A328 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246EB209BA8B30067A328 /* UIColorExtension.swift */; };
 		205246FE209BA8B40067A328 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246EC209BA8B40067A328 /* UITableViewCellExtension.swift */; };
 		205246FF209BA8B40067A328 /* UISearchBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246ED209BA8B40067A328 /* UISearchBarExtension.swift */; };
-		20524707209BA9620067A328 /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20524706209BA9620067A328 /* ReusableCell.swift */; };
+		20524707209BA9620067A328 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20524706209BA9620067A328 /* ReusableView.swift */; };
 		20524715209BAA820067A328 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20524714209BAA820067A328 /* KeyboardObserver.swift */; };
 		2052471F209BB3240067A328 /* ImagePickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052471C209BB3240067A328 /* ImagePickerDelegate.swift */; };
 		20524720209BB3240067A328 /* CameraPhotoLibraryPermissionsValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052471D209BB3240067A328 /* CameraPhotoLibraryPermissionsValidator.swift */; };
@@ -104,7 +104,7 @@
 		205246EB209BA8B30067A328 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		205246EC209BA8B40067A328 /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
 		205246ED209BA8B40067A328 /* UISearchBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISearchBarExtension.swift; sourceTree = "<group>"; };
-		20524706209BA9620067A328 /* ReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
+		20524706209BA9620067A328 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		20524714209BAA820067A328 /* KeyboardObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
 		2052471C209BB3240067A328 /* ImagePickerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerDelegate.swift; sourceTree = "<group>"; };
 		2052471D209BB3240067A328 /* CameraPhotoLibraryPermissionsValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPhotoLibraryPermissionsValidator.swift; sourceTree = "<group>"; };
@@ -328,17 +328,17 @@
 			isa = PBXGroup;
 			children = (
 				20524716209BAA940067A328 /* KeyboardObserver */,
-				20524705209BA94A0067A328 /* ReusableCell */,
+				20524705209BA94A0067A328 /* ReusableView */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		20524705209BA94A0067A328 /* ReusableCell */ = {
+		20524705209BA94A0067A328 /* ReusableView */ = {
 			isa = PBXGroup;
 			children = (
-				20524706209BA9620067A328 /* ReusableCell.swift */,
+				20524706209BA9620067A328 /* ReusableView.swift */,
 			);
-			path = ReusableCell;
+			path = ReusableView;
 			sourceTree = "<group>";
 		};
 		20524708209BA9740067A328 /* UIColorExtension */ = {
@@ -779,7 +779,7 @@
 				205246FE209BA8B40067A328 /* UITableViewCellExtension.swift in Sources */,
 				205246F3209BA8B40067A328 /* UIViewControllerExtension.swift in Sources */,
 				205246F2209BA8B40067A328 /* UIFontExtension.swift in Sources */,
-				20524707209BA9620067A328 /* ReusableCell.swift in Sources */,
+				20524707209BA9620067A328 /* ReusableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

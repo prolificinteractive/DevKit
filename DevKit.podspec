@@ -67,9 +67,9 @@ Collection of commonly used swift code.
       ssp.source_files = 'DevKit/DevKit/Classes/Protocols/KeyboardObserver/*'
     end
 
-      # ReusableCell
-    sp.subspec 'ReusableCell' do |ssp|
-      ssp.source_files = 'DevKit/DevKit/Classes/Protocols/ReusableCell/*'
+    # ReusableView
+    sp.subspec 'ReusableView' do |ssp|
+      ssp.source_files = 'DevKit/DevKit/Classes/Protocols/ReusableView/*'
     end
   end
 
@@ -93,9 +93,16 @@ Collection of commonly used swift code.
         ssp.source_files = 'DevKit/DevKit/Classes/Extensions/UIApplicationExtension/*'
     end
 
+    # UITableViewCell Extension
     sp.subspec 'UITableViewCellExtension' do |ssp|
         ssp.source_files = 'DevKit/DevKit/Classes/Extensions/UITableViewCellExtension/*'
-        sp.dependency 'DevKit/Protocols/ReusableCell'
+        sp.dependency 'DevKit/Protocols/ReusableView'
+    end
+
+    # UITableView Extension
+    sp.subspec 'UITableViewExtension' do |ssp|
+        ssp.source_files = 'DevKit/DevKit/Classes/Extensions/UITableViewExtension/*'
+        sp.dependency 'DevKit/Protocols/ReusableView'
     end
   end
 

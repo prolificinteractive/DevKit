@@ -9,7 +9,7 @@
 import UIKit
 
 // MARK: - ReusableCell
-extension UITableViewCell: ReusableCell {
+extension UITableViewCell: ReusableView {
     
 }
 

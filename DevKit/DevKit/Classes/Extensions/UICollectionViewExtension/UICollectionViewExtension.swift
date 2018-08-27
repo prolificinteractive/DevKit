@@ -14,7 +14,7 @@ extension UICollectionView {
     ///
     /// - Parameter indexPath: The index path.
     /// - Returns: The collection view cell.
-    public func dequeueReusableCell<T: ReusableCell>(forIndexPath indexPath: IndexPath) -> T {
+    public func dequeueReusableCell<T: ReusableView>(forIndexPath indexPath: IndexPath) -> T {
         guard let cell = dequeueReusableCell(withReuseIdentifier: T.reuseIdentifier, for: indexPath) as? T else {
             fatalError("Can't dequeue a collection view cell with identifier \(T.reuseIdentifier)")
         }
@@ -25,7 +25,7 @@ extension UICollectionView {
     /// Registers the collection view cell with its reuseidentifier.
     ///
     /// - Parameters cellClass: The cell class to use.
-    public func registerCell<T: ReusableCell>(cellClass: T.Type) {
+    public func registerCell<T: ReusableView>(cellClass: T.Type) {
         register(T.self, forCellWithReuseIdentifier: T.reuseIdentifier)
     }
     

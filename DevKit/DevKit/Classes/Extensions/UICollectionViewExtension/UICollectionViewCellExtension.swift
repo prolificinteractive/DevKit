@@ -9,6 +9,6 @@
 import UIKit
 
 // MARK: - ReusableCell
-extension UICollectionViewCell: ReusableCell {
+extension UICollectionViewCell: ReusableView {
     
 }
