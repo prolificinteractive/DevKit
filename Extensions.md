@@ -1,6 +1,6 @@
 # Extensions 
 
-# String Extension
+# String Extensions (Extensions/StringExtension)
 
 ## General Functions
 
@@ -52,6 +52,7 @@
 ## Social Media URls 
 
 ```
+
     /// Extracts username from given url string.
     ///
     /// - Returns: Username if included in path.
@@ -70,7 +71,7 @@
     /// - Returns: URL string if handle given, nil otherwise.
     public static func facebookURL(with username: String?) -> String?
 
-        /// Returns a URL string given an Instagram username.
+    /// Returns a URL string given an Instagram username.
     ///
     /// - Parameter username: Instagram username.
     /// - Returns: URL string if handle given, nil otherwise.
