@@ -1,18 +1,41 @@
 PODS:
+  - DevKit (0.1.0):
+    - DevKit/CalendarPermissionsValidator (= 0.1.0)
+    - DevKit/Extensions (= 0.1.0)
+    - DevKit/ImagePickerValidator (= 0.1.0)
+    - DevKit/Protocols (= 0.1.0)
+    - DevKit/SharedOptions (= 0.1.0)
+    - DevKit/TransitioningNavigationView (= 0.1.0)
   - DevKit/CalendarPermissionsValidator (0.1.0):
     - DevKit/Extensions/StringExtension
     - DevKit/Extensions/UIAlertControllerExtension
     - DevKit/Extensions/UIApplicationExtension
+  - DevKit/Extensions (0.1.0):
+    - DevKit/Extensions/StringExtension (= 0.1.0)
+    - DevKit/Extensions/UIAlertControllerExtension (= 0.1.0)
+    - DevKit/Extensions/UIApplicationExtension (= 0.1.0)
+    - DevKit/Extensions/UITableViewCellExtension (= 0.1.0)
+    - DevKit/Extensions/UITableViewExtension (= 0.1.0)
+    - DevKit/Protocols/ReusableView
   - DevKit/Extensions/StringExtension (0.1.0):
-    - DevKit/Protocols/ReusableCell
+    - DevKit/Protocols/ReusableView
   - DevKit/Extensions/UIAlertControllerExtension (0.1.0):
-    - DevKit/Protocols/ReusableCell
+    - DevKit/Protocols/ReusableView
   - DevKit/Extensions/UIApplicationExtension (0.1.0):
-    - DevKit/Protocols/ReusableCell
+    - DevKit/Protocols/ReusableView
   - DevKit/Extensions/UITableViewCellExtension (0.1.0):
-    - DevKit/Protocols/ReusableCell
+    - DevKit/Protocols/ReusableView
+  - DevKit/Extensions/UITableViewExtension (0.1.0):
+    - DevKit/Protocols/ReusableView
+  - DevKit/ImagePickerValidator (0.1.0):
+    - DevKit/Extensions/StringExtension
+  - DevKit/Protocols (0.1.0):
+    - DevKit/Protocols/KeyboardObserver (= 0.1.0)
+    - DevKit/Protocols/ReusableView (= 0.1.0)
   - DevKit/Protocols/KeyboardObserver (0.1.0)
-  - DevKit/Protocols/ReusableCell (0.1.0)
+  - DevKit/Protocols/ReusableView (0.1.0)
+  - DevKit/SharedOptions (0.1.0):
+    - DevKit/SharedOptions/ShadowOptions (= 0.1.0)
   - DevKit/SharedOptions/ShadowOptions (0.1.0)
   - DevKit/TransitioningNavigationView (0.1.0):
     - DevKit/SharedOptions/ShadowOptions
@@ -22,10 +45,7 @@ PODS:
   - PureLayout (3.0.2)
 
 DEPENDENCIES:
-  - DevKit/CalendarPermissionsValidator (from `../`)
-  - DevKit/Extensions/UITableViewCellExtension (from `../`)
-  - DevKit/Protocols/KeyboardObserver (from `../`)
-  - DevKit/TransitioningNavigationView (from `../`)
+  - DevKit (from `../`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -37,10 +57,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DevKit: 017542fe16692ee04b2b0363e4d7d024bf26690d
+  DevKit: a38be6866edfd1bd9abdfcab5b8b433ef94df96e
   Marker: f35e0b5d9c97d6997d6b89b23f189e0e4cc127c7
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
 
-PODFILE CHECKSUM: e6370a3a33a9980812a59812aae29ad237832457
+PODFILE CHECKSUM: 0c967073f397fab04e915fc4700c2c7fed74867b
 
 COCOAPODS: 1.5.0

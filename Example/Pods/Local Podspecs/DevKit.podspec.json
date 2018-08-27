@@ -70,15 +70,15 @@
           "source_files": "DevKit/DevKit/Classes/Protocols/KeyboardObserver/*"
         },
         {
-          "name": "ReusableCell",
-          "source_files": "DevKit/DevKit/Classes/Protocols/ReusableCell/*"
+          "name": "ReusableView",
+          "source_files": "DevKit/DevKit/Classes/Protocols/ReusableView/*"
         }
       ]
     },
     {
       "name": "Extensions",
       "dependencies": {
-        "DevKit/Protocols/ReusableCell": [
+        "DevKit/Protocols/ReusableView": [
 
         ]
       },
@@ -101,6 +101,10 @@
         {
           "name": "UITableViewCellExtension",
           "source_files": "DevKit/DevKit/Classes/Extensions/UITableViewCellExtension/*"
+        },
+        {
+          "name": "UITableViewExtension",
+          "source_files": "DevKit/DevKit/Classes/Extensions/UITableViewExtension/*"
         }
       ]
     },

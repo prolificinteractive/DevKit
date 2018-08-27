@@ -53,6 +53,9 @@ public extension UITableView {
         register(T.self, forCellReuseIdentifier: T.reuseIdentifier)
     }
 
+    /// Registers the table view cell nib with its reuseidentifier.
+    ///
+    /// - Parameter cellClass: Class of the cell to register.
     public func registerCellNib<T: ReusableView>(cellClass: T.Type) {
         register(UINib(nibName: cellClass.reuseIdentifier, bundle: Bundle.main),
                  forCellReuseIdentifier: cellClass.reuseIdentifier)
