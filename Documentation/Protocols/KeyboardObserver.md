@@ -1,8 +1,6 @@
 # Keyboard Observer
 **Subspec: Protocols/KeyboardObserver**
 
-Contains UIViewController extension that easily adds keyboard observers. 
-
 ```
 override func viewDidLoad() {
     super.viewDidLoad()
