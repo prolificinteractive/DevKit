@@ -24,8 +24,8 @@ pod 'DevKit'
 
 ## DevKit Subspecs
 
-* [Protocols]()
-* [Extensions]()
+* [Protocols](https://github.com/prolificinteractive/DevKit/blob/master/Protocols.md)
+* [Extensions](https://github.com/prolificinteractive/DevKit/blob/master/Extensions.md)
 
 ## Contributing to DevKit
 
