@@ -4,10 +4,10 @@
 Contains UIViewController extension that easily adds keyboard observers. 
 
 ```
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        addRecognizerForKeyboardDismissal()
-    }
+override func viewDidLoad() {
+    super.viewDidLoad()
+    addRecognizerForKeyboardDismissal()
+}
 
 ```
 
@@ -15,15 +15,15 @@ To hide the keyboard when the user taps on the view add the `addRecognizerForKey
 
 
 ```
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        addKeyboardObservers()
-    }
+override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    addKeyboardObservers()
+}
 
-	override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        removeKeyboardObservers()
-    }
+override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+    removeKeyboardObservers()
+}
 
 ```
 
@@ -31,13 +31,13 @@ Add the keyboard observer functions to `viewWillAppear` and `viewWillDisappear` 
 
 
 ```
-	override func keyboardWillShow(notification: Notification) {
-        // Handle keyboard will show action
-    }
-    
-    override func keyboardWillHide(notification: Notification) {
-        // Handle keyboard will hide action
-    }
+override func keyboardWillShow(notification: Notification) {
+    // Handle keyboard will show action
+}
+
+override func keyboardWillHide(notification: Notification) {
+    // Handle keyboard will hide action
+}
 
 ```
 
