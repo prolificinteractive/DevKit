@@ -11,7 +11,7 @@ import UIKit
 /// Keyboard notifications observer.
 public protocol KeyboardObserver {
     
-    /// Adds keybaord observers to element.
+    /// Adds keyboard observers to element.
     func addKeyboardObservers()
     
     /// Removes keyboard observers from element.
