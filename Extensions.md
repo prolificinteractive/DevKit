@@ -1,6 +1,7 @@
 # Extensions 
 
-# String Extensions (Extensions/StringExtension)
+# String Extensions 
+(Extensions/StringExtension)
 
 ## General Functions
 
