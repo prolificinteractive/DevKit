@@ -44,6 +44,7 @@ Collection of commonly used swift code.
 
   # CalendarPermissionsValidator
   s.subspec 'CalendarPermissionsValidator' do |sp|
+    sp.ios.deployment_target = '11.0'
     sp.dependency 'DevKit/Extensions/StringExtension'
     sp.dependency 'DevKit/Extensions/UIAlertControllerExtension'
     sp.dependency 'DevKit/Extensions/UIApplicationExtension'
@@ -90,6 +91,11 @@ Collection of commonly used swift code.
     sp.subspec 'UIApplicationExtension' do |ssp|
         ssp.ios.deployment_target = '11.0'
         ssp.source_files = 'DevKit/DevKit/Classes/Extensions/UIApplicationExtension/*'
+    end
+
+    sp.subspec 'UITableViewCellExtension' do |ssp|
+        ssp.source_files = 'DevKit/DevKit/Classes/Extensions/UITableViewCellExtension/*'
+        sp.dependency 'DevKit/Protocols/ReusableCell'
     end
   end
 

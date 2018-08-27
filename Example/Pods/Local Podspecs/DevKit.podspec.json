@@ -37,6 +37,9 @@
     },
     {
       "name": "CalendarPermissionsValidator",
+      "platforms": {
+        "ios": "11.0"
+      },
       "dependencies": {
         "DevKit/Extensions/StringExtension": [
 
@@ -74,6 +77,11 @@
     },
     {
       "name": "Extensions",
+      "dependencies": {
+        "DevKit/Protocols/ReusableCell": [
+
+        ]
+      },
       "subspecs": [
         {
           "name": "StringExtension",
@@ -89,6 +97,10 @@
             "ios": "11.0"
           },
           "source_files": "DevKit/DevKit/Classes/Extensions/UIApplicationExtension/*"
+        },
+        {
+          "name": "UITableViewCellExtension",
+          "source_files": "DevKit/DevKit/Classes/Extensions/UITableViewCellExtension/*"
         }
       ]
     },

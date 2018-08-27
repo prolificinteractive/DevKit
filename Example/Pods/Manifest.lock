@@ -3,9 +3,14 @@ PODS:
     - DevKit/Extensions/StringExtension
     - DevKit/Extensions/UIAlertControllerExtension
     - DevKit/Extensions/UIApplicationExtension
-  - DevKit/Extensions/StringExtension (0.1.0)
-  - DevKit/Extensions/UIAlertControllerExtension (0.1.0)
-  - DevKit/Extensions/UIApplicationExtension (0.1.0)
+  - DevKit/Extensions/StringExtension (0.1.0):
+    - DevKit/Protocols/ReusableCell
+  - DevKit/Extensions/UIAlertControllerExtension (0.1.0):
+    - DevKit/Protocols/ReusableCell
+  - DevKit/Extensions/UIApplicationExtension (0.1.0):
+    - DevKit/Protocols/ReusableCell
+  - DevKit/Extensions/UITableViewCellExtension (0.1.0):
+    - DevKit/Protocols/ReusableCell
   - DevKit/Protocols/KeyboardObserver (0.1.0)
   - DevKit/Protocols/ReusableCell (0.1.0)
   - DevKit/SharedOptions/ShadowOptions (0.1.0)
@@ -18,8 +23,8 @@ PODS:
 
 DEPENDENCIES:
   - DevKit/CalendarPermissionsValidator (from `../`)
+  - DevKit/Extensions/UITableViewCellExtension (from `../`)
   - DevKit/Protocols/KeyboardObserver (from `../`)
-  - DevKit/Protocols/ReusableCell (from `../`)
   - DevKit/TransitioningNavigationView (from `../`)
 
 SPEC REPOS:
@@ -32,10 +37,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DevKit: 8655e4047b6c61021d9d495beb4e6e8783c82ec2
+  DevKit: 017542fe16692ee04b2b0363e4d7d024bf26690d
   Marker: f35e0b5d9c97d6997d6b89b23f189e0e4cc127c7
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
 
-PODFILE CHECKSUM: 5cd2f71c9bc2210cc985c565bb8e00cdf39d1c9d
+PODFILE CHECKSUM: e6370a3a33a9980812a59812aae29ad237832457
 
 COCOAPODS: 1.5.0
