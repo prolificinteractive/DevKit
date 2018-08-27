@@ -1,5 +1,5 @@
 # Keyboard Observer
-*Subspec: Protocols/KeyboardObserver*
+**Subspec: Protocols/KeyboardObserver**
 
 Contains UIViewController extension that easily adds keyboard observers. 
 
