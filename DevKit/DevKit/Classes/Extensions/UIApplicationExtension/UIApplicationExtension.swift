@@ -13,7 +13,7 @@ extension UIApplication {
     /// Opens user's settings.
     public func openSettings() {
         if let url = URL(string: UIApplicationOpenSettingsURLString) {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            open(url, options: [:], completionHandler: nil)
         }
     }
 
@@ -21,7 +21,7 @@ extension UIApplication {
     ///
     /// - Returns: Edge insets of the application.
     public func safeAreaInsets() -> UIEdgeInsets {
-        guard let rootView = UIApplication.shared.keyWindow else {
+        guard let rootView = keyWindow else {
             return UIEdgeInsets.zero
         }
         return rootView.safeAreaInsets

@@ -1,4 +1,4 @@
-# String Extensions 
+# String Extension
 (Extensions/StringExtension)
 
 ## General Functions

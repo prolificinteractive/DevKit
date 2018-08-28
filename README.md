@@ -31,8 +31,11 @@ pod 'DevKit'
 
 ### Extensions
 
-[String Extensions](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Extensions/StringExtensions.md)
+[String Extension](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Extensions/StringExtension.md)
 * Collections of extensions for strings
+
+[UIApplication Extension](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Extensions/UIApplicationExtension.md)
+* Collections of extensions for UIApplication
 
 ## Contributing to DevKit
 
