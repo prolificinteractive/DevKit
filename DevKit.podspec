@@ -42,34 +42,31 @@ Collection of commonly used swift code.
 
 # ==== Utility ==============================================================================================================
 
-  # CalendarPermissionsValidator
-  s.subspec 'CalendarPermissionsValidator' do |sp|
-    sp.ios.deployment_target = '11.0'
-    sp.dependency 'DevKit/Extensions/StringExtension'
-    sp.dependency 'DevKit/Extensions/UIAlertControllerExtension'
-    sp.dependency 'DevKit/Extensions/UIApplicationExtension'
-    sp.source_files = 'DevKit/DevKit/Classes/Utility/Validators/CalendarPermissionsValidator/*'
-  end
+  s.subspec 'Utility' do |sp|
 
-  # ImagePickerValidator
-  s.subspec 'ImagePickerValidator' do |sp|
-    sp.dependency 'DevKit/Extensions/StringExtension'
-    sp.source_files = 'DevKit/DevKit/Classes/Utility/Validators/ImagePickerValidator/*'
-  end
+    # CalendarPermissionsValidator
+    sp.subspec 'CalendarPermissionsValidator' do |ssp|
+      ssp.ios.deployment_target = '11.0'
+      ssp.dependency 'DevKit/Extensions/StringExtension'
+      ssp.dependency 'DevKit/Extensions/UIAlertControllerExtension'
+      ssp.dependency 'DevKit/Extensions/UIApplicationExtension'
+      ssp.source_files = 'DevKit/DevKit/Classes/Utility/Validators/CalendarPermissionsValidator/*'
+    end
 
-# ==== Protocols ============================================================================================================
-
-  # Validators
-  s.subspec 'Protocols' do |sp|
+    # ImagePickerValidator
+    sp.subspec 'ImagePickerValidator' do |ssp|
+      ssp.dependency 'DevKit/Extensions/StringExtension'
+      ssp.source_files = 'DevKit/DevKit/Classes/Utility/Validators/ImagePickerValidator/*'
+    end
 
     # KeyboardObserver
     sp.subspec 'KeyboardObserver' do |ssp|
-      ssp.source_files = 'DevKit/DevKit/Classes/Protocols/KeyboardObserver/*'
+        ssp.source_files = 'DevKit/DevKit/Classes/Utility/KeyboardObserver/*'
     end
 
     # ReusableView
     sp.subspec 'ReusableView' do |ssp|
-      ssp.source_files = 'DevKit/DevKit/Classes/Protocols/ReusableView/*'
+        ssp.source_files = 'DevKit/DevKit/Classes/Utility/ReusableView/*'
     end
   end
 
@@ -95,16 +92,15 @@ Collection of commonly used swift code.
         ssp.source_files = 'DevKit/DevKit/Classes/Extensions/UIApplicationExtension/*'
     end
 
-    # UITableViewCell Extension
-    sp.subspec 'UITableViewCellExtension' do |ssp|
-        ssp.source_files = 'DevKit/DevKit/Classes/Extensions/UITableViewCellExtension/*'
-        sp.dependency 'DevKit/Protocols/ReusableView'
-    end
-
     # UITableView Extension
     sp.subspec 'UITableViewExtension' do |ssp|
         ssp.source_files = 'DevKit/DevKit/Classes/Extensions/UITableViewExtension/*'
-        sp.dependency 'DevKit/Protocols/ReusableView'
+        sp.dependency 'DevKit/Utility/ReusableView'
+    end
+
+    # UIColor Extension
+    sp.subspec 'UIColorExtension' do |ssp|
+        ssp.source_files = 'DevKit/DevKit/Classes/Extensions/UIColorExtension/*'
     end
   end
 

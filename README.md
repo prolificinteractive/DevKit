@@ -24,10 +24,13 @@ pod 'DevKit'
 
 ## DevKit Subspecs
 
-### Protocols
+### Utility
 
-[Keyboard Observer](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Protocols/KeyboardObserver.md)
+[Keyboard Observer](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Utility/KeyboardObserver.md)
 * Contains UIViewController extension that easily adds keyboard observers.
+
+[ReusableView](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Utility/ReusableView.md)
+* Protocol and default implememtation for reuse identifiers. Useful for dequeued cell.
 
 ### Extensions
 

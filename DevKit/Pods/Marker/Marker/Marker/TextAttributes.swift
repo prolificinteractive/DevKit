@@ -33,7 +33,7 @@
     /// Text attributes.
     public typealias TextAttributes = [String: Any]
 
-    internal struct AttributedStringKey {
+    struct AttributedStringKey {
 
         static let font = NSFontAttributeName
         static let foregroundColor = NSForegroundColorAttributeName

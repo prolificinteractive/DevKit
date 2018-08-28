@@ -27,6 +27,7 @@ public func attributedMarkdownString(from markdownText: String,
     } catch {
         return NSAttributedString(string: markdownText, textStyle: textStyle)
     }
+
 }
 
 /// Parses custom mark up information and returns formatted text as an attributed string with custom markup attributes applied.
@@ -45,6 +46,7 @@ public func attributedMarkupString(from text: String,
     } catch {
         return NSAttributedString(string: text, textStyle: textStyle)
     }
+
 }
 
 /// Returns formatted Markdown text as an attributed string.

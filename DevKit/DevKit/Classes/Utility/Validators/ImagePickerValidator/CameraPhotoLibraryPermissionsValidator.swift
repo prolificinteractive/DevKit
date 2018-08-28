@@ -10,7 +10,7 @@ import UIKit
 import Photos
 
 /// The Camera & Photo Library Permissions Validator.
-public class CameraPhotoLibraryPermissionsValidator {
+public final class CameraPhotoLibraryPermissionsValidator {
     
     // MARK: - Private Properties
     

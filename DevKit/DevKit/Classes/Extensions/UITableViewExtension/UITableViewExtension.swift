@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension UITableView {
+extension UITableView {
     
     /// Get an index set with all the sections in this table view.
     public var allSectionsIndexSet: IndexSet {

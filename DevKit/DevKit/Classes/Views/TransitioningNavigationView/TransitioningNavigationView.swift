@@ -10,7 +10,7 @@ import UIKit
 import PureLayout
 import Marker
 
-public class TransitioningNavigationView: UIView {
+public final class TransitioningNavigationView: UIView {
 
     // MARK: - Private Properties
 

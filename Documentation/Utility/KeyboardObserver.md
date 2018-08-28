@@ -1,5 +1,5 @@
 # Keyboard Observer
-**Subspec: Protocols/KeyboardObserver**
+**Subspec: Utility/KeyboardObserver**
 
 ```
 override func viewDidLoad() {
