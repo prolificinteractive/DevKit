@@ -1,12 +1,14 @@
 # UIApplication Extension
 (Extensions/UIApplicationExtension)
 
+*Deployment Target: iOS 11.0*
+
 ```
 /// Opens user's settings.
 public func openSettings()
 ```
 
-When called the device will deeplink to the device's settings page.
+When called, the device will deeplink to the device's settings page.
 
 ```
 /// The safe area insets of the application.
