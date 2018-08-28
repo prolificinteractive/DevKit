@@ -28,7 +28,7 @@ Collection of commonly used swift code.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'DevKit/DevKit/Classes/**/*'
+  s.source_files = 'DevKit/DevKit/Classes/*'
 
 # ==== Views ================================================================================================================
 
@@ -76,6 +76,8 @@ Collection of commonly used swift code.
 # ==== Extensions ===========================================================================================================
 
   s.subspec 'Extensions' do |sp|
+
+    sp.source_files = 'DevKit/DevKit/Classes/Extensions/*'
 
     # String Extension
     sp.subspec 'StringExtension' do |ssp|
