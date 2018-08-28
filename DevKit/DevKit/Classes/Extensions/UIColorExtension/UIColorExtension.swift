@@ -47,7 +47,7 @@ extension UIColor {
         self.init(red: red, green: green, blue: blue, alpha: 1)
     }
 
-    /// Darkens the reciever color by blending it with black color using given weight.
+    /// Darkens the receiver color by blending it with black color using given weight.
     ///
     /// - Parameter weight: Proportional weight that should be given to blend color, specified as value from 0.0 to 1.0.
     /// - Returns: Darkened color.

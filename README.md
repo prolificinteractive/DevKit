@@ -34,11 +34,14 @@ pod 'DevKit'
 
 ### Extensions
 
-[String Extension](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Extensions/StringExtension.md)
+[String Extensions](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Extensions/StringExtension.md)
 * Collections of extensions for strings
 
-[UIApplication Extension](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Extensions/UIApplicationExtension.md)
+[UIApplication Extensions](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Extensions/UIApplicationExtension.md)
 * Collections of extensions for UIApplication
+
+[UIColor Extensions](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Extensions/UIColorExtension.md)
+* Collections of extensions for UIColor including blending, fading and image generation.
 
 ## Contributing to DevKit
 
