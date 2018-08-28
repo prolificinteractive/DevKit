@@ -24,10 +24,15 @@ pod 'DevKit'
 
 ## DevKit Subspecs
 
-### [Keyboard Observer](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Protocols/KeyboardObserver.md)
-Contains UIViewController extension that easily adds keyboard observers.
+### Protocols
 
-* [Extensions](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Extensions/Extensions.md)
+[Keyboard Observer](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Protocols/KeyboardObserver.md)
+* Contains UIViewController extension that easily adds keyboard observers.
+
+### Extensions
+
+[String Extensions](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Extensions/StringExtensions.md)
+* Collections of extensions for strings
 
 ## Contributing to DevKit
 
