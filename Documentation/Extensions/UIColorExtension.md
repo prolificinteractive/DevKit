@@ -4,14 +4,14 @@
 
 ## Image Generation
 
-```
+```swift
 /// Returns an image of the color.
 public var image: UIImage
 ```
 
 ## Initializers
 
-```
+```swift
 /// Initialize and return a UIColor object that corresponds to the given hex string
 ///
 /// - Parameter hexString: 6 digits color hex string
@@ -20,7 +20,7 @@ public convenience init(hexString: String)
 
 ## Blend Colors
 
-```
+```swift
 /// Darkens the receiver color by blending it with black color using given weight.
 ///
 /// - Parameter weight: Proportional weight that should be given to blend color, specified as value from 0.0 to 1.0.
@@ -28,7 +28,7 @@ public convenience init(hexString: String)
 public func darken(by weight: CGFloat) -> UIColor
 ```
 
-```
+```swift
 /// Brightens the receiver color by blending it with white color using given weight.
 ///
 /// - Parameter weight: Proportional weight that should be given to blend color, specified as value from 0.0 to 1.0.
@@ -36,7 +36,7 @@ public func darken(by weight: CGFloat) -> UIColor
 public func brighten(by weight: CGFloat) -> UIColor
 ```
 
-```
+```swift
 /// Fades the current color to the target color.
 ///
 /// - Parameters:
@@ -46,7 +46,7 @@ public func brighten(by weight: CGFloat) -> UIColor
 public func fadeColor(targetColor: UIColor, percent: CGFloat) -> UIColor
 ```
 
-```
+```swift
 /// Blend the receiver with specified color using given weight.
 ///
 /// - Parameters:

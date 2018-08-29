@@ -1,4 +1,5 @@
 # String Extension
+
 (Extensions/StringExtension)
 
 ## General Functions
@@ -21,12 +22,11 @@
     ///
     /// - Returns: String.
     public func whitespaceTrimmed() -> String
-
 ```
 
-## Validation 
+## Validation
 
-```
+```swift
 
     /// Determines if input string is valid and not empty.
     ///
@@ -34,7 +34,7 @@
     /// - Returns: True, if not empty, false otherwise.
     public static func isValidInput(_ input: String?) -> Bool
 
-	/// Determines if input string is a valid email address.
+    /// Determines if input string is a valid email address.
     ///
     /// - Parameter email: Email address.
     /// - Returns: True, if valid email, false otherwise.
@@ -45,12 +45,11 @@
     /// - Parameter password: Password.
     /// - Returns: True, if valid password, false otherwise.
     public static func validatePassword(_ password: String) -> Bool
-
 ```
 
-## Social Media URls 
+## Social Media URls
 
-```
+```swift
 
     /// Extracts username from given url string.
     ///
@@ -75,5 +74,4 @@
     /// - Parameter username: Instagram username.
     /// - Returns: URL string if handle given, nil otherwise.
     public static func instagramURL(with username: String?) -> String?
-
 ```

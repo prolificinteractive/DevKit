@@ -1,9 +1,10 @@
 # UIApplication Extension
+
 (Extensions/UIApplicationExtension)
 
 *Deployment Target: iOS 11.0*
 
-```
+```swift
 /// Opens user's settings.
 public func openSettings()
 ```
