@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 /// Defines a reusable collection or table view cell.
 public protocol ReusableView: class {
@@ -18,8 +19,24 @@ public protocol ReusableView: class {
 
 extension ReusableView {
 
+    /// Reusable identifier, used to dequeue cells and views.
     public static var reuseIdentifier: String {
         return String(describing: self)
     }
+
+}
+
+// MARK: - ReusableView
+extension UICollectionViewCell: ReusableView {
+
+}
+
+// MARK: - ReusableView
+extension UITableViewCell: ReusableView {
+
+}
+
+// MARK: - ReusableView
+extension UITableViewHeaderFooterView: ReusableView {
 
 }

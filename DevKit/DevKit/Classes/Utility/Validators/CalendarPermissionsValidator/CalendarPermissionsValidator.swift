@@ -9,7 +9,7 @@
 import Foundation
 import EventKit
 
-public class CalendarPermissionsValidator {
+public final class CalendarPermissionsValidator {
 
     // MARK: - Public Properties
 
@@ -28,6 +28,8 @@ public class CalendarPermissionsValidator {
         let authorizationStatus = EKEventStore.authorizationStatus(for: EKEntityType.event)
         checkCalendarPermissions(status: authorizationStatus, eventInfo: eventInfo)
     }
+
+    // MARK: - Initialization
 
     public init() { }
     

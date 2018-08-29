@@ -141,6 +141,7 @@ public extension TextStyle {
 
 // MARK: Equatable
 
+// MARK: - Equatable
 extension TextStyle: Equatable { }
 
 public func ==(lhs: TextStyle, rhs: TextStyle) -> Bool {

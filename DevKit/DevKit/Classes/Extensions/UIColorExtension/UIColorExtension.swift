@@ -11,6 +11,23 @@ import UIKit
 
 extension UIColor {
 
+    /// Returns an image of the color.
+    public var image: UIImage {
+        let size = CGSize(width: 1, height: 1)
+        let rect = CGRect(origin: .zero, size: size)
+
+        UIGraphicsBeginImageContextWithOptions(size, false, 0)
+        self.setFill()
+        UIRectFill(rect)
+
+        guard let image: UIImage = UIGraphicsGetImageFromCurrentImageContext() else {
+            return UIImage()
+        }
+
+        UIGraphicsEndImageContext()
+        return image
+    }
+
     /// Initialize and return a UIColor object that corresponds to the given hex string
     ///
     /// - Parameter hexString: 6 digits color hex string
@@ -30,7 +47,7 @@ extension UIColor {
         self.init(red: red, green: green, blue: blue, alpha: 1)
     }
 
-    /// Darkens the reciever color by blending it with black color using given weight.
+    /// Darkens the receiver color by blending it with black color using given weight.
     ///
     /// - Parameter weight: Proportional weight that should be given to blend color, specified as value from 0.0 to 1.0.
     /// - Returns: Darkened color.

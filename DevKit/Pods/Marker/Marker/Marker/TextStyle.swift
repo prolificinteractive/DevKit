@@ -210,4 +210,5 @@ public struct TextStyle {
         self.linkColor = linkColor
         self.textTransform = textTransform
     }
+
 }

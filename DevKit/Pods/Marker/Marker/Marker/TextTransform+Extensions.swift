@@ -12,6 +12,7 @@ import Foundation
 
 // MARK: Equatable
 
+// MARK: - Equatable
 extension TextTransform: Equatable { }
 
 /// Returns a Boolean value indicating whether two TextTransform are equal.
@@ -35,4 +36,5 @@ public func ==(lhs: TextTransform, rhs: TextTransform) -> Bool {
     default:
         return false
     }
+
 }

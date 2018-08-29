@@ -24,8 +24,24 @@ pod 'DevKit'
 
 ## DevKit Subspecs
 
-* [Protocols](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Protocols/Protocols.md)
-* [Extensions](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Extensions/Extensions.md)
+### Utility
+
+[Keyboard Observer](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Utility/KeyboardObserver.md)
+* Contains UIViewController extension that easily adds keyboard observers.
+
+[ReusableView](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Utility/ReusableView.md)
+* Protocol and default implememtation for reuse identifiers. Useful for dequeued cell.
+
+### Extensions
+
+[String Extensions](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Extensions/StringExtension.md)
+* Collections of extensions for strings
+
+[UIApplication Extensions](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Extensions/UIApplicationExtension.md)
+* Collections of extensions for UIApplication
+
+[UIColor Extensions](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Extensions/UIColorExtension.md)
+* Collections of extensions for UIColor including blending, fading and image generation.
 
 ## Contributing to DevKit
 

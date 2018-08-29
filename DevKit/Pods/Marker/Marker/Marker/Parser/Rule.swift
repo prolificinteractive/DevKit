@@ -50,6 +50,7 @@ extension Rule: Equatable {
 
 // MARK: Hashable
 
+// MARK: - Hashable
 extension Rule: Hashable {
 
     var hashValue: Int {

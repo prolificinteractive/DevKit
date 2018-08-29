@@ -8,16 +8,16 @@
 
 import UIKit
 
-public class ViewController: UIViewController {
+public final class ViewController: UIViewController {
 
     // MARK: - Public Functions
 
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
