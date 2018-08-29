@@ -1,6 +1,6 @@
 # UIApplication Extension
 
-(Extensions/UIApplicationExtension)
+**Subspec: Extensions/UIApplicationExtension**
 
 *Deployment Target: iOS 11.0*
 

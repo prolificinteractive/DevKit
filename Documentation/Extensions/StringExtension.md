@@ -1,10 +1,10 @@
 # String Extension
 
-(Extensions/StringExtension)
+**Subspec: Extensions/StringExtension**
 
 ## General Functions
 
-```
+```swift
 
     /// Generates a localized string with the given parameters.
     ///
