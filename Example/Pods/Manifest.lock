@@ -1,9 +1,13 @@
 PODS:
   - DevKit (0.1.0):
+    - DevKit/DataStructures (= 0.1.0)
     - DevKit/Extensions (= 0.1.0)
     - DevKit/SharedOptions (= 0.1.0)
     - DevKit/TransitioningNavigationView (= 0.1.0)
     - DevKit/Utility (= 0.1.0)
+  - DevKit/DataStructures (0.1.0):
+    - DevKit/DataStructures/LinkedList (= 0.1.0)
+  - DevKit/DataStructures/LinkedList (0.1.0)
   - DevKit/Extensions (0.1.0):
     - DevKit/Extensions/StringExtension (= 0.1.0)
     - DevKit/Extensions/UIAlertControllerExtension (= 0.1.0)
@@ -57,7 +61,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DevKit: 3d03cdcd447fb36be2d615491acb9ad6dd932f23
+  DevKit: 7583eaae5e71a98ba52ef93c490d4c5024eceae7
   Marker: f35e0b5d9c97d6997d6b89b23f189e0e4cc127c7
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
 

@@ -48,6 +48,12 @@ pod 'DevKit'
 
 * Collections of extensions for UIColor including blending, fading and image generation.
 
+### Data Structures
+
+[LinkedList](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Extensions/LinkedLists.md)
+
+* A linked list is a linear collection of data elements where each element points to the next
+
 ## Contributing to DevKit
 
 Adding new classes to DevKit should be added to the appropriate subspec section. Unique subspecs should include the source files, any limiting deployment targets and necessary dependencies. 
