@@ -122,6 +122,11 @@ Collection of commonly used swift code.
     sp.subspec 'LinkedList' do |ssp|
         ssp.source_files = 'DevKit/DevKit/Classes/Data\ Structures/Linked\ List/*'
     end
+
+    # Stack
+    sp.subspec 'Stack' do |ssp|
+        ssp.source_files = 'DevKit/DevKit/Classes/Data\ Structures/Stack/*'
+    end
   end
 
 end
