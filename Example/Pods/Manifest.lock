@@ -1,39 +1,26 @@
 PODS:
   - DevKit (0.1.0):
-    - DevKit/CalendarPermissionsValidator (= 0.1.0)
     - DevKit/Extensions (= 0.1.0)
-    - DevKit/ImagePickerValidator (= 0.1.0)
-    - DevKit/Protocols (= 0.1.0)
     - DevKit/SharedOptions (= 0.1.0)
     - DevKit/TransitioningNavigationView (= 0.1.0)
-  - DevKit/CalendarPermissionsValidator (0.1.0):
-    - DevKit/Extensions/StringExtension
-    - DevKit/Extensions/UIAlertControllerExtension
-    - DevKit/Extensions/UIApplicationExtension
+    - DevKit/Utility (= 0.1.0)
   - DevKit/Extensions (0.1.0):
     - DevKit/Extensions/StringExtension (= 0.1.0)
     - DevKit/Extensions/UIAlertControllerExtension (= 0.1.0)
     - DevKit/Extensions/UIApplicationExtension (= 0.1.0)
-    - DevKit/Extensions/UITableViewCellExtension (= 0.1.0)
+    - DevKit/Extensions/UIColorExtension (= 0.1.0)
     - DevKit/Extensions/UITableViewExtension (= 0.1.0)
-    - DevKit/Protocols/ReusableView
+    - DevKit/Utility/ReusableView
   - DevKit/Extensions/StringExtension (0.1.0):
-    - DevKit/Protocols/ReusableView
+    - DevKit/Utility/ReusableView
   - DevKit/Extensions/UIAlertControllerExtension (0.1.0):
-    - DevKit/Protocols/ReusableView
+    - DevKit/Utility/ReusableView
   - DevKit/Extensions/UIApplicationExtension (0.1.0):
-    - DevKit/Protocols/ReusableView
-  - DevKit/Extensions/UITableViewCellExtension (0.1.0):
-    - DevKit/Protocols/ReusableView
+    - DevKit/Utility/ReusableView
+  - DevKit/Extensions/UIColorExtension (0.1.0):
+    - DevKit/Utility/ReusableView
   - DevKit/Extensions/UITableViewExtension (0.1.0):
-    - DevKit/Protocols/ReusableView
-  - DevKit/ImagePickerValidator (0.1.0):
-    - DevKit/Extensions/StringExtension
-  - DevKit/Protocols (0.1.0):
-    - DevKit/Protocols/KeyboardObserver (= 0.1.0)
-    - DevKit/Protocols/ReusableView (= 0.1.0)
-  - DevKit/Protocols/KeyboardObserver (0.1.0)
-  - DevKit/Protocols/ReusableView (0.1.0)
+    - DevKit/Utility/ReusableView
   - DevKit/SharedOptions (0.1.0):
     - DevKit/SharedOptions/ShadowOptions (= 0.1.0)
   - DevKit/SharedOptions/ShadowOptions (0.1.0)
@@ -41,6 +28,19 @@ PODS:
     - DevKit/SharedOptions/ShadowOptions
     - Marker (~> 1.1.0)
     - PureLayout (~> 3.0.2)
+  - DevKit/Utility (0.1.0):
+    - DevKit/Utility/CalendarPermissionsValidator (= 0.1.0)
+    - DevKit/Utility/ImagePickerValidator (= 0.1.0)
+    - DevKit/Utility/KeyboardObserver (= 0.1.0)
+    - DevKit/Utility/ReusableView (= 0.1.0)
+  - DevKit/Utility/CalendarPermissionsValidator (0.1.0):
+    - DevKit/Extensions/StringExtension
+    - DevKit/Extensions/UIAlertControllerExtension
+    - DevKit/Extensions/UIApplicationExtension
+  - DevKit/Utility/ImagePickerValidator (0.1.0):
+    - DevKit/Extensions/StringExtension
+  - DevKit/Utility/KeyboardObserver (0.1.0)
+  - DevKit/Utility/ReusableView (0.1.0)
   - Marker (1.1.0)
   - PureLayout (3.0.2)
 
@@ -57,7 +57,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DevKit: a38be6866edfd1bd9abdfcab5b8b433ef94df96e
+  DevKit: 3d03cdcd447fb36be2d615491acb9ad6dd932f23
   Marker: f35e0b5d9c97d6997d6b89b23f189e0e4cc127c7
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
 
