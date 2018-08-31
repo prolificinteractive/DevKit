@@ -114,4 +114,14 @@ Collection of commonly used swift code.
     end
   end
 
+# ==== Data Structures  =====================================================================================================
+
+  s.subspec 'DataStructures' do |sp|
+
+    # Linked List
+    sp.subspec 'LinkedList' do |ssp|
+        ssp.source_files = 'DevKit/DevKit/Classes/Data\ Structures/Linked\ List/*'
+    end
+  end
+
 end
