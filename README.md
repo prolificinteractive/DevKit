@@ -50,7 +50,7 @@ pod 'DevKit'
 
 ### Data Structures
 
-[LinkedList](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Data\ Structures/LinkedLists.md)
+[LinkedList](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Data%20Structures/LinkedLists.md)
 
 * A linked list is a linear collection of data elements where each element points to the next.
 
