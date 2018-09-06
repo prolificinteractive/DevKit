@@ -45,6 +45,8 @@
 		8E8F4AB52138698B00E2FD66 /* LinkedListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F4AB42138698B00E2FD66 /* LinkedListNode.swift */; };
 		8E8F4AB7213869E000E2FD66 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F4AB6213869E000E2FD66 /* LinkedList.swift */; };
 		8E8F4ABC2138731500E2FD66 /* LinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F4ABB2138731500E2FD66 /* LinkedListTests.swift */; };
+		8E8F4ABF2139C6E300E2FD66 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F4ABE2139C6E300E2FD66 /* Stack.swift */; };
+		8E8F4AC22139C87300E2FD66 /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F4AC12139C87300E2FD66 /* StackTests.swift */; };
 		D7C6243C4F18537B1510C7A1 /* Pods_DevKitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3939CE1C2FCEB6AE9D5E4974 /* Pods_DevKitUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +114,8 @@
 		8E8F4AB42138698B00E2FD66 /* LinkedListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListNode.swift; sourceTree = "<group>"; };
 		8E8F4AB6213869E000E2FD66 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		8E8F4ABB2138731500E2FD66 /* LinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTests.swift; sourceTree = "<group>"; };
+		8E8F4ABE2139C6E300E2FD66 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		8E8F4AC12139C87300E2FD66 /* StackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTests.swift; sourceTree = "<group>"; };
 		9D986637F245DC8CE1CCA9B0 /* Pods-DevKitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevKitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevKitUITests/Pods-DevKitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A70409DC5600E02F5134B243 /* Pods-DevKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DevKitTests/Pods-DevKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA8FB83E8BE3E5509A2577E0 /* Pods_DevKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -484,6 +488,7 @@
 		8E8F4AB22138696E00E2FD66 /* Data Structures */ = {
 			isa = PBXGroup;
 			children = (
+				8E8F4ABD2139C6D800E2FD66 /* Stack */,
 				8E8F4AB32138697600E2FD66 /* Linked List */,
 			);
 			path = "Data Structures";
@@ -509,6 +514,7 @@
 		8E8F4AB9213872F900E2FD66 /* Data Structures */ = {
 			isa = PBXGroup;
 			children = (
+				8E8F4AC02139C86700E2FD66 /* Stack */,
 				8E8F4ABA2138730100E2FD66 /* Linked List */,
 			);
 			path = "Data Structures";
@@ -520,6 +526,22 @@
 				8E8F4ABB2138731500E2FD66 /* LinkedListTests.swift */,
 			);
 			path = "Linked List";
+			sourceTree = "<group>";
+		};
+		8E8F4ABD2139C6D800E2FD66 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				8E8F4ABE2139C6E300E2FD66 /* Stack.swift */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
+		8E8F4AC02139C86700E2FD66 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				8E8F4AC12139C87300E2FD66 /* StackTests.swift */,
+			);
+			path = Stack;
 			sourceTree = "<group>";
 		};
 		B4EADB9A0901D69BD2E4AFA6 /* Frameworks */ = {
@@ -789,6 +811,7 @@
 				8E8F4AB52138698B00E2FD66 /* LinkedListNode.swift in Sources */,
 				205246D3209B9E8F0067A328 /* TransitioningNavigationView.swift in Sources */,
 				20524697209B9C250067A328 /* AppDelegate.swift in Sources */,
+				8E8F4ABF2139C6E300E2FD66 /* Stack.swift in Sources */,
 				20524720209BB3240067A328 /* CameraPhotoLibraryPermissionsValidator.swift in Sources */,
 				205246F3209BA8B40067A328 /* UIViewControllerExtension.swift in Sources */,
 				205246F2209BA8B40067A328 /* UIFontExtension.swift in Sources */,
@@ -799,6 +822,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E8F4AC22139C87300E2FD66 /* StackTests.swift in Sources */,
 				8E8F4ABC2138731500E2FD66 /* LinkedListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
