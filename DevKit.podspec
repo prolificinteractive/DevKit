@@ -127,6 +127,11 @@ Collection of commonly used swift code.
     sp.subspec 'Stack' do |ssp|
         ssp.source_files = 'DevKit/DevKit/Classes/Data\ Structures/Stack/*'
     end
+
+    # Queue
+    sp.subspec 'Queue' do |ssp|
+        ssp.source_files = 'DevKit/DevKit/Classes/Data\ Structures/Queue/*'
+    end
   end
 
 end

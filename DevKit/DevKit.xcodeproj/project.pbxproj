@@ -42,11 +42,16 @@
 		205C74EE2135A3D700AF0B52 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205C74EB2135A3D700AF0B52 /* KeyboardObserver.swift */; };
 		205C74EF2135A3D700AF0B52 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205C74ED2135A3D700AF0B52 /* ReusableView.swift */; };
 		329452415E472FA3C293B641 /* Pods_DevKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC5340BFE3332A9CE19D779 /* Pods_DevKit.framework */; };
+		8E54C4352142E91A003207CC /* QueueArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54C4342142E91A003207CC /* QueueArrayTests.swift */; };
+		8E54C4372142EA73003207CC /* QueueStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54C4362142EA73003207CC /* QueueStackTests.swift */; };
 		8E8F4AB52138698B00E2FD66 /* LinkedListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F4AB42138698B00E2FD66 /* LinkedListNode.swift */; };
 		8E8F4AB7213869E000E2FD66 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F4AB6213869E000E2FD66 /* LinkedList.swift */; };
 		8E8F4ABC2138731500E2FD66 /* LinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F4ABB2138731500E2FD66 /* LinkedListTests.swift */; };
 		8E8F4ABF2139C6E300E2FD66 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F4ABE2139C6E300E2FD66 /* Stack.swift */; };
 		8E8F4AC22139C87300E2FD66 /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F4AC12139C87300E2FD66 /* StackTests.swift */; };
+		8E8F4AC52141B18A00E2FD66 /* QueueArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F4AC42141B18A00E2FD66 /* QueueArray.swift */; };
+		8ED0CAB92141CEAE00F05CD6 /* Queueable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED0CAB82141CEAE00F05CD6 /* Queueable.swift */; };
+		8ED0CABB2141D14500F05CD6 /* QueueStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED0CABA2141D14500F05CD6 /* QueueStack.swift */; };
 		D7C6243C4F18537B1510C7A1 /* Pods_DevKitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3939CE1C2FCEB6AE9D5E4974 /* Pods_DevKitUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -111,11 +116,16 @@
 		439C165EDA375DDFA28D0AB6 /* Pods-DevKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevKit/Pods-DevKit.release.xcconfig"; sourceTree = "<group>"; };
 		4DC5340BFE3332A9CE19D779 /* Pods_DevKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61E76AB64DDE67385EB88E7F /* Pods-DevKitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevKitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DevKitUITests/Pods-DevKitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E54C4342142E91A003207CC /* QueueArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueArrayTests.swift; sourceTree = "<group>"; };
+		8E54C4362142EA73003207CC /* QueueStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueStackTests.swift; sourceTree = "<group>"; };
 		8E8F4AB42138698B00E2FD66 /* LinkedListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListNode.swift; sourceTree = "<group>"; };
 		8E8F4AB6213869E000E2FD66 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		8E8F4ABB2138731500E2FD66 /* LinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTests.swift; sourceTree = "<group>"; };
 		8E8F4ABE2139C6E300E2FD66 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		8E8F4AC12139C87300E2FD66 /* StackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTests.swift; sourceTree = "<group>"; };
+		8E8F4AC42141B18A00E2FD66 /* QueueArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueArray.swift; sourceTree = "<group>"; };
+		8ED0CAB82141CEAE00F05CD6 /* Queueable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queueable.swift; sourceTree = "<group>"; };
+		8ED0CABA2141D14500F05CD6 /* QueueStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueStack.swift; sourceTree = "<group>"; };
 		9D986637F245DC8CE1CCA9B0 /* Pods-DevKitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevKitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevKitUITests/Pods-DevKitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A70409DC5600E02F5134B243 /* Pods-DevKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DevKitTests/Pods-DevKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA8FB83E8BE3E5509A2577E0 /* Pods_DevKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -485,11 +495,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8E54C4332142E906003207CC /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				8E54C4342142E91A003207CC /* QueueArrayTests.swift */,
+				8E54C4362142EA73003207CC /* QueueStackTests.swift */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
 		8E8F4AB22138696E00E2FD66 /* Data Structures */ = {
 			isa = PBXGroup;
 			children = (
-				8E8F4ABD2139C6D800E2FD66 /* Stack */,
 				8E8F4AB32138697600E2FD66 /* Linked List */,
+				8E8F4AC32141B17300E2FD66 /* Queue */,
+				8E8F4ABD2139C6D800E2FD66 /* Stack */,
 			);
 			path = "Data Structures";
 			sourceTree = "<group>";
@@ -514,8 +534,9 @@
 		8E8F4AB9213872F900E2FD66 /* Data Structures */ = {
 			isa = PBXGroup;
 			children = (
-				8E8F4AC02139C86700E2FD66 /* Stack */,
 				8E8F4ABA2138730100E2FD66 /* Linked List */,
+				8E54C4332142E906003207CC /* Queue */,
+				8E8F4AC02139C86700E2FD66 /* Stack */,
 			);
 			path = "Data Structures";
 			sourceTree = "<group>";
@@ -542,6 +563,16 @@
 				8E8F4AC12139C87300E2FD66 /* StackTests.swift */,
 			);
 			path = Stack;
+			sourceTree = "<group>";
+		};
+		8E8F4AC32141B17300E2FD66 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				8ED0CAB82141CEAE00F05CD6 /* Queueable.swift */,
+				8E8F4AC42141B18A00E2FD66 /* QueueArray.swift */,
+				8ED0CABA2141D14500F05CD6 /* QueueStack.swift */,
+			);
+			path = Queue;
 			sourceTree = "<group>";
 		};
 		B4EADB9A0901D69BD2E4AFA6 /* Frameworks */ = {
@@ -790,6 +821,7 @@
 				8E8F4AB7213869E000E2FD66 /* LinkedList.swift in Sources */,
 				20524724209BB3550067A328 /* StringExtension.swift in Sources */,
 				205246F0209BA8B40067A328 /* UIScreenExtension.swift in Sources */,
+				8ED0CAB92141CEAE00F05CD6 /* Queueable.swift in Sources */,
 				205246F9209BA8B40067A328 /* UICollectionViewExtension.swift in Sources */,
 				205246FB209BA8B40067A328 /* UITableViewExtension.swift in Sources */,
 				205C74EF2135A3D700AF0B52 /* ReusableView.swift in Sources */,
@@ -800,6 +832,7 @@
 				205246FC209BA8B40067A328 /* UINavigationControllerExtension.swift in Sources */,
 				205246FD209BA8B40067A328 /* UIColorExtension.swift in Sources */,
 				205246F7209BA8B40067A328 /* UIStackViewExtension.swift in Sources */,
+				8ED0CABB2141D14500F05CD6 /* QueueStack.swift in Sources */,
 				205246FF209BA8B40067A328 /* UISearchBarExtension.swift in Sources */,
 				20524721209BB3240067A328 /* ImagePickerValidator.swift in Sources */,
 				205246CB209B9D2B0067A328 /* CalendarPermissionsValidator.swift in Sources */,
@@ -808,6 +841,7 @@
 				205246EF209BA8B40067A328 /* UIScrollViewExtension.swift in Sources */,
 				205246F8209BA8B40067A328 /* UIImageExtension.swift in Sources */,
 				205246D5209BA3200067A328 /* TransitioningNavigationViewOptions.swift in Sources */,
+				8E8F4AC52141B18A00E2FD66 /* QueueArray.swift in Sources */,
 				8E8F4AB52138698B00E2FD66 /* LinkedListNode.swift in Sources */,
 				205246D3209B9E8F0067A328 /* TransitioningNavigationView.swift in Sources */,
 				20524697209B9C250067A328 /* AppDelegate.swift in Sources */,
@@ -823,6 +857,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E8F4AC22139C87300E2FD66 /* StackTests.swift in Sources */,
+				8E54C4352142E91A003207CC /* QueueArrayTests.swift in Sources */,
+				8E54C4372142EA73003207CC /* QueueStackTests.swift in Sources */,
 				8E8F4ABC2138731500E2FD66 /* LinkedListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
