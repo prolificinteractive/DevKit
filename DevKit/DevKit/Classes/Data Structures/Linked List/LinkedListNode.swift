@@ -12,6 +12,7 @@ import Foundation
 open class LinkedListNode<T> {
 
     // MARK: - Public Properties
+    
     public var value: T
     public var next: LinkedListNode?
 

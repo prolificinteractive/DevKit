@@ -11,6 +11,8 @@ import UIKit
 
 extension UIColor {
 
+    // MARK: - Image Generation
+
     /// Returns an image of the color.
     public var image: UIImage {
         let size = CGSize(width: 1, height: 1)
@@ -27,6 +29,8 @@ extension UIColor {
         UIGraphicsEndImageContext()
         return image
     }
+
+    // MARK: - Initializers
 
     /// Initialize and return a UIColor object that corresponds to the given hex string
     ///
@@ -46,6 +50,8 @@ extension UIColor {
 
         self.init(red: red, green: green, blue: blue, alpha: 1)
     }
+
+    // MARK: - Blend Colors
 
     /// Darkens the receiver color by blending it with black color using given weight.
     ///

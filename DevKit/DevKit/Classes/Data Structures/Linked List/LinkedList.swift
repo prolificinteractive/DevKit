@@ -13,7 +13,6 @@ import Foundation
 /// - Constant time insertion and removal from the front of the list.
 /// - Reliable performance characteristics.
 ///
-///
 /// - Note:
 /// Use a linked list over a Swift array if you need to store a large amount of data and you need to perform
 /// insertions and removals from any position in the sequence.

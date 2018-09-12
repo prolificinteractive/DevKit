@@ -173,7 +173,36 @@
 
                 </div>
               </div>
-            <p>Keyboard notifications observer.</p>
+            <p><strong>Subspec: Utility/KeyboardObserver</strong></p>
+<pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">super</span><span class="o">.</span><span class="nf">viewDidLoad</span><span class="p">()</span>
+    <span class="nf">addRecognizerForKeyboardDismissal</span><span class="p">()</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>To hide the keyboard when the user taps on the view add the <code>addRecognizerForKeyboardDismissal</code> to the viewDidLoad function.</p>
+<pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewWillAppear</span><span class="p">(</span><span class="n">_</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">super</span><span class="o">.</span><span class="nf">viewWillAppear</span><span class="p">(</span><span class="n">animated</span><span class="p">)</span>
+    <span class="nf">addKeyboardObservers</span><span class="p">()</span>
+<span class="p">}</span>
+
+<span class="k">override</span> <span class="kd">func</span> <span class="nf">viewWillDisappear</span><span class="p">(</span><span class="n">_</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">super</span><span class="o">.</span><span class="nf">viewWillDisappear</span><span class="p">(</span><span class="n">animated</span><span class="p">)</span>
+    <span class="nf">removeKeyboardObservers</span><span class="p">()</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>Add the keyboard observer functions to <code>viewWillAppear</code> and <code>viewWillDisappear</code> respectively. Adding them will allow the view controller to call the functions below when the keyboard is shown or hidden.</p>
+<pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">keyboardWillShow</span><span class="p">(</span><span class="nv">notification</span><span class="p">:</span> <span class="kt">Notification</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Handle keyboard will show action</span>
+<span class="p">}</span>
+
+<span class="k">override</span> <span class="kd">func</span> <span class="nf">keyboardWillHide</span><span class="p">(</span><span class="nv">notification</span><span class="p">:</span> <span class="kt">Notification</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Handle keyboard will hide action</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>The functions above will be called when the keyboard is shown or hidden.</p>
 
           </div>
         </section>

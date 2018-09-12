@@ -14,6 +14,7 @@ import Foundation
 /// - Note:
 /// Use a Stack if you need a sequence ordered as FILO.
 open class Stack<T> {
+
     // MARK: - Public Properties
 
     /// `true` if the stack is empty. `false` if not.
@@ -30,6 +31,7 @@ open class Stack<T> {
     public init() { }
 
     // MARK: - Public Functions
+
     // MARK: General Functions
 
     /// Returns the value at the top of the stack.
