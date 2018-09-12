@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>String Extension Reference</title>
+    <title>LinkedList Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Extension/String" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Class/LinkedList" class="dashAnchor"></a>
 
-    <a title="String Extension Reference"></a>
+    <a title="LinkedList Class Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -38,7 +38,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png" />
-      String Extension Reference
+      LinkedList Class Reference
     </p>
 
     <div class="content-wrapper">
@@ -166,27 +166,51 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>String</h1>
+            <h1>LinkedList</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">String</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">LinkedList</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
 
                 </div>
               </div>
-            
+            <p>Linked List.
+A linked list is a linear collection of data elements where each element points to the next. A linked list has several theoretical advantages over contiguous storage options such as the Swift Array:</p>
+<li>Constant time insertion and removal from the front of the list.</li>
+<li><p>Reliable performance characteristics.</p></li>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Use a linked list over a Swift array if you need to store a large amount of data and you need to perform
+insertions and removals from any position in the sequence.</p>
+
+</div>
+
+<p>Do not use a linked list if you need indexing, sorting, random access to the data or sequence traversal from the back of the sequence to the front.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    Due to the fact that each node has a reference to the next node, the memory footprint of a linked list can have a negative impact on the device if the list becomes extremely large.
+
+</div>
+
           </div>
         </section>
 
         <section class="section">
           <div class="section-content">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Public Properties" class="dashAnchor"></a>
+                <a href="#/Public%20Properties">
+                  <h3 class="section-name">Public Properties</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:SS6DevKitE9localizedS2S7comment_tF"></a>
-                    <a name="//apple_ref/swift/Method/localized(comment:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SS6DevKitE9localizedS2S7comment_tF">localized(comment:)</a>
+                    <a name="/s:6DevKit10LinkedListC4headAA0cD4NodeCyxGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/head" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6DevKit10LinkedListC4headAA0cD4NodeCyxGSgvp">head</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -194,39 +218,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Generates a localized string with the given parameters.</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">localized</span><span class="p">(</span><span class="nv">comment</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">head</span><span class="p">:</span> <span class="kt"><a href="../Classes/LinkedListNode.html">LinkedListNode</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">?</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>comment</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Comment for the localized string.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>String that is localized.</p>
                       </div>
                     </section>
                   </div>
@@ -234,9 +235,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:SS6DevKitE14removeTrailingS2S9startWith_tF"></a>
-                    <a name="//apple_ref/swift/Method/removeTrailing(startWith:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SS6DevKitE14removeTrailingS2S9startWith_tF">removeTrailing(startWith:)</a>
+                    <a name="/s:6DevKit10LinkedListC4tailAA0cD4NodeCyxGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/tail" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6DevKit10LinkedListC4tailAA0cD4NodeCyxGSgvp">tail</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -244,39 +245,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Removes the trailing line after the given token.</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeTrailing</span><span class="p">(</span><span class="n">startWith</span> <span class="nv">token</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">tail</span><span class="p">:</span> <span class="kt"><a href="../Classes/LinkedListNode.html">LinkedListNode</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">?</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>token</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Token to search for.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>String of the removed trailing string. Includes removing the token.</p>
                       </div>
                     </section>
                   </div>
@@ -284,9 +262,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:SS6DevKitE17whitespaceTrimmedSSyF"></a>
-                    <a name="//apple_ref/swift/Method/whitespaceTrimmed()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SS6DevKitE17whitespaceTrimmedSSyF">whitespaceTrimmed()</a>
+                    <a name="/s:6DevKit10LinkedListC7isEmptySbvp"></a>
+                    <a name="//apple_ref/swift/Property/isEmpty" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6DevKit10LinkedListC7isEmptySbvp">isEmpty</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -294,20 +272,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a string with leading and trailing whitespace trimmed.</p>
+                        <p><code>true</code> if the linked list is empty. <code>false</code> if not.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">whitespaceTrimmed</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isEmpty</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>String.</p>
                       </div>
                     </section>
                   </div>
@@ -315,13 +289,20 @@
               </ul>
             </div>
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initialization"></a>
+                <a name="//apple_ref/swift/Section/Initialization" class="dashAnchor"></a>
+                <a href="#/Initialization">
+                  <h3 class="section-name">Initialization</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:SS6DevKitE12isValidInputSbSSSgFZ"></a>
-                    <a name="//apple_ref/swift/Method/isValidInput(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SS6DevKitE12isValidInputSbSSSgFZ">isValidInput(_:)</a>
+                    <a name="/s:6DevKit10LinkedListCACyxGycfc"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6DevKit10LinkedListCACyxGycfc">init()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -329,139 +310,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Determines if input string is valid and not empty.</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">isValidInput</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">()</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>input</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>String.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>True, if not empty, false otherwise.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:SS6DevKitE13validateEmailSbSSFZ"></a>
-                    <a name="//apple_ref/swift/Method/validateEmail(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SS6DevKitE13validateEmailSbSSFZ">validateEmail(_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Determines if input string is a valid email address.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">validateEmail</span><span class="p">(</span><span class="n">_</span> <span class="nv">email</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>email</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Email address.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>True, if valid email, false otherwise.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:SS6DevKitE16validatePasswordSbSSFZ"></a>
-                    <a name="//apple_ref/swift/Method/validatePassword(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SS6DevKitE16validatePasswordSbSSFZ">validatePassword(_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Determines if input string is a valid password entry.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">validatePassword</span><span class="p">(</span><span class="n">_</span> <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>password</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Password.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>True, if valid password, false otherwise.</p>
                       </div>
                     </section>
                   </div>
@@ -469,13 +327,20 @@
               </ul>
             </div>
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Functions"></a>
+                <a name="//apple_ref/swift/Section/Public Functions" class="dashAnchor"></a>
+                <a href="#/Public%20Functions">
+                  <h3 class="section-name">Public Functions</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:SS6DevKitE17extractedUserNameSSyF"></a>
-                    <a name="//apple_ref/swift/Method/extractedUserName()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SS6DevKitE17extractedUserNameSSyF">extractedUserName()</a>
+                    <a name="/s:6DevKit10LinkedListC4peekxSgyF"></a>
+                    <a name="//apple_ref/swift/Method/peek()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6DevKit10LinkedListC4peekxSgyF">peek()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -483,20 +348,20 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Extracts username from given url string.</p>
+                        <p>Returns the linked list head&rsquo;s value.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">extractedUserName</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">peek</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>Username if included in path.</p>
+                        <p>The head&rsquo;s value.</p>
                       </div>
                     </section>
                   </div>
@@ -504,9 +369,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:SS6DevKitE10twitterURLSSSgAC4with_tFZ"></a>
-                    <a name="//apple_ref/swift/Method/twitterURL(with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SS6DevKitE10twitterURLSSSgAC4with_tFZ">twitterURL(with:)</a>
+                    <a name="/s:6DevKit10LinkedListC4nodeAA0cD4NodeCyxGSgSi2at_tF"></a>
+                    <a name="//apple_ref/swift/Method/node(at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6DevKit10LinkedListC4nodeAA0cD4NodeCyxGSgSi2at_tF">node(at:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -514,14 +379,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a URL string given a Twitter handle.</p>
+                        <p>Returns the node at the given index, or nil if the node can&rsquo;t be found.</p>
+<div class="aside aside-complexity">
+    <p class="aside-title">Complexity</p>
+    O(n)
+
+</div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">twitterURL</span><span class="p">(</span><span class="n">with</span> <span class="nv">username</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">node</span><span class="p">(</span><span class="n">at</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/LinkedListNode.html">LinkedListNode</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -532,12 +402,12 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>username</em>
+                                <em>index</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>Twitter handle.</p>
+                                  <p>The index to use.</p>
                                 </div>
                               </td>
                             </tr>
@@ -546,17 +416,28 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>URL string if handle given, nil otherwise.</p>
+                        <p>The node at the given index.</p>
                       </div>
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Adding%20Functions"></a>
+                <a name="//apple_ref/swift/Section/Adding Functions" class="dashAnchor"></a>
+                <a href="#/Adding%20Functions">
+                  <h3 class="section-name">Adding Functions</h3>
+                </a>
+              </div>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:SS6DevKitE11facebookURLSSSgAC4with_tFZ"></a>
-                    <a name="//apple_ref/swift/Method/facebookURL(with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SS6DevKitE11facebookURLSSSgAC4with_tFZ">facebookURL(with:)</a>
+                    <a name="/s:6DevKit10LinkedListC4pushAA0cD4NodeCyxGxF"></a>
+                    <a name="//apple_ref/swift/Method/push(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6DevKit10LinkedListC4pushAA0cD4NodeCyxGxF">push(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -564,14 +445,20 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a URL string given a Facebook username.</p>
+                        <p>Adds a value at the beginning of the linked list.</p>
+<div class="aside aside-complexity">
+    <p class="aside-title">Complexity</p>
+    O(1)
+
+</div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">facebookURL</span><span class="p">(</span><span class="n">with</span> <span class="nv">username</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">push</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/LinkedListNode.html">LinkedListNode</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -582,12 +469,12 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>username</em>
+                                <em>value</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>Facebook username.</p>
+                                  <p>The value to add.</p>
                                 </div>
                               </td>
                             </tr>
@@ -596,7 +483,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>URL string if handle given, nil otherwise.</p>
+                        <p>The newly added node.</p>
                       </div>
                     </section>
                   </div>
@@ -604,9 +491,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:SS6DevKitE12instagramURLSSSgAC4with_tFZ"></a>
-                    <a name="//apple_ref/swift/Method/instagramURL(with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SS6DevKitE12instagramURLSSSgAC4with_tFZ">instagramURL(with:)</a>
+                    <a name="/s:6DevKit10LinkedListC6appendAA0cD4NodeCyxGxF"></a>
+                    <a name="//apple_ref/swift/Method/append(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6DevKit10LinkedListC6appendAA0cD4NodeCyxGxF">append(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -614,14 +501,20 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a URL string given an Instagram username.</p>
+                        <p>Appends a value at the end of the linked list.</p>
+<div class="aside aside-complexity">
+    <p class="aside-title">Complexity</p>
+    O(1)
+
+</div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">instagramURL</span><span class="p">(</span><span class="n">with</span> <span class="nv">username</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">append</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/LinkedListNode.html">LinkedListNode</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -632,12 +525,12 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>username</em>
+                                <em>value</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>Instagram username.</p>
+                                  <p>The value to add.</p>
                                 </div>
                               </td>
                             </tr>
@@ -646,7 +539,214 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>URL string if handle given, nil otherwise.</p>
+                        <p>The newly added node.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6DevKit10LinkedListC6insertAA0cD4NodeCyxGx5value_AG5aftertF"></a>
+                    <a name="//apple_ref/swift/Method/insert(value:after:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6DevKit10LinkedListC6insertAA0cD4NodeCyxGx5value_AG5aftertF">insert(value:after:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Inserts a value after the given node.</p>
+<div class="aside aside-complexity">
+    <p class="aside-title">Complexity</p>
+    O(1)
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">insert</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="n">after</span> <span class="nv">node</span><span class="p">:</span> <span class="kt"><a href="../Classes/LinkedListNode.html">LinkedListNode</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/LinkedListNode.html">LinkedListNode</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The value to insert.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>node</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The node to add after.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The newly added node.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Removing%20Functions"></a>
+                <a name="//apple_ref/swift/Section/Removing Functions" class="dashAnchor"></a>
+                <a href="#/Removing%20Functions">
+                  <h3 class="section-name">Removing Functions</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6DevKit10LinkedListC3popxSgyF"></a>
+                    <a name="//apple_ref/swift/Method/pop()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6DevKit10LinkedListC3popxSgyF">pop()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the value at the top of the list.</p>
+<div class="aside aside-complexity">
+    <p class="aside-title">Complexity</p>
+    O(1)
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">pop</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The value at top of the list.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6DevKit10LinkedListC10removeLastxSgyF"></a>
+                    <a name="//apple_ref/swift/Method/removeLast()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6DevKit10LinkedListC10removeLastxSgyF">removeLast()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the last node of the list.</p>
+<div class="aside aside-complexity">
+    <p class="aside-title">Complexity</p>
+    O(n)
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeLast</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The value at the end of the list.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6DevKit10LinkedListC6removexSgAA0cD4NodeCyxG5after_tF"></a>
+                    <a name="//apple_ref/swift/Method/remove(after:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6DevKit10LinkedListC6removexSgAA0cD4NodeCyxG5after_tF">remove(after:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the node after the given node.</p>
+<div class="aside aside-complexity">
+    <p class="aside-title">Complexity</p>
+    O(1)
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="n">after</span> <span class="nv">node</span><span class="p">:</span> <span class="kt"><a href="../Classes/LinkedListNode.html">LinkedListNode</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>node</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The node to use.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The value removed.</p>
                       </div>
                     </section>
                   </div>

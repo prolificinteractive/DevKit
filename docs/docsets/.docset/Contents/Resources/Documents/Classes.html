@@ -23,7 +23,7 @@
         <a class="header-link" href="index.html">
            Docs
         </a>
-         (78% documented)
+         (64% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -58,6 +58,15 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/ImagePickerValidator.html">ImagePickerValidator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/LinkedList.html">LinkedList</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/LinkedListNode.html">LinkedListNode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Stack.html">Stack</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/TransitioningNavigationView.html">TransitioningNavigationView</a>
@@ -133,7 +142,7 @@
                 <a class="nav-group-task-link" href="Protocols/KeyboardObserver.html">KeyboardObserver</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Protocols/ReusableCell.html">ReusableCell</a>
+                <a class="nav-group-task-link" href="Protocols/ReusableView.html">ReusableView</a>
               </li>
             </ul>
           </li>
@@ -189,7 +198,125 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@UIApplicationMain</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="kt">AppDelegate</span> <span class="p">:</span> <span class="kt">UIResponder</span><span class="p">,</span> <span class="kt">UIApplicationDelegate</span></code></pre>
+<span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">AppDelegate</span> <span class="p">:</span> <span class="kt">UIResponder</span><span class="p">,</span> <span class="kt">UIApplicationDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6DevKit10LinkedListC"></a>
+                    <a name="//apple_ref/swift/Class/LinkedList" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6DevKit10LinkedListC">LinkedList</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Linked List.
+A linked list is a linear collection of data elements where each element points to the next. A linked list has several theoretical advantages over contiguous storage options such as the Swift Array:</p>
+<li>Constant time insertion and removal from the front of the list.</li>
+<li><p>Reliable performance characteristics.</p></li>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Use a linked list over a Swift array if you need to store a large amount of data and you need to perform
+insertions and removals from any position in the sequence.</p>
+
+</div>
+
+<p>Do not use a linked list if you need indexing, sorting, random access to the data or sequence traversal from the back of the sequence to the front.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    Due to the fact that each node has a reference to the next node, the memory footprint of a linked list can have a negative impact on the device if the list becomes extremely large.
+
+</div>
+
+                        <a href="Classes/LinkedList.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">LinkedList</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6DevKit14LinkedListNodeC"></a>
+                    <a name="//apple_ref/swift/Class/LinkedListNode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6DevKit14LinkedListNodeC">LinkedListNode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Describes a node in a linked list.</p>
+
+                        <a href="Classes/LinkedListNode.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">LinkedListNode</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6DevKit5StackC"></a>
+                    <a name="//apple_ref/swift/Class/Stack" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6DevKit5StackC">Stack</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stack.
+A stack is a collection of elements following a First-In-Last-Out (FILO) order.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Use a Stack if you need a sequence ordered as FILO.
+
+</div>
+
+                        <a href="Classes/Stack.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">Stack</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -221,7 +348,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CalendarPermissionsValidator</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">CalendarPermissionsValidator</span></code></pre>
 
                         </div>
                       </div>
@@ -253,7 +380,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CameraPhotoLibraryPermissionsValidator</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">CameraPhotoLibraryPermissionsValidator</span></code></pre>
 
                         </div>
                       </div>
@@ -285,7 +412,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ImagePickerValidator</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">ImagePickerValidator</span></code></pre>
 
                         </div>
                       </div>
@@ -317,7 +444,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TransitioningNavigationView</span> <span class="p">:</span> <span class="kt">UIView</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">TransitioningNavigationView</span> <span class="p">:</span> <span class="kt">UIView</span></code></pre>
 
                         </div>
                       </div>
@@ -349,7 +476,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">ViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
 
                         </div>
                       </div>

@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
            Docs
         </a>
-         (78% documented)
+         (64% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -58,6 +58,15 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/ImagePickerValidator.html">ImagePickerValidator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/LinkedList.html">LinkedList</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/LinkedListNode.html">LinkedListNode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Stack.html">Stack</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/TransitioningNavigationView.html">TransitioningNavigationView</a>
@@ -133,7 +142,7 @@
                 <a class="nav-group-task-link" href="../Protocols/KeyboardObserver.html">KeyboardObserver</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols/ReusableCell.html">ReusableCell</a>
+                <a class="nav-group-task-link" href="../Protocols/ReusableView.html">ReusableView</a>
               </li>
             </ul>
           </li>
@@ -160,7 +169,7 @@
             <h1>CalendarPermissionsValidator</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CalendarPermissionsValidator</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">CalendarPermissionsValidator</span></code></pre>
 
                 </div>
               </div>
@@ -201,6 +210,44 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CalendarPermissionsValidatorDelegate.html">CalendarPermissionsValidatorDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Private%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Private Properties" class="dashAnchor"></a>
+                <a href="#/Private%20Properties">
+                  <h3 class="section-name">Private Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6DevKit28CalendarPermissionsValidatorC10eventStore33_A485EDB033555A559886EB31C4F5C7A6LLSo07EKEventG0CvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/eventStore" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6DevKit28CalendarPermissionsValidatorC10eventStore33_A485EDB033555A559886EB31C4F5C7A6LLSo07EKEventG0CvpZ">eventStore</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">eventStore</span><span class="p">:</span> <span class="kt">EKEventStore</span></code></pre>
 
                         </div>
                       </div>
@@ -264,6 +311,17 @@
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initialization"></a>
+                <a name="//apple_ref/swift/Section/Initialization" class="dashAnchor"></a>
+                <a href="#/Initialization">
+                  <h3 class="section-name">Initialization</h3>
+                </a>
+              </div>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -285,6 +343,152 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Private%20Functions"></a>
+                <a name="//apple_ref/swift/Section/Private Functions" class="dashAnchor"></a>
+                <a href="#/Private%20Functions">
+                  <h3 class="section-name">Private Functions</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6DevKit28CalendarPermissionsValidatorC05checkcD033_A485EDB033555A559886EB31C4F5C7A6LLySC21EKAuthorizationStatusO6status_AA05EventC4InfoV05eventS0tF"></a>
+                    <a name="//apple_ref/swift/Method/checkCalendarPermissions(status:eventInfo:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6DevKit28CalendarPermissionsValidatorC05checkcD033_A485EDB033555A559886EB31C4F5C7A6LLySC21EKAuthorizationStatusO6status_AA05EventC4InfoV05eventS0tF">checkCalendarPermissions(status:eventInfo:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkCalendarPermissions</span><span class="p">(</span><span class="nv">status</span><span class="p">:</span> <span class="kt">EKAuthorizationStatus</span><span class="p">,</span> <span class="nv">eventInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/EventCalendarInfo.html">EventCalendarInfo</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6DevKit28CalendarPermissionsValidatorC07requestC10Pemissions33_A485EDB033555A559886EB31C4F5C7A6LLyAA05EventC4InfoV05eventQ0_tF"></a>
+                    <a name="//apple_ref/swift/Method/requestCalendarPemissions(eventInfo:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6DevKit28CalendarPermissionsValidatorC07requestC10Pemissions33_A485EDB033555A559886EB31C4F5C7A6LLyAA05EventC4InfoV05eventQ0_tF">requestCalendarPemissions(eventInfo:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">requestCalendarPemissions</span><span class="p">(</span><span class="nv">eventInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/EventCalendarInfo.html">EventCalendarInfo</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6DevKit28CalendarPermissionsValidatorC05addToC033_A485EDB033555A559886EB31C4F5C7A6LLyAA05EventC4InfoV05eventQ0_tF"></a>
+                    <a name="//apple_ref/swift/Method/addToCalendar(eventInfo:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6DevKit28CalendarPermissionsValidatorC05addToC033_A485EDB033555A559886EB31C4F5C7A6LLyAA05EventC4InfoV05eventQ0_tF">addToCalendar(eventInfo:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">addToCalendar</span><span class="p">(</span><span class="nv">eventInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/EventCalendarInfo.html">EventCalendarInfo</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6DevKit28CalendarPermissionsValidatorC012eventFoundInC033_A485EDB033555A559886EB31C4F5C7A6LLSbAA05EventC4InfoV0fR0_tF"></a>
+                    <a name="//apple_ref/swift/Method/eventFoundInCalendar(eventInfo:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6DevKit28CalendarPermissionsValidatorC012eventFoundInC033_A485EDB033555A559886EB31C4F5C7A6LLSbAA05EventC4InfoV0fR0_tF">eventFoundInCalendar(eventInfo:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">eventFoundInCalendar</span><span class="p">(</span><span class="nv">eventInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/EventCalendarInfo.html">EventCalendarInfo</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6DevKit28CalendarPermissionsValidatorC8newEvent33_A485EDB033555A559886EB31C4F5C7A6LLSo7EKEventCAA0gC4InfoV05eventQ0_tF"></a>
+                    <a name="//apple_ref/swift/Method/newEvent(eventInfo:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6DevKit28CalendarPermissionsValidatorC8newEvent33_A485EDB033555A559886EB31C4F5C7A6LLSo7EKEventCAA0gC4InfoV05eventQ0_tF">newEvent(eventInfo:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">newEvent</span><span class="p">(</span><span class="nv">eventInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/EventCalendarInfo.html">EventCalendarInfo</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EKEvent</span></code></pre>
 
                         </div>
                       </div>

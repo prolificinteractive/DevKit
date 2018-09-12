@@ -57,10 +57,80 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Data Structures/Linked List/LinkedList.swift",
+      "line": 27,
+      "symbol": "LinkedList.head",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Data Structures/Linked List/LinkedList.swift",
+      "line": 28,
+      "symbol": "LinkedList.tail",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Data Structures/Linked List/LinkedList.swift",
+      "line": 37,
+      "symbol": "LinkedList.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Data Structures/Linked List/LinkedListNode.swift",
+      "line": 15,
+      "symbol": "LinkedListNode.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Data Structures/Linked List/LinkedListNode.swift",
+      "line": 16,
+      "symbol": "LinkedListNode.next",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Data Structures/Linked List/LinkedListNode.swift",
+      "line": 20,
+      "symbol": "LinkedListNode.init(value:next:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Data Structures/Stack/Stack.swift",
+      "line": 26,
+      "symbol": "Stack.storage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Data Structures/Stack/Stack.swift",
+      "line": 30,
+      "symbol": "Stack.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Extensions/UISearchBarExtension/UISearchBarExtension.swift",
+      "line": 41,
+      "symbol": "UISearchBar.getViewElement(type:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/SharedOptions/ShadowOptions.swift",
       "line": 11,
       "symbol": "ShadowOptions",
       "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Utility/Validators/CalendarPermissionsValidator/CalendarPermissionsValidator.swift",
+      "line": null,
+      "symbol": "CalendarPermissionsValidator",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
@@ -79,8 +149,50 @@
     },
     {
       "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Utility/Validators/CalendarPermissionsValidator/CalendarPermissionsValidator.swift",
-      "line": 32,
+      "line": 20,
+      "symbol": "CalendarPermissionsValidator.eventStore",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Utility/Validators/CalendarPermissionsValidator/CalendarPermissionsValidator.swift",
+      "line": 34,
       "symbol": "CalendarPermissionsValidator.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Utility/Validators/CalendarPermissionsValidator/CalendarPermissionsValidator.swift",
+      "line": 41,
+      "symbol": "CalendarPermissionsValidator.checkCalendarPermissions(status:eventInfo:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Utility/Validators/CalendarPermissionsValidator/CalendarPermissionsValidator.swift",
+      "line": 52,
+      "symbol": "CalendarPermissionsValidator.requestCalendarPemissions(eventInfo:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Utility/Validators/CalendarPermissionsValidator/CalendarPermissionsValidator.swift",
+      "line": 60,
+      "symbol": "CalendarPermissionsValidator.addToCalendar(eventInfo:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Utility/Validators/CalendarPermissionsValidator/CalendarPermissionsValidator.swift",
+      "line": 75,
+      "symbol": "CalendarPermissionsValidator.eventFoundInCalendar(eventInfo:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Utility/Validators/CalendarPermissionsValidator/CalendarPermissionsValidator.swift",
+      "line": 87,
+      "symbol": "CalendarPermissionsValidator.newEvent(eventInfo:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -107,9 +219,58 @@
     },
     {
       "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Utility/Validators/ImagePickerValidator/CameraPhotoLibraryPermissionsValidator.swift",
+      "line": 17,
+      "symbol": "CameraPhotoLibraryPermissionsValidator.viewController",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Utility/Validators/ImagePickerValidator/CameraPhotoLibraryPermissionsValidator.swift",
       "line": 21,
       "symbol": "CameraPhotoLibraryPermissionsValidator.init(viewController:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Utility/Validators/ImagePickerValidator/CameraPhotoLibraryPermissionsValidator.swift",
+      "line": 62,
+      "symbol": "CameraPhotoLibraryPermissionsValidator.requestPhotoPemissions()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Utility/Validators/ImagePickerValidator/CameraPhotoLibraryPermissionsValidator.swift",
+      "line": 75,
+      "symbol": "CameraPhotoLibraryPermissionsValidator.presentImagePicker(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Utility/Validators/ImagePickerValidator/CameraPhotoLibraryPermissionsValidator.swift",
+      "line": 90,
+      "symbol": "CameraPhotoLibraryPermissionsValidator.presentPermissionsAlert(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Utility/Validators/ImagePickerValidator/CameraPhotoLibraryPermissionsValidator.swift",
+      "line": 115,
+      "symbol": "CameraPhotoLibraryPermissionsValidator.requestCameraPemissions()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Utility/Validators/ImagePickerValidator/ImagePickerValidator.swift",
+      "line": 16,
+      "symbol": "ImagePickerValidator.viewController",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Utility/Validators/ImagePickerValidator/ImagePickerValidator.swift",
+      "line": 18,
+      "symbol": "ImagePickerValidator.cameraPhotoLibraryPermissionsValidator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -128,9 +289,79 @@
     },
     {
       "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Views/TransitioningNavigationView/TransitioningNavigationView.swift",
+      "line": null,
+      "symbol": "TransitioningNavigationView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Views/TransitioningNavigationView/TransitioningNavigationView.swift",
       "line": 13,
       "symbol": "TransitioningNavigationView",
       "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Views/TransitioningNavigationView/TransitioningNavigationView.swift",
+      "line": 17,
+      "symbol": "TransitioningNavigationView.backButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Views/TransitioningNavigationView/TransitioningNavigationView.swift",
+      "line": 19,
+      "symbol": "TransitioningNavigationView.stackView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Views/TransitioningNavigationView/TransitioningNavigationView.swift",
+      "line": 26,
+      "symbol": "TransitioningNavigationView.titleLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Views/TransitioningNavigationView/TransitioningNavigationView.swift",
+      "line": 35,
+      "symbol": "TransitioningNavigationView.backgroundView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Views/TransitioningNavigationView/TransitioningNavigationView.swift",
+      "line": 47,
+      "symbol": "TransitioningNavigationView.labelContainerView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Views/TransitioningNavigationView/TransitioningNavigationView.swift",
+      "line": 53,
+      "symbol": "TransitioningNavigationView.titleTopConstraint",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Views/TransitioningNavigationView/TransitioningNavigationView.swift",
+      "line": 54,
+      "symbol": "TransitioningNavigationView.options",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Views/TransitioningNavigationView/TransitioningNavigationView.swift",
+      "line": 58,
+      "symbol": "TransitioningNavigationView.bottomOffset",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Views/TransitioningNavigationView/TransitioningNavigationView.swift",
+      "line": 59,
+      "symbol": "TransitioningNavigationView.labelGutter",
+      "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
@@ -144,6 +375,48 @@
       "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Views/TransitioningNavigationView/TransitioningNavigationView.swift",
       "line": 71,
       "symbol": "TransitioningNavigationView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Views/TransitioningNavigationView/TransitioningNavigationView.swift",
+      "line": 113,
+      "symbol": "TransitioningNavigationView.setupDesign()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Views/TransitioningNavigationView/TransitioningNavigationView.swift",
+      "line": 123,
+      "symbol": "TransitioningNavigationView.setupBackgroundView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Views/TransitioningNavigationView/TransitioningNavigationView.swift",
+      "line": 128,
+      "symbol": "TransitioningNavigationView.setupLabelView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Views/TransitioningNavigationView/TransitioningNavigationView.swift",
+      "line": 136,
+      "symbol": "TransitioningNavigationView.setupBackButton()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Views/TransitioningNavigationView/TransitioningNavigationView.swift",
+      "line": 143,
+      "symbol": "TransitioningNavigationView.setupStackView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Views/TransitioningNavigationView/TransitioningNavigationView.swift",
+      "line": 150,
+      "symbol": "TransitioningNavigationView.maxLabelTopOffset()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },

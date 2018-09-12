@@ -52,7 +52,7 @@ autocorrect:
 
 documentation:
 	@jazzy \
-            --min-acl internal \
+            --min-acl private \
             --no-hide-documentation-coverage \
             --theme fullwidth \
             --author "Prolific Interactive" \
