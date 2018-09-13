@@ -47,6 +47,14 @@ Adding new classes to DevKit should be added to the appropriate subspec section.
   end
 ```
 
+Once all classes and files are added to the project make sure to:
+
+* Run pod install on the example project
+
+* Ensure the classes are added to the main DevKit Xcode workspace at ./DevKit/DevKit.xcworkspace
+
+* Run `make documentation` at ./DevKit
+
 All new additions should be code reviewed before merging into master.
 
 
