@@ -63,7 +63,7 @@ All new additions should be code reviewed before merging into master.
 
 ![prolific](https://s3.amazonaws.com/prolificsitestaging/logos/Prolific_Logo_Full_Color.png)
 
-Copyright (c) 2017 Prolific Interactive
+Copyright (c) 2018 Prolific Interactive
 
 DevKit is maintained and sponsored by Prolific Interactive. It may be redistributed under the terms specified in the [LICENSE] file.
 
