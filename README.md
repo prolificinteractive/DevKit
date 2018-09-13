@@ -5,54 +5,32 @@
 [![License](https://img.shields.io/cocoapods/l/DevKit.svg?style=flat)](https://cocoapods.org/pods/DevKit)
 [![Platform](https://img.shields.io/cocoapods/p/DevKit.svg?style=flat)](https://cocoapods.org/pods/DevKit)
 
-Collection of commonly used swift code
+## Description
 
-## Example
+Collection of commonly used swift code. Documentation can be found [here](https://prolificinteractive.github.io/DevKit/).
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
 
-## Installation
+## Usage
 
-DevKit is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+If you would like to integrate DevKit into your project, add the repo to your project as a git submodule.
+
+`git submodule add https://github.com/prolificinteractive/DevKit`
+
+In your podfile add DevKit as shown below:
 
 ```ruby
-pod 'DevKit'
+pod 'DevKit', :path => './DevKit'
 ```
 
-## DevKit Subspecs
+Customizing DevKit with certain subspecs can be done as shown below. Subspecs can be found in the [documentation](https://prolificinteractive.github.io/DevKit/).
 
-### Utility
+```ruby
+pod 'DevKit', :path => './DevKit', :subspecs => ['Extensions/StringExtension',
+                                                 'DataStructures/LinkedList']
+```
 
-[Keyboard Observer](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Utility/KeyboardObserver.md)
 
-* Contains UIViewController extension that easily adds keyboard observers.
-
-[ReusableView](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Utility/ReusableView.md)
-
-* Protocol and default implememtation for reuse identifiers. Useful for dequeued cell.
-
-### Extensions
-
-[String Extensions](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Extensions/StringExtension.md)
-
-* Collections of extensions for strings
-
-[UIApplication Extensions](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Extensions/UIApplicationExtension.md)
-
-* Collections of extensions for UIApplication
-
-[UIColor Extensions](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Extensions/UIColorExtension.md)
-
-* Collections of extensions for UIColor including blending, fading and image generation.
-
-### Data Structures
-
-[LinkedList](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Data%20Structures/LinkedLists.md)
-
-* A linked list is a linear collection of data elements where each element points to the next.
 
 ## Contributing to DevKit
 
@@ -70,6 +48,8 @@ Adding new classes to DevKit should be added to the appropriate subspec section.
 ```
 
 All new additions should be code reviewed before merging into master.
+
+
 
 ## License
 
