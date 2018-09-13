@@ -5,58 +5,36 @@
 [![License](https://img.shields.io/cocoapods/l/DevKit.svg?style=flat)](https://cocoapods.org/pods/DevKit)
 [![Platform](https://img.shields.io/cocoapods/p/DevKit.svg?style=flat)](https://cocoapods.org/pods/DevKit)
 
-Collection of commonly used swift code
+## Description
 
-## Example
+Collection of commonly used swift code. Documentation can be found [here](https://prolificinteractive.github.io/DevKit/).
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+## Usage
 
-## Requirements
+If you would like to integrate DevKit into your project, add the repo to your project as a git submodule.
 
-## Installation
+`git submodule add https://github.com/prolificinteractive/DevKit`
 
-DevKit is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+In your podfile add DevKit as shown below:
 
 ```ruby
-pod 'DevKit'
+pod 'DevKit', :path => './DevKit'
 ```
 
-## DevKit Subspecs
+Customizing DevKit with certain subspecs can be done as shown below. Subspecs can be found in the [documentation](https://prolificinteractive.github.io/DevKit/).
 
-### Utility
-
-[Keyboard Observer](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Utility/KeyboardObserver.md)
-
-* Contains UIViewController extension that easily adds keyboard observers.
-
-[ReusableView](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Utility/ReusableView.md)
-
-* Protocol and default implememtation for reuse identifiers. Useful for dequeued cell.
-
-### Extensions
-
-[String Extensions](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Extensions/StringExtension.md)
-
-* Collections of extensions for strings
-
-[UIApplication Extensions](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Extensions/UIApplicationExtension.md)
-
-* Collections of extensions for UIApplication
-
-[UIColor Extensions](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Extensions/UIColorExtension.md)
-
-* Collections of extensions for UIColor including blending, fading and image generation.
-
-### Data Structures
-
-[LinkedList](https://github.com/prolificinteractive/DevKit/blob/master/Documentation/Data%20Structures/LinkedLists.md)
-
-* A linked list is a linear collection of data elements where each element points to the next.
+```ruby
+pod 'DevKit', :path => './DevKit', :subspecs => ['Extensions/StringExtension',
+                                                 'DataStructures/LinkedList']
+```
 
 ## Contributing to DevKit
 
 Adding new classes to DevKit should be added to the appropriate subspec section. Unique subspecs should include the source files, any limiting deployment targets and necessary dependencies. 
+
+
+
+#### Sample Subspec:
 
 ```ruby
   # CalendarPermissionsValidator
@@ -69,13 +47,47 @@ Adding new classes to DevKit should be added to the appropriate subspec section.
   end
 ```
 
+
+
+#### New File Documentation Template:
+
+```swift
+/// <Description of the class>
+///
+/// **Subspec: Folder/Filename**
+///
+/// ```
+/// Code Snippet
+/// ```
+///
+/// <Real world example of how someone would use this class with code snippet>
+///
+class myCoolClass {
+  // Does something cool! 
+}
+```
+
+
+
+#### Pull Request Checklist:
+
+Once all classes and files are added to the project and documented make sure to:
+
+* Run pod install on the example project
+
+* Ensure the classes are added to the main DevKit Xcode workspace at ./DevKit/DevKit.xcworkspace
+
+* Run `make documentation` at ./DevKit
+
 All new additions should be code reviewed before merging into master.
+
+
 
 ## License
 
 ![prolific](https://s3.amazonaws.com/prolificsitestaging/logos/Prolific_Logo_Full_Color.png)
 
-Copyright (c) 2017 Prolific Interactive
+Copyright (c) 2018 Prolific Interactive
 
 DevKit is maintained and sponsored by Prolific Interactive. It may be redistributed under the terms specified in the [LICENSE] file.
 

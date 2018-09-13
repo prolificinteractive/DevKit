@@ -10,6 +10,17 @@ import Foundation
 import UIKit
 
 /// Defines a reusable collection or table view cell.
+///
+/// **Subspec: Utility/ReusableView**
+///
+/// ```
+/// func registerCell<T: ReusableView>(cellClass: T.Type) {
+///     register(T.self, forCellWithReuseIdentifier: T.reuseIdentifier)
+/// }
+/// ```
+///
+/// Used when registering and dequeuing reuseable cells and the identifier is the same as the class name.
+///
 public protocol ReusableView: class {
 
     /// Default reuse identifier is set with the class name.
