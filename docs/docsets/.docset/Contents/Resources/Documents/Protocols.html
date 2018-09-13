@@ -252,6 +252,14 @@
                       <div class="abstract">
                         <p>Defines a reusable collection or table view cell.</p>
 
+<p><strong>Subspec: Utility/ReusableView</strong></p>
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="n">registerCell</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">ReusableView</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">cellClass</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">register</span><span class="p">(</span><span class="kt">T</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">forCellWithReuseIdentifier</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="n">reuseIdentifier</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>Used when registering and dequeuing reuseable cells and the identifier is the same as the class name.</p>
+
                         <a href="Protocols/ReusableView.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
