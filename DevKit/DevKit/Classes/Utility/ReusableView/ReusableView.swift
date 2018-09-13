@@ -14,11 +14,13 @@ import UIKit
 /// **Subspec: Utility/ReusableView**
 ///
 /// ```
-/// override func viewDidLoad() {
-///     super.viewDidLoad()
-///     addRecognizerForKeyboardDismissal()
+/// func registerCell<T: ReusableView>(cellClass: T.Type) {
+///     register(T.self, forCellWithReuseIdentifier: T.reuseIdentifier)
 /// }
 /// ```
+///
+/// Used when registering and dequeuing reuseable cells and the identifier is the same as the class name.
+///
 public protocol ReusableView: class {
 
     /// Default reuse identifier is set with the class name.
@@ -49,14 +51,3 @@ extension UITableViewCell: ReusableView {
 extension UITableViewHeaderFooterView: ReusableView {
 
 }
-
-/// <Description of the class>
-///
-/// **Subspec: Folder/Filename**
-///
-/// ```
-/// Code Snippet
-/// ```
-///
-/// <Real world example of how someone would use this class with code snippet>
-///
