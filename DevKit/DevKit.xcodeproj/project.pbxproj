@@ -25,7 +25,6 @@
 		205246F1209BA8B40067A328 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246DF209BA8B30067A328 /* UIApplicationExtension.swift */; };
 		205246F2209BA8B40067A328 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246E0209BA8B30067A328 /* UIFontExtension.swift */; };
 		205246F3209BA8B40067A328 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246E1209BA8B30067A328 /* UIViewControllerExtension.swift */; };
-		205246F4209BA8B40067A328 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246E2209BA8B30067A328 /* UIViewExtension.swift */; };
 		205246F6209BA8B40067A328 /* UIBarButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246E4209BA8B30067A328 /* UIBarButtonExtension.swift */; };
 		205246F7209BA8B40067A328 /* UIStackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246E5209BA8B30067A328 /* UIStackViewExtension.swift */; };
 		205246F8209BA8B40067A328 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205246E6209BA8B30067A328 /* UIImageExtension.swift */; };
@@ -92,7 +91,6 @@
 		205246DF209BA8B30067A328 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
 		205246E0209BA8B30067A328 /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		205246E1209BA8B30067A328 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
-		205246E2209BA8B30067A328 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		205246E4209BA8B30067A328 /* UIBarButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonExtension.swift; sourceTree = "<group>"; };
 		205246E5209BA8B30067A328 /* UIStackViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackViewExtension.swift; sourceTree = "<group>"; };
 		205246E6209BA8B30067A328 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
@@ -288,7 +286,6 @@
 				2052470F209BA9C60067A328 /* UIStackViewExtension */,
 				20524711209BA9E20067A328 /* UITableViewExtension */,
 				20524725209BB3600067A328 /* UIViewControllerExtension */,
-				20524713209BAA380067A328 /* UIViewExtension */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -395,14 +392,6 @@
 				205246E9209BA8B30067A328 /* UITableViewExtension.swift */,
 			);
 			path = UITableViewExtension;
-			sourceTree = "<group>";
-		};
-		20524713209BAA380067A328 /* UIViewExtension */ = {
-			isa = PBXGroup;
-			children = (
-				205246E2209BA8B30067A328 /* UIViewExtension.swift */,
-			);
-			path = UIViewExtension;
 			sourceTree = "<group>";
 		};
 		20524718209BB2BC0067A328 /* Views */ = {
@@ -796,7 +785,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				205246F4209BA8B40067A328 /* UIViewExtension.swift in Sources */,
 				205246D8209BA3480067A328 /* ShadowOptions.swift in Sources */,
 				205C74EE2135A3D700AF0B52 /* KeyboardObserver.swift in Sources */,
 				205246CC209B9D2B0067A328 /* CalendarPermissionsValidatorDelegate.swift in Sources */,
@@ -1005,7 +993,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "DevKit/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.prolificinteractive.DevKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1020,7 +1011,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "DevKit/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.prolificinteractive.DevKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1036,7 +1030,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DevKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.prolificinteractive.DevKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1053,7 +1051,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DevKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.prolificinteractive.DevKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1069,7 +1071,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DevKitUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.prolificinteractive.DevKitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1085,7 +1091,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DevKitUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.prolificinteractive.DevKitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
