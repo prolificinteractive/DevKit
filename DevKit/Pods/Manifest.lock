@@ -1,24 +1,28 @@
 PODS:
+  - KeychainAccess (3.1.0)
   - Marker (1.1.0)
   - Moulinette (0.1.0)
   - PureLayout (3.0.2)
 
 DEPENDENCIES:
+  - KeychainAccess (= 3.1.0)
   - Marker (= 1.1.0)
   - Moulinette (= 0.1.0)
   - PureLayout (= 3.0.2)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - KeychainAccess
     - Marker
     - Moulinette
     - PureLayout
 
 SPEC CHECKSUMS:
+  KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
   Marker: f35e0b5d9c97d6997d6b89b23f189e0e4cc127c7
   Moulinette: cbd1bc254840dd218446569618e32172447268d5
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
 
-PODFILE CHECKSUM: 84e2f4f7f0c332bc20c2047ee6fb9c0390d9f132
+PODFILE CHECKSUM: bca523e9b7651a94676626d51df1e3fe9c9cf271
 
 COCOAPODS: 1.5.0
