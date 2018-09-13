@@ -9,8 +9,6 @@
 
 Collection of commonly used swift code. Documentation can be found [here](https://prolificinteractive.github.io/DevKit/).
 
-
-
 ## Usage
 
 If you would like to integrate DevKit into your project, add the repo to your project as a git submodule.
@@ -30,11 +28,13 @@ pod 'DevKit', :path => './DevKit', :subspecs => ['Extensions/StringExtension',
                                                  'DataStructures/LinkedList']
 ```
 
-
-
 ## Contributing to DevKit
 
 Adding new classes to DevKit should be added to the appropriate subspec section. Unique subspecs should include the source files, any limiting deployment targets and necessary dependencies. 
+
+
+
+#### Sample Subspec:
 
 ```ruby
   # CalendarPermissionsValidator
@@ -47,7 +47,31 @@ Adding new classes to DevKit should be added to the appropriate subspec section.
   end
 ```
 
-Once all classes and files are added to the project make sure to:
+
+
+#### New File Documentation Template:
+
+```swift
+/// <Description of the class>
+///
+/// **Subspec: Folder/Filename**
+///
+/// ```
+/// Code Snippet
+/// ```
+///
+/// <Real world example of how someone would use this class with code snippet>
+///
+class myCoolClass {
+  // Does something cool! 
+}
+```
+
+
+
+#### Pull Request Checklist:
+
+Once all classes and files are added to the project and documented make sure to:
 
 * Run pod install on the example project
 

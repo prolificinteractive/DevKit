@@ -10,6 +10,15 @@ import Foundation
 import UIKit
 
 /// Defines a reusable collection or table view cell.
+///
+/// **Subspec: Utility/ReusableView**
+///
+/// ```
+/// override func viewDidLoad() {
+///     super.viewDidLoad()
+///     addRecognizerForKeyboardDismissal()
+/// }
+/// ```
 public protocol ReusableView: class {
 
     /// Default reuse identifier is set with the class name.
@@ -40,3 +49,14 @@ extension UITableViewCell: ReusableView {
 extension UITableViewHeaderFooterView: ReusableView {
 
 }
+
+/// <Description of the class>
+///
+/// **Subspec: Folder/Filename**
+///
+/// ```
+/// Code Snippet
+/// ```
+///
+/// <Real world example of how someone would use this class with code snippet>
+///
