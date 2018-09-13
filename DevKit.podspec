@@ -68,6 +68,12 @@ Collection of commonly used swift code.
     sp.subspec 'ReusableView' do |ssp|
         ssp.source_files = 'DevKit/DevKit/Classes/Utility/ReusableView/*'
     end
+
+    # SessionManager
+    sp.subspec 'SessionManager' do |ssp|
+        ssp.source_files = 'DevKit/DevKit/Classes/Utility/SessionManager/*'
+        ssp.dependency 'KeychainAccess', '3.1.0'
+    end
   end
 
 # ==== Extensions ===========================================================================================================

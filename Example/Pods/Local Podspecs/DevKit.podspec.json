@@ -72,6 +72,15 @@
         {
           "name": "ReusableView",
           "source_files": "DevKit/DevKit/Classes/Utility/ReusableView/*"
+        },
+        {
+          "name": "SessionManager",
+          "source_files": "DevKit/DevKit/Classes/Utility/SessionManager/*",
+          "dependencies": {
+            "KeychainAccess": [
+              "3.1.0"
+            ]
+          }
         }
       ]
     },
@@ -124,6 +133,10 @@
         {
           "name": "LinkedList",
           "source_files": "DevKit/DevKit/Classes/Data\\ Structures/Linked\\ List/*"
+        },
+        {
+          "name": "Stack",
+          "source_files": "DevKit/DevKit/Classes/Data\\ Structures/Stack/*"
         }
       ]
     }

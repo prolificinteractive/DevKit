@@ -7,7 +7,9 @@ PODS:
     - DevKit/Utility (= 0.1.0)
   - DevKit/DataStructures (0.1.0):
     - DevKit/DataStructures/LinkedList (= 0.1.0)
+    - DevKit/DataStructures/Stack (= 0.1.0)
   - DevKit/DataStructures/LinkedList (0.1.0)
+  - DevKit/DataStructures/Stack (0.1.0)
   - DevKit/Extensions (0.1.0):
     - DevKit/Extensions/StringExtension (= 0.1.0)
     - DevKit/Extensions/UIAlertControllerExtension (= 0.1.0)
@@ -37,6 +39,7 @@ PODS:
     - DevKit/Utility/ImagePickerValidator (= 0.1.0)
     - DevKit/Utility/KeyboardObserver (= 0.1.0)
     - DevKit/Utility/ReusableView (= 0.1.0)
+    - DevKit/Utility/SessionManager (= 0.1.0)
   - DevKit/Utility/CalendarPermissionsValidator (0.1.0):
     - DevKit/Extensions/StringExtension
     - DevKit/Extensions/UIAlertControllerExtension
@@ -45,6 +48,9 @@ PODS:
     - DevKit/Extensions/StringExtension
   - DevKit/Utility/KeyboardObserver (0.1.0)
   - DevKit/Utility/ReusableView (0.1.0)
+  - DevKit/Utility/SessionManager (0.1.0):
+    - KeychainAccess (= 3.1.0)
+  - KeychainAccess (3.1.0)
   - Marker (1.1.0)
   - PureLayout (3.0.2)
 
@@ -53,6 +59,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - KeychainAccess
     - Marker
     - PureLayout
 
@@ -61,7 +68,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DevKit: 7583eaae5e71a98ba52ef93c490d4c5024eceae7
+  DevKit: 1c2e00ffb8fd991a57b5a1f6bbe979152b1719c4
+  KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
   Marker: f35e0b5d9c97d6997d6b89b23f189e0e4cc127c7
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
 
