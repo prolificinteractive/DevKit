@@ -2,6 +2,7 @@
     "excludedRules" : [
         "empty_icons",
         "mark_usage",
-        "git_branches"
+        "git_branches",
+        "final_classes"
     ]
 }

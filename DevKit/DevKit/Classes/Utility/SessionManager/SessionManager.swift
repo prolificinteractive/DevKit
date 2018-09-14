@@ -9,7 +9,7 @@
 import Foundation
 import KeychainAccess
 
-/// Session manager for the wing application.
+/// Session manager used to manage a user's login status.
 ///
 /// **Subspec: Utility/SessionManager**
 ///
