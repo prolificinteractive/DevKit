@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
            Docs
         </a>
-         (61% documented)
+         (65% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -301,7 +301,7 @@ the user object into the user defaults for fast sign-in when the app is relaunch
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Keychain service used to access the keychain.</p>
 
                       </div>
                       <div class="declaration">
@@ -328,7 +328,7 @@ the user object into the user defaults for fast sign-in when the app is relaunch
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Bundle identifier of the app.</p>
 
                       </div>
                       <div class="declaration">
@@ -355,7 +355,7 @@ the user object into the user defaults for fast sign-in when the app is relaunch
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Authentication token keychain key.</p>
 
                       </div>
                       <div class="declaration">
@@ -431,7 +431,7 @@ the user object into the user defaults for fast sign-in when the app is relaunch
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Default initializer. Reloads the user stored in the user defaults.</p>
 
                       </div>
                       <div class="declaration">
@@ -507,7 +507,7 @@ the user object into the user defaults for fast sign-in when the app is relaunch
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Reloads the user that is stored in the user defaults.</p>
 
                       </div>
                       <div class="declaration">
@@ -534,7 +534,7 @@ the user object into the user defaults for fast sign-in when the app is relaunch
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Returns the string with the given identifer.</p>
 
                       </div>
                       <div class="declaration">
@@ -544,6 +544,29 @@ the user object into the user defaults for fast sign-in when the app is relaunch
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">keychainString</span><span class="p">(</span><span class="n">_</span> <span class="nv">identifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>identifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Keychain id used to return the desired string.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Optional string stored in the keychain.</p>
                       </div>
                     </section>
                   </div>
@@ -561,7 +584,7 @@ the user object into the user defaults for fast sign-in when the app is relaunch
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Sets the value provided to the keychain.</p>
 
                       </div>
                       <div class="declaration">
@@ -571,6 +594,37 @@ the user object into the user defaults for fast sign-in when the app is relaunch
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setKeychainString</span><span class="p">(</span><span class="n">_</span> <span class="nv">identifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>identifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Key identidier of the value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>String value to add to the keychain.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -588,7 +642,7 @@ the user object into the user defaults for fast sign-in when the app is relaunch
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Removes the keychain string with the given parameter.</p>
 
                       </div>
                       <div class="declaration">
@@ -598,6 +652,25 @@ the user object into the user defaults for fast sign-in when the app is relaunch
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removeKeychainString</span><span class="p">(</span><span class="n">_</span> <span class="nv">identifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>identifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Key identifier to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
