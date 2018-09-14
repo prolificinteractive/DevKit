@@ -14,6 +14,8 @@ import Foundation
 ///
 extension String {
 
+    // MARK: - General Extension Functions
+
     /// Generates a localized string with the given parameters.
     ///
     /// - Parameter comment: Comment for the localized string.
@@ -44,8 +46,9 @@ extension String {
     
 }
 
-// MARK: - Validation
 extension String {
+
+    // MARK: - Validation
     
     /// Determines if input string is valid and not empty.
     ///
@@ -74,8 +77,9 @@ extension String {
 
 }
 
-// MARK: - Social Media URLs
 extension String {
+
+    // MARK: - Social Media URLs
 
     /// Extracts username from given url string.
     ///
