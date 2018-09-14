@@ -28,18 +28,13 @@ open class SessionManager<T: Codable> {
     public var authToken: String? {
         get {
             return keychainString(authTokenKeychainKey)
-        }
-        set(newAuthToken) {
+        } set(newAuthToken) {
             setKeychainString(authTokenKeychainKey, value: newAuthToken)
         }
     }
 
     /// Current user of the application.
     public var user: T? {
-        set {
-            let encoder = JSONEncoder()
-            UserDefaults.standard.set(try? encoder.encode(newValue), forKey: userKey)
-        }
         get {
             let decoder = JSONDecoder()
             if let data = UserDefaults.standard.data(forKey: userKey) {
@@ -47,6 +42,9 @@ open class SessionManager<T: Codable> {
             } else {
                 return nil
             }
+        } set {
+            let encoder = JSONEncoder()
+            UserDefaults.standard.set(try? encoder.encode(newValue), forKey: userKey)
         }
     }
 
