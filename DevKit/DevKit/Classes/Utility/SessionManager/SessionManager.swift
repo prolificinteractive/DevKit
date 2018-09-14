@@ -10,12 +10,12 @@ import Foundation
 import KeychainAccess
 
 /// Session manager for the wing application.
-final class SessionManager<T: Codable> {
+open class SessionManager<T: Codable> {
 
     // MARK: - Public Properties
 
     /// Authentication token of the current user.
-    var authToken: String? {
+    public var authToken: String? {
         get {
             return keychainString(authTokenKeychainKey)
         }
@@ -25,7 +25,7 @@ final class SessionManager<T: Codable> {
     }
 
     /// Current user of the application.
-    var user: T? {
+    public var user: T? {
         set {
             let encoder = JSONEncoder()
             UserDefaults.standard.set(try? encoder.encode(newValue), forKey: userKey)
@@ -41,7 +41,7 @@ final class SessionManager<T: Codable> {
     }
 
     /// Flag to determine if the user is logged in.
-    var isLoggedIn: Bool {
+    public var isLoggedIn: Bool {
         return (authToken != nil) && (user != nil)
     }
 
@@ -68,14 +68,14 @@ final class SessionManager<T: Codable> {
 
     // MARK: - Initialization
 
-    init() {
+    public init() {
         loadStoredUser()
     }
 
     // MARK: - Public Functions
 
     /// Log out the current user.
-    func logOut() {
+    public func logOut() {
         user = nil
         authToken = nil
     }

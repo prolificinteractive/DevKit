@@ -23,6 +23,8 @@ import UIKit
 ///
 public protocol ReusableView: class {
 
+    // MARK: - Public Properties
+
     /// Default reuse identifier is set with the class name.
     static var reuseIdentifier: String { get }
 
