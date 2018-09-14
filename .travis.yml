@@ -13,4 +13,4 @@ before_install:
     - git checkout -b gh-pages
     - git add .
     - git commit -m "Documentation Generated - ${TRAVIS_BUILD_NUMBER}"
-    - git push https://${GH_TOKEN}@github.com/prolificinteractive/DevKit.git gh_pages
+    - git push https://${GH_TOKEN}@github.com/prolificinteractive/DevKit.git gh-pages
