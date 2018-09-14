@@ -12,7 +12,7 @@ target 'DevKit' do
   pod 'Marker', '1.1.0'
 
   # https://github.com/prolificinteractive/Moulinette
-  pod 'Moulinette', '0.1.0'
+  pod 'Moulinette', '0.1.1'
 
   # https://github.com/kishikawakatsumi/KeychainAccess
   pod 'KeychainAccess', '3.1.0'
