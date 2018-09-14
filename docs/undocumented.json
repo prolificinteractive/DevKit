@@ -128,63 +128,63 @@
     },
     {
       "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Utility/SessionManager/SessionManager.swift",
-      "line": 50,
+      "line": 59,
       "symbol": "SessionManager.keychain",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Utility/SessionManager/SessionManager.swift",
-      "line": 54,
+      "line": 63,
       "symbol": "SessionManager.bundleIdentifer",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Utility/SessionManager/SessionManager.swift",
-      "line": 61,
+      "line": 70,
       "symbol": "SessionManager.authTokenKeychainKey",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Utility/SessionManager/SessionManager.swift",
-      "line": 67,
+      "line": 76,
       "symbol": "SessionManager.userKey",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Utility/SessionManager/SessionManager.swift",
-      "line": 71,
+      "line": 80,
       "symbol": "SessionManager.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Utility/SessionManager/SessionManager.swift",
-      "line": 88,
+      "line": 97,
       "symbol": "SessionManager.loadStoredUser()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Utility/SessionManager/SessionManager.swift",
-      "line": 96,
+      "line": 105,
       "symbol": "SessionManager.keychainString(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Utility/SessionManager/SessionManager.swift",
-      "line": 105,
+      "line": 114,
       "symbol": "SessionManager.setKeychainString(_:value:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Utility/SessionManager/SessionManager.swift",
-      "line": 118,
+      "line": 127,
       "symbol": "SessionManager.removeKeychainString(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
