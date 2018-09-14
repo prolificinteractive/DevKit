@@ -106,7 +106,7 @@
 		20524723209BB3550067A328 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		205C74EB2135A3D700AF0B52 /* KeyboardObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
 		205C74ED2135A3D700AF0B52 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
-		20987058214C4B04008B8B0C /* DevKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = DevKit.podspec; path = ../../DevKit.podspec; sourceTree = "<group>"; };
+		20987058214C4B04008B8B0C /* DevKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = DevKit.podspec; path = ../../DevKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		209955A3214AD81100674465 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		3939CE1C2FCEB6AE9D5E4974 /* Pods_DevKitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevKitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		439C165EDA375DDFA28D0AB6 /* Pods-DevKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevKit/Pods-DevKit.release.xcconfig"; sourceTree = "<group>"; };
