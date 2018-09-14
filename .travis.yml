@@ -4,4 +4,4 @@ xcode_workspace: DevKit/DevKit.xcworkspace # path to your xcodeproj folder
 xcode_scheme: DevKit
 xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
 before_install:
-    - cd DevKit && pod install
+    - cd DevKit && pod install && cd ..
