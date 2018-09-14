@@ -17,7 +17,8 @@ import KeychainAccess
 /// let sessionManager = SessionManager<User>()
 /// ```
 ///
-/// Given a Codable user object, the SessionManager will store the authentication token in the secure keychain and will store the user object into the user defaults for fast sign-in when the app is relaunched.
+/// Given a Codable user object, the SessionManager will store the authentication token in the secure keychain and will store
+/// the user object into the user defaults for fast sign-in when the app is relaunched.
 ///
 open class SessionManager<T: Codable> {
 
