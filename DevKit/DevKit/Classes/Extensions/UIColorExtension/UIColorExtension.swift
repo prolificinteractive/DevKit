@@ -9,6 +9,10 @@
 import Foundation
 import UIKit
 
+/// Collection of all UIColor Extensions.
+///
+/// **Subspec: Extensions/UIColorExtension**
+///
 extension UIColor {
 
     // MARK: - Image Generation

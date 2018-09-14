@@ -8,6 +8,10 @@
 
 import UIKit
 
+/// Collection of all UITableView Extensions.
+///
+/// **Subspec: Extensions/UITableViewExtension**
+///
 extension UITableView {
     
     /// Get an index set with all the sections in this table view.
@@ -17,7 +21,7 @@ extension UITableView {
 
     /// Reload the table view with an animation
     ///
-    /// WARNING: Do not call this if the number of sections has changed since you last
+    /// - Warning: Do not call this if the number of sections has changed since you last
     /// called `reloadData`.
     ///
     /// - Parameter animation: the animation you want.
