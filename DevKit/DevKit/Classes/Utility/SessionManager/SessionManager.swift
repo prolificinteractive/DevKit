@@ -57,10 +57,12 @@ open class SessionManager<T: Codable> {
 
     // MARK: - Private Properties
 
+    /// Keychain service used to access the keychain.
     private lazy var keychain: Keychain = {
         return Keychain(service: bundleIdentifer)
     }()
 
+    /// Bundle identifier of the app.
     private var bundleIdentifer: String {
         guard let identifier = Bundle.main.bundleIdentifier else {
             return "com.default"
@@ -68,6 +70,7 @@ open class SessionManager<T: Codable> {
         return identifier
     }
 
+    /// Authentication token keychain key.
     private var authTokenKeychainKey: String {
         return bundleIdentifer + ".authtoken"
     }
@@ -78,6 +81,7 @@ open class SessionManager<T: Codable> {
 
     // MARK: - Initialization
 
+    /// Default initializer. Reloads the user stored in the user defaults.
     public init() {
         loadStoredUser()
     }
@@ -95,6 +99,7 @@ open class SessionManager<T: Codable> {
 // MARK: - Private Functions
 private extension SessionManager {
 
+    /// Reloads the user that is stored in the user defaults.
     func loadStoredUser() {
         guard let data = UserDefaults.standard.object(forKey: userKey) as? Data else {
             return
@@ -103,6 +108,10 @@ private extension SessionManager {
         user = try? decoder.decode(T.self, from: data)
     }
 
+    /// Returns the string with the given identifer.
+    ///
+    /// - Parameter identifier: Keychain id used to return the desired string.
+    /// - Returns: Optional string stored in the keychain.
     func keychainString(_ identifier: String) -> String? {
         do {
             return try keychain.getString(identifier)
@@ -112,6 +121,11 @@ private extension SessionManager {
         return nil
     }
 
+    /// Sets the value provided to the keychain.
+    ///
+    /// - Parameters:
+    ///   - identifier: Key identidier of the value.
+    ///   - value: String value to add to the keychain.
     func setKeychainString(_ identifier: String, value: String?) {
         guard let value = value else {
             removeKeychainString(identifier)
@@ -125,6 +139,9 @@ private extension SessionManager {
         }
     }
 
+    /// Removes the keychain string with the given parameter.
+    ///
+    /// - Parameter identifier: Key identifier to remove.
     func removeKeychainString(_ identifier: String) {
         do {
             try keychain.remove(identifier)
