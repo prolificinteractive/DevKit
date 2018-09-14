@@ -9,10 +9,8 @@ after_success:
     - gem install jazzy
     - make documentation
     - cd ..
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep-history: true
-  on:
-    branch: HEAD
+    - git config --global user.email "builds@travis-ci.com"
+    - git config --global user.name "Travis CI"
+    - git add .
+    - git commit -m "Documentation Auto Updated." 
+    - git push origin HEAD https://${GH_TOKEN}@github.com/prolificinteractive/DevKit.git
