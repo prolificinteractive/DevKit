@@ -9,14 +9,16 @@
 import Foundation
 import EventKit
 
-public final class CalendarPermissionsValidator {
+open class CalendarPermissionsValidator {
 
     // MARK: - Public Properties
 
+    /// Permissions delegate.
     public weak var delegate: CalendarPermissionsValidatorDelegate?
 
     // MARK: - Private Properties
 
+    /// Default event store from the EventKit.
     private static var eventStore = EKEventStore()
 
     // MARK: - Public Functions
@@ -31,6 +33,7 @@ public final class CalendarPermissionsValidator {
 
     // MARK: - Initialization
 
+    /// Default initializer
     public init() { }
     
 }

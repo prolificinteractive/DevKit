@@ -108,6 +108,11 @@ Collection of commonly used swift code.
     sp.subspec 'UIColorExtension' do |ssp|
         ssp.source_files = 'DevKit/DevKit/Classes/Extensions/UIColorExtension/*'
     end
+
+    # UIImage Extension
+    sp.subspec 'UIImageExtension' do |ssp|
+        ssp.source_files = 'DevKit/DevKit/Classes/Extensions/UIImageExtension/*'
+    end
   end
 
 # ==== Shared Options =======================================================================================================

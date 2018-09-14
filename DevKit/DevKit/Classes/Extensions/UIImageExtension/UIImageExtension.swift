@@ -8,6 +8,10 @@
 
 import UIKit
 
+/// Collection of all UIImage Extensions.
+///
+/// **Subspec: Extensions/UIImageExtension**
+///
 extension UIImage {
     
     /// Returns an image with a color.
