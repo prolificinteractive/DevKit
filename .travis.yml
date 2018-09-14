@@ -5,7 +5,6 @@ xcode_scheme: DevKit
 xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
 before_install:
     - cd DevKit && pod install
-after_success:
     - gem install jazzy
     - make documentation
     - cd ..
@@ -14,4 +13,4 @@ after_success:
     - git checkout -b gh-pages
     - git add .
     - git commit -m "Documentation Generated - ${TRAVIS_BUILD_NUMBER}"
-    - git push --quiet --set-upstream origin gh-pages https://${GH_TOKEN}@github.com/prolificinteractive/DevKit.git
+    - git push https://${GH_TOKEN}@github.com/prolificinteractive/DevKit.git gh_pages
