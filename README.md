@@ -1,6 +1,6 @@
 # DevKit
 
-[![CI Status](https://img.shields.io/travis/prolificinteractive.com/DevKit.svg?style=flat)](https://travis-ci.org/jgsamudio/DevKit)
+[![CI Status](https://img.shields.io/travis/prolificinteractive/DevKit.svg?style=flat)](https://travis-ci.org/prolificinteractive/DevKit)
 
 ## Description
 
