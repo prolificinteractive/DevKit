@@ -10,7 +10,7 @@ import UIKit
 import Photos
 
 /// The Camera & Photo Library Permissions Validator.
-public final class CameraPhotoLibraryPermissionsValidator {
+open class CameraPhotoLibraryPermissionsValidator {
     
     // MARK: - Private Properties
     
@@ -18,14 +18,17 @@ public final class CameraPhotoLibraryPermissionsValidator {
     
     // MARK: - Initialization
     
-    init(viewController: UIViewController) {
+    /// Default initializer of the class.
+    ///
+    /// - Parameter viewController: Current top view controller used to display alerts if needed.
+    public init(viewController: UIViewController) {
         self.viewController = viewController
     }
     
     // MARK: - Public Functions
     
     /// Checks the camera's permissions status.
-    func checkCameraPermissions() {
+    public func checkCameraPermissions() {
         let cameraStatus = AVCaptureDevice.authorizationStatus(for: .video)
         switch cameraStatus {
         case .notDetermined:
@@ -40,7 +43,7 @@ public final class CameraPhotoLibraryPermissionsValidator {
     }
     
     /// Checks the photo library's permissions status.
-    func checkPhotoLibraryPermissions() {
+    public func checkPhotoLibraryPermissions() {
         let photoLibraryPermissionStatus = PHPhotoLibrary.authorizationStatus()
         switch photoLibraryPermissionStatus {
         case .notDetermined:
