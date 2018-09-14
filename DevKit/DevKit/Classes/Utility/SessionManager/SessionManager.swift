@@ -77,6 +77,7 @@ open class SessionManager<T: Codable> {
 
     // MARK: - Constants
 
+    /// User key to access the user object from the UserDefaults.
     private let userKey = "user"
 
     // MARK: - Initialization

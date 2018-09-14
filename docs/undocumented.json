@@ -127,13 +127,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Utility/SessionManager/SessionManager.swift",
-      "line": 80,
-      "symbol": "SessionManager.userKey",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/jonathansamudio/Prolific-Projects/DevKit/DevKit/DevKit/Classes/Utility/Validators/CalendarPermissionsValidator/CalendarPermissionsValidator.swift",
       "line": null,
       "symbol": "CalendarPermissionsValidator",

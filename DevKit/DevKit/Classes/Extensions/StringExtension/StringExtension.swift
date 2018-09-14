@@ -8,6 +8,10 @@
 
 import Foundation
 
+/// Collection of all String Extensions.
+///
+/// **Subspec: Extensions/StringExtension**
+///
 extension String {
 
     /// Generates a localized string with the given parameters.
