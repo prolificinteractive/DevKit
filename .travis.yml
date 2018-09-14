@@ -13,4 +13,4 @@ after_success:
     - git config --global user.name "Travis CI"
     - git add .
     - git commit -m "Documentation Auto Updated." 
-    - git push https://f5850ad0e17640541fec6535fb6fc0c363bfb5f4@github.com/prolificinteractive/DevKit.git HEAD
+    - git push https://${GH_TOKEN}@github.com/prolificinteractive/DevKit.git HEAD
