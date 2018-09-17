@@ -21,7 +21,6 @@ import EventKit
 /// }()
 ///
 /// calendarPermissionsValidator.addEventToCalendar(eventInfo: eventCalendarInfo)
-///
 /// ```
 ///
 /// The CalendarPermissionsValidator uses the default EKEventStore to add an event to a user's calendar if the necessary

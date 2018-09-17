@@ -74,8 +74,6 @@ Once all classes and files are added to the project and documented make sure to:
 
 * Ensure the classes are added to the main DevKit Xcode workspace at ./DevKit/DevKit.xcworkspace
 
-* Run `make documentation` at ./DevKit
-
 All new additions should be code reviewed before merging into master.
 
 

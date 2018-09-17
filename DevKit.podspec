@@ -44,6 +44,8 @@ Collection of commonly used swift code.
 
   s.subspec 'Utility' do |sp|
 
+    sp.source_files = 'DevKit/DevKit/Classes/Utility/*'
+
     # CalendarPermissionsValidator
     sp.subspec 'CalendarPermissionsValidator' do |ssp|
       ssp.ios.deployment_target = '11.0'
