@@ -134,6 +134,26 @@ Collection of commonly used swift code.
     sp.subspec 'UIImageExtension' do |ssp|
         ssp.source_files = 'DevKit/DevKit/Classes/Extensions/UIImageExtension/*'
     end
+
+    # TextStyle Extension
+    sp.subspec 'TextStyleExtension' do |ssp|
+        ssp.source_files = 'DevKit/DevKit/Classes/Extensions/TextStyleExtension/*'
+    end
+
+    # DateFormatter Extension
+    sp.subspec 'DateFormatterExtension' do |ssp|
+        ssp.source_files = 'DevKit/DevKit/Classes/Extensions/DateFormatterExtension/*'
+    end
+
+    # CALayer Extension
+    sp.subspec 'CALayerExtension' do |ssp|
+        ssp.source_files = 'DevKit/DevKit/Classes/Extensions/CALayerExtension/*'
+    end
+
+    # Bundle Extension
+    sp.subspec 'BundleExtension' do |ssp|
+        ssp.source_files = 'DevKit/DevKit/Classes/Extensions/BundleExtension/*'
+    end
   end
 
 # ==== Shared Options ============================================

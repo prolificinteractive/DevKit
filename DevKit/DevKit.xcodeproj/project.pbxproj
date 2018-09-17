@@ -15,10 +15,14 @@
 		20076D79214FF6E9005CC155 /* DataDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D74214FF6E9005CC155 /* DataDecoder.swift */; };
 		20076D7D214FF8B4005CC155 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D7C214FF8B3005CC155 /* APIError.swift */; };
 		20076D7F214FF8DD005CC155 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D7E214FF8DD005CC155 /* ErrorResponse.swift */; };
-		20076D81214FF910005CC155 /* WickedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D80214FF910005CC155 /* WickedError.swift */; };
 		20076D83214FFE04005CC155 /* BaseKillSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D82214FFE04005CC155 /* BaseKillSwitchView.swift */; };
 		20076D85214FFE15005CC155 /* KillSwitchProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D84214FFE15005CC155 /* KillSwitchProviderProtocol.swift */; };
 		20076D8B215036D8005CC155 /* MockHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D8A215036D8005CC155 /* MockHTTPClient.swift */; };
+		20076D9821504CCE005CC155 /* DefaultNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D9721504CCD005CC155 /* DefaultNetworkError.swift */; };
+		20076DA121504D0D005CC155 /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D9A21504D0D005CC155 /* DateFormatterExtension.swift */; };
+		20076DA221504D0D005CC155 /* TextStyleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D9C21504D0D005CC155 /* TextStyleExtension.swift */; };
+		20076DA321504D0D005CC155 /* CALayerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D9E21504D0D005CC155 /* CALayerExtensions.swift */; };
+		20076DA421504D0D005CC155 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076DA021504D0D005CC155 /* BundleExtension.swift */; };
 		20524697209B9C250067A328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20524696209B9C250067A328 /* AppDelegate.swift */; };
 		20524699209B9C250067A328 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20524698209B9C250067A328 /* ViewController.swift */; };
 		2052469C209B9C250067A328 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2052469A209B9C250067A328 /* Main.storyboard */; };
@@ -88,10 +92,14 @@
 		20076D7A214FF714005CC155 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		20076D7C214FF8B3005CC155 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		20076D7E214FF8DD005CC155 /* ErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
-		20076D80214FF910005CC155 /* WickedError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WickedError.swift; sourceTree = "<group>"; };
 		20076D82214FFE04005CC155 /* BaseKillSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseKillSwitchView.swift; sourceTree = "<group>"; };
 		20076D84214FFE15005CC155 /* KillSwitchProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillSwitchProviderProtocol.swift; sourceTree = "<group>"; };
 		20076D8A215036D8005CC155 /* MockHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockHTTPClient.swift; sourceTree = "<group>"; };
+		20076D9721504CCD005CC155 /* DefaultNetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultNetworkError.swift; sourceTree = "<group>"; };
+		20076D9A21504D0D005CC155 /* DateFormatterExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterExtension.swift; sourceTree = "<group>"; };
+		20076D9C21504D0D005CC155 /* TextStyleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextStyleExtension.swift; sourceTree = "<group>"; };
+		20076D9E21504D0D005CC155 /* CALayerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerExtensions.swift; sourceTree = "<group>"; };
+		20076DA021504D0D005CC155 /* BundleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		20524693209B9C250067A328 /* DevKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20524696209B9C250067A328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20524698209B9C250067A328 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -180,8 +188,8 @@
 		20076D6F214FF6CB005CC155 /* HTTPClient */ = {
 			isa = PBXGroup;
 			children = (
+				20076D9721504CCD005CC155 /* DefaultNetworkError.swift */,
 				20076D8A215036D8005CC155 /* MockHTTPClient.swift */,
-				20076D80214FF910005CC155 /* WickedError.swift */,
 				20076D7E214FF8DD005CC155 /* ErrorResponse.swift */,
 				20076D70214FF6E9005CC155 /* AlamofireHTTPClient.swift */,
 				20076D74214FF6E9005CC155 /* DataDecoder.swift */,
@@ -198,6 +206,38 @@
 				20076D7C214FF8B3005CC155 /* APIError.swift */,
 			);
 			path = APIError;
+			sourceTree = "<group>";
+		};
+		20076D9921504D0D005CC155 /* DateFormatterExtension */ = {
+			isa = PBXGroup;
+			children = (
+				20076D9A21504D0D005CC155 /* DateFormatterExtension.swift */,
+			);
+			path = DateFormatterExtension;
+			sourceTree = "<group>";
+		};
+		20076D9B21504D0D005CC155 /* TextStyleExtension */ = {
+			isa = PBXGroup;
+			children = (
+				20076D9C21504D0D005CC155 /* TextStyleExtension.swift */,
+			);
+			path = TextStyleExtension;
+			sourceTree = "<group>";
+		};
+		20076D9D21504D0D005CC155 /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				20076D9E21504D0D005CC155 /* CALayerExtensions.swift */,
+			);
+			path = CALayer;
+			sourceTree = "<group>";
+		};
+		20076D9F21504D0D005CC155 /* BundleExtension */ = {
+			isa = PBXGroup;
+			children = (
+				20076DA021504D0D005CC155 /* BundleExtension.swift */,
+			);
+			path = BundleExtension;
 			sourceTree = "<group>";
 		};
 		2052468A209B9C250067A328 = {
@@ -322,6 +362,10 @@
 		205246DA209BA86F0067A328 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				20076D9F21504D0D005CC155 /* BundleExtension */,
+				20076D9D21504D0D005CC155 /* CALayer */,
+				20076D9921504D0D005CC155 /* DateFormatterExtension */,
+				20076D9B21504D0D005CC155 /* TextStyleExtension */,
 				20524722209BB33E0067A328 /* StringExtension */,
 				20524700209BA8E20067A328 /* UIAlertControllerExtension */,
 				20524701209BA9020067A328 /* UIApplicationExtension */,
@@ -838,14 +882,16 @@
 			files = (
 				205246D8209BA3480067A328 /* ShadowOptions.swift in Sources */,
 				205C74EE2135A3D700AF0B52 /* KeyboardObserver.swift in Sources */,
+				20076DA121504D0D005CC155 /* DateFormatterExtension.swift in Sources */,
 				205246CC209B9D2B0067A328 /* CalendarPermissionsValidatorDelegate.swift in Sources */,
 				8E8F4AB7213869E000E2FD66 /* LinkedList.swift in Sources */,
 				20524724209BB3550067A328 /* StringExtension.swift in Sources */,
 				205246F0209BA8B40067A328 /* UIScreenExtension.swift in Sources */,
 				205246F9209BA8B40067A328 /* UICollectionViewExtension.swift in Sources */,
-				20076D81214FF910005CC155 /* WickedError.swift in Sources */,
 				205246FB209BA8B40067A328 /* UITableViewExtension.swift in Sources */,
 				205C74EF2135A3D700AF0B52 /* ReusableView.swift in Sources */,
+				20076DA221504D0D005CC155 /* TextStyleExtension.swift in Sources */,
+				20076DA321504D0D005CC155 /* CALayerExtensions.swift in Sources */,
 				205246FA209BA8B40067A328 /* UIAlertControllerExtension.swift in Sources */,
 				205246CD209B9D2B0067A328 /* EventCalendarInfo.swift in Sources */,
 				20524699209B9C250067A328 /* ViewController.swift in Sources */,
@@ -857,6 +903,7 @@
 				205246FD209BA8B40067A328 /* UIColorExtension.swift in Sources */,
 				205246F7209BA8B40067A328 /* UIStackViewExtension.swift in Sources */,
 				20076D79214FF6E9005CC155 /* DataDecoder.swift in Sources */,
+				20076DA421504D0D005CC155 /* BundleExtension.swift in Sources */,
 				205246FF209BA8B40067A328 /* UISearchBarExtension.swift in Sources */,
 				20524721209BB3240067A328 /* ImagePickerValidator.swift in Sources */,
 				205246CB209B9D2B0067A328 /* CalendarPermissionsValidator.swift in Sources */,
@@ -878,6 +925,7 @@
 				205246F3209BA8B40067A328 /* UIViewControllerExtension.swift in Sources */,
 				20987060214FF1A7008B8B0C /* KillSwitchProvider.swift in Sources */,
 				20076D75214FF6E9005CC155 /* AlamofireHTTPClient.swift in Sources */,
+				20076D9821504CCE005CC155 /* DefaultNetworkError.swift in Sources */,
 				205246F2209BA8B40067A328 /* UIFontExtension.swift in Sources */,
 				209955A4214AD81100674465 /* SessionManager.swift in Sources */,
 			);
