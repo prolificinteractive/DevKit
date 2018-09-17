@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		00787CE99E8D74A942F9BE85 /* Pods_DevKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8FB83E8BE3E5509A2577E0 /* Pods_DevKitTests.framework */; };
+		20076D75214FF6E9005CC155 /* AlamofireHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D70214FF6E9005CC155 /* AlamofireHTTPClient.swift */; };
+		20076D76214FF6E9005CC155 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D71214FF6E9005CC155 /* APIError.swift */; };
+		20076D77214FF6E9005CC155 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D72214FF6E9005CC155 /* HTTPClient.swift */; };
+		20076D78214FF6E9005CC155 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D73214FF6E9005CC155 /* HTTPRequest.swift */; };
+		20076D79214FF6E9005CC155 /* DataDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D74214FF6E9005CC155 /* DataDecoder.swift */; };
+		20076D7D214FF8B4005CC155 /* BackendError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D7C214FF8B3005CC155 /* BackendError.swift */; };
+		20076D7F214FF8DD005CC155 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D7E214FF8DD005CC155 /* ErrorResponse.swift */; };
+		20076D81214FF910005CC155 /* WickedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D80214FF910005CC155 /* WickedError.swift */; };
 		20524697209B9C250067A328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20524696209B9C250067A328 /* AppDelegate.swift */; };
 		20524699209B9C250067A328 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20524698209B9C250067A328 /* ViewController.swift */; };
 		2052469C209B9C250067A328 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2052469A209B9C250067A328 /* Main.storyboard */; };
@@ -40,6 +48,7 @@
 		20524724209BB3550067A328 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20524723209BB3550067A328 /* StringExtension.swift */; };
 		205C74EE2135A3D700AF0B52 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205C74EB2135A3D700AF0B52 /* KeyboardObserver.swift */; };
 		205C74EF2135A3D700AF0B52 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205C74ED2135A3D700AF0B52 /* ReusableView.swift */; };
+		20987060214FF1A7008B8B0C /* KillSwitchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2098705F214FF1A7008B8B0C /* KillSwitchProvider.swift */; };
 		209955A4214AD81100674465 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209955A3214AD81100674465 /* SessionManager.swift */; };
 		209955A5214C0F5E00674465 /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F4AC12139C87300E2FD66 /* StackTests.swift */; };
 		209955A6214C0F5E00674465 /* LinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F4ABB2138731500E2FD66 /* LinkedListTests.swift */; };
@@ -68,6 +77,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20076D70214FF6E9005CC155 /* AlamofireHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireHTTPClient.swift; sourceTree = "<group>"; };
+		20076D71214FF6E9005CC155 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		20076D72214FF6E9005CC155 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		20076D73214FF6E9005CC155 /* HTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		20076D74214FF6E9005CC155 /* DataDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataDecoder.swift; sourceTree = "<group>"; };
+		20076D7A214FF714005CC155 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		20076D7C214FF8B3005CC155 /* BackendError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendError.swift; sourceTree = "<group>"; };
+		20076D7E214FF8DD005CC155 /* ErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		20076D80214FF910005CC155 /* WickedError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WickedError.swift; sourceTree = "<group>"; };
 		20524693209B9C250067A328 /* DevKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20524696209B9C250067A328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20524698209B9C250067A328 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +125,7 @@
 		205C74EB2135A3D700AF0B52 /* KeyboardObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
 		205C74ED2135A3D700AF0B52 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		20987058214C4B04008B8B0C /* DevKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = DevKit.podspec; path = ../../DevKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2098705F214FF1A7008B8B0C /* KillSwitchProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillSwitchProvider.swift; sourceTree = "<group>"; };
 		209955A3214AD81100674465 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		3939CE1C2FCEB6AE9D5E4974 /* Pods_DevKitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevKitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		439C165EDA375DDFA28D0AB6 /* Pods-DevKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevKit/Pods-DevKit.release.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +171,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20076D6F214FF6CB005CC155 /* HTTPClient */ = {
+			isa = PBXGroup;
+			children = (
+				20076D80214FF910005CC155 /* WickedError.swift */,
+				20076D7E214FF8DD005CC155 /* ErrorResponse.swift */,
+				20076D7C214FF8B3005CC155 /* BackendError.swift */,
+				20076D70214FF6E9005CC155 /* AlamofireHTTPClient.swift */,
+				20076D71214FF6E9005CC155 /* APIError.swift */,
+				20076D74214FF6E9005CC155 /* DataDecoder.swift */,
+				20076D72214FF6E9005CC155 /* HTTPClient.swift */,
+				20076D73214FF6E9005CC155 /* HTTPRequest.swift */,
+			);
+			path = HTTPClient;
+			sourceTree = "<group>";
+		};
 		2052468A209B9C250067A328 = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +211,7 @@
 		20524695209B9C250067A328 /* DevKit */ = {
 			isa = PBXGroup;
 			children = (
+				20076D7A214FF714005CC155 /* README.md */,
 				20987058214C4B04008B8B0C /* DevKit.podspec */,
 				20524696209B9C250067A328 /* AppDelegate.swift */,
 				20524698209B9C250067A328 /* ViewController.swift */,
@@ -416,6 +451,8 @@
 		2052471A209BB2F30067A328 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				20076D6F214FF6CB005CC155 /* HTTPClient */,
+				2098705E214FF194008B8B0C /* KillSwitchProvider */,
 				209955A2214AD7FC00674465 /* SessionManager */,
 				205C74EA2135A3D700AF0B52 /* KeyboardObserver */,
 				205C74EC2135A3D700AF0B52 /* ReusableView */,
@@ -464,6 +501,14 @@
 				205C74ED2135A3D700AF0B52 /* ReusableView.swift */,
 			);
 			path = ReusableView;
+			sourceTree = "<group>";
+		};
+		2098705E214FF194008B8B0C /* KillSwitchProvider */ = {
+			isa = PBXGroup;
+			children = (
+				2098705F214FF1A7008B8B0C /* KillSwitchProvider.swift */,
+			);
+			path = KillSwitchProvider;
 			sourceTree = "<group>";
 		};
 		209955A2214AD7FC00674465 /* SessionManager */ = {
@@ -727,12 +772,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DevKit/Pods-DevKit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bellerophon/Bellerophon.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/Marker/Marker.framework",
 				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bellerophon.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Marker.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
@@ -792,22 +841,29 @@
 				20524724209BB3550067A328 /* StringExtension.swift in Sources */,
 				205246F0209BA8B40067A328 /* UIScreenExtension.swift in Sources */,
 				205246F9209BA8B40067A328 /* UICollectionViewExtension.swift in Sources */,
+				20076D81214FF910005CC155 /* WickedError.swift in Sources */,
 				205246FB209BA8B40067A328 /* UITableViewExtension.swift in Sources */,
 				205C74EF2135A3D700AF0B52 /* ReusableView.swift in Sources */,
 				205246FA209BA8B40067A328 /* UIAlertControllerExtension.swift in Sources */,
 				205246CD209B9D2B0067A328 /* EventCalendarInfo.swift in Sources */,
 				20524699209B9C250067A328 /* ViewController.swift in Sources */,
 				205246F6209BA8B40067A328 /* UIBarButtonExtension.swift in Sources */,
+				20076D76214FF6E9005CC155 /* APIError.swift in Sources */,
+				20076D77214FF6E9005CC155 /* HTTPClient.swift in Sources */,
+				20076D7F214FF8DD005CC155 /* ErrorResponse.swift in Sources */,
 				205246FC209BA8B40067A328 /* UINavigationControllerExtension.swift in Sources */,
 				205246FD209BA8B40067A328 /* UIColorExtension.swift in Sources */,
 				205246F7209BA8B40067A328 /* UIStackViewExtension.swift in Sources */,
+				20076D79214FF6E9005CC155 /* DataDecoder.swift in Sources */,
 				205246FF209BA8B40067A328 /* UISearchBarExtension.swift in Sources */,
 				20524721209BB3240067A328 /* ImagePickerValidator.swift in Sources */,
 				205246CB209B9D2B0067A328 /* CalendarPermissionsValidator.swift in Sources */,
+				20076D78214FF6E9005CC155 /* HTTPRequest.swift in Sources */,
 				2052471F209BB3240067A328 /* ImagePickerDelegate.swift in Sources */,
 				205246F1209BA8B40067A328 /* UIApplicationExtension.swift in Sources */,
 				205246EF209BA8B40067A328 /* UIScrollViewExtension.swift in Sources */,
 				205246F8209BA8B40067A328 /* UIImageExtension.swift in Sources */,
+				20076D7D214FF8B4005CC155 /* BackendError.swift in Sources */,
 				205246D5209BA3200067A328 /* TransitioningNavigationViewOptions.swift in Sources */,
 				8E8F4AB52138698B00E2FD66 /* LinkedListNode.swift in Sources */,
 				205246D3209B9E8F0067A328 /* TransitioningNavigationView.swift in Sources */,
@@ -815,6 +871,8 @@
 				8E8F4ABF2139C6E300E2FD66 /* Stack.swift in Sources */,
 				20524720209BB3240067A328 /* CameraPhotoLibraryPermissionsValidator.swift in Sources */,
 				205246F3209BA8B40067A328 /* UIViewControllerExtension.swift in Sources */,
+				20987060214FF1A7008B8B0C /* KillSwitchProvider.swift in Sources */,
+				20076D75214FF6E9005CC155 /* AlamofireHTTPClient.swift in Sources */,
 				205246F2209BA8B40067A328 /* UIFontExtension.swift in Sources */,
 				209955A4214AD81100674465 /* SessionManager.swift in Sources */,
 			);
