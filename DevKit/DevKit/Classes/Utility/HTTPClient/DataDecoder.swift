@@ -89,7 +89,7 @@ private extension DataDecoder {
                 print(decodeError)
                 print(error)
                 #endif
-                return Result.failure(WickedError(reason: error.response))
+                return Result.failure(DefaultNetworkError(reason: error.response))
             }
         } catch {
             #if DEBUG

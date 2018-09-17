@@ -14,7 +14,39 @@ import Foundation
 ///
 extension String {
 
-    // MARK: - General Extension Functions
+    /// Initialization using unicode name.
+    ///
+    /// - Parameter unicodeNameString: Unicode name as string.
+    public init(unicodeNameString: String) {
+        if let unicode = Int(unicodeNameString.replacingOccurrences(of: "U+", with: ""), radix: 16),
+            let scalar = UnicodeScalar(unicode) {
+            self = String(scalar)
+        } else {
+            self = ""
+        }
+    }
+
+    /// Returns a string if the optional string instance is not nil or empty, otherwise nil.
+    public var whitespaceTrimmedAndNilIfEmpty: String? {
+        return whitespaceTrimmed.isEmpty ? nil : self
+    }
+
+    /// Returns a string with leading and trailing whitespace trimmed.
+    public var whitespaceTrimmed: String {
+        return trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+
+    /// New string, capitalizes first letter
+    ///
+    /// - Returns: A string with the first letter capitalized
+    public func capitalizingFirstLetter() -> String {
+        return prefix(1).uppercased() + dropFirst()
+    }
+
+    /// Mutates self to be the capitalized first letter version
+    public mutating func capitalizeFirstLetter() {
+        self = self.capitalizingFirstLetter()
+    }
 
     /// Generates a localized string with the given parameters.
     ///
@@ -23,7 +55,7 @@ extension String {
     public func localized(comment: String) -> String {
         return NSLocalizedString(self, comment: comment)
     }
-    
+
     /// Removes the trailing line after the given token.
     ///
     /// - Parameter token: Token to search for.
@@ -36,43 +68,67 @@ extension String {
         }
         return self
     }
-    
-    /// Returns a string with leading and trailing whitespace trimmed.
-    ///
-    /// - Returns: String.
-    public func whitespaceTrimmed() -> String {
-        return self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+
+    /// Returns nil if empty, quite useful when "" means the same as nil to you.
+    public var nilIfEmpty: String? {
+        return isEmpty ? nil : self
     }
-    
+
+    /// Is this string a valid URL?
+    public var isValidUrl: Bool {
+        let detector = try? NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue)
+        let matches = detector?.matches(in: self, options: [], range: NSRange(location: 0, length: utf16.count))
+        if let matchUrl = matches?.first?.url, let url = url {
+            return url.absoluteString == matchUrl.absoluteString
+        }
+        return false
+    }
+
+    /// Attempt to build a url with this string.
+    public var url: URL? {
+        return URL(string: urlString)
+    }
+
+    /// Attempt to build a url string with this string, check for http because no one cares about that.
+    public var urlString: String {
+        var urlString = self
+        if !(urlString.contains("://")) {
+            urlString = "https://\(urlString)"
+        }
+        return urlString
+    }
+
 }
 
 extension String {
 
     // MARK: - Validation
-    
-    /// Determines if input string is valid and not empty.
-    ///
-    /// - Parameter input: String.
-    /// - Returns: True, if not empty, false otherwise.
-    public static func isValidInput(_ input: String?) -> Bool {
-        return !(input?.whitespaceTrimmed().isEmpty ?? true)
+
+    /// Determines if string is not empty and valid.
+    public var isValidString: Bool {
+        return !whitespaceTrimmed.isEmpty
     }
-    
-    /// Determines if input string is a valid email address.
-    ///
-    /// - Parameter email: Email address.
-    /// - Returns: True, if valid email, false otherwise.
-    public static func validateEmail(_ email: String) -> Bool {
+
+    /// Determines if email is valid.
+    public var isValidEmail: Bool {
         let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-        return NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: email)
+        return NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: self)
     }
-    
-    /// Determines if input string is a valid password entry.
+
+    /// Determines is password is valid.
+    public var isValidPassword: Bool {
+        return count > 0
+    }
+
+    /// Determines if input string is not nil and valid.
     ///
-    /// - Parameter password: Password.
-    /// - Returns: True, if valid password, false otherwise.
-    public static func validatePassword(_ password: String) -> Bool {
-        return password.count > 0
+    /// - Parameter input: Optional string.
+    /// - Returns: True, if not nil and valid, false otherwise.
+    public static func isValidInput(_ input: String?) -> Bool {
+        guard let input = input, input.isValidString else {
+            return false
+        }
+        return true
     }
 
 }
@@ -81,16 +137,6 @@ extension String {
 
     // MARK: - Social Media URLs
 
-    /// Extracts username from given url string.
-    ///
-    /// - Returns: Username if included in path.
-    public func extractedUserName() -> String {
-        guard let url = URL(string: self) else {
-            return ""
-        }
-        return url.lastPathComponent.isEmpty ? "" : url.lastPathComponent
-    }
-    
     /// Returns a URL string given a Twitter handle.
     ///
     /// - Parameter username: Twitter handle.
@@ -99,11 +145,11 @@ extension String {
         guard let username = username else {
             return nil
         }
-        
+
         guard isValidInput(username) else {
             return ""
         }
-        
+
         return "https://twitter.com/\(username)"
     }
 
@@ -115,14 +161,14 @@ extension String {
         guard let username = username else {
             return nil
         }
-        
+
         guard isValidInput(username) else {
             return ""
         }
-        
+
         return "https://facebook.com/\(username)"
     }
-    
+
     /// Returns a URL string given an Instagram username.
     ///
     /// - Parameter username: Instagram username.
@@ -131,12 +177,33 @@ extension String {
         guard let username = username else {
             return nil
         }
-        
+
         guard isValidInput(username) else {
             return ""
         }
-        
+
         return "https://instagram.com/\(username)"
     }
-    
+
+    /// Determines if the handles is valid.
+    public var isValidHandle: Bool {
+        return !contains("@") && isValidSocialLink
+    }
+
+    /// Determine if the social link is valid.
+    public var isValidSocialLink: Bool {
+        let httpCount = components(separatedBy: "/").filter { $0.contains("http") }.count
+        return httpCount == 1 && !contains("www.")
+    }
+
+    /// Extracts username from given url string.
+    ///
+    /// - Returns: Username if included in path.
+    public func extractedUserName() -> String {
+        guard let url = URL(string: self) else {
+            return ""
+        }
+        return url.lastPathComponent.isEmpty ? "" : url.lastPathComponent
+    }
+
 }

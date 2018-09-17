@@ -1,5 +1,5 @@
 //
-//  WickedError.swift
+//  DefaultNetworkError.swift
 //  TheWing
 //
 //  Created by Paul Jones on 8/13/18.
@@ -8,14 +8,14 @@
 
 import Foundation
 
-open class WickedError: NSObject, LocalizedError {
+open class DefaultNetworkError: NSObject, LocalizedError {
     
     // MARK: - Public Properties
     
     public var reason: String? = ""
 
     open override var description: String {
-        return reason ?? "ErrorLocalization.networkErrorBodyText"
+        return reason ?? ""
     }
     
     public var errorDescription: String? {
