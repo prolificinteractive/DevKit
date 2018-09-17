@@ -30,7 +30,7 @@ Collection of commonly used swift code.
 
   s.source_files = 'DevKit/DevKit/Classes/*'
 
-# ==== Views ================================================================================================================
+# ==== Views ============================================
 
   # TransitioningNavigationView
   s.subspec 'TransitioningNavigationView' do |sp|
@@ -40,7 +40,7 @@ Collection of commonly used swift code.
     sp.source_files = 'DevKit/DevKit/Classes/Views/TransitioningNavigationView/*'
   end
 
-# ==== Utility ==============================================================================================================
+# ==== Utility ============================================
 
   s.subspec 'Utility' do |sp|
 
@@ -74,9 +74,21 @@ Collection of commonly used swift code.
         ssp.source_files = 'DevKit/DevKit/Classes/Utility/SessionManager/*'
         ssp.dependency 'KeychainAccess', '3.1.0'
     end
+
+    # KillSwitchProvider
+    sp.subspec 'KillSwitchProvider' do |ssp|
+        ssp.source_files = 'DevKit/DevKit/Classes/Utility/KillSwitchProvider/*'
+        ssp.dependency 'Bellerophon', '1.2.0'
+    end
+
+    # HTTPClient
+    sp.subspec 'HTTPClient' do |ssp|
+        ssp.source_files = 'DevKit/DevKit/Classes/Utility/HTTPClient/*'
+        ssp.dependency 'Alamofire', '4.7.2'
+    end
   end
 
-# ==== Extensions ===========================================================================================================
+# ==== Extensions ============================================
 
   s.subspec 'Extensions' do |sp|
 
@@ -115,7 +127,7 @@ Collection of commonly used swift code.
     end
   end
 
-# ==== Shared Options =======================================================================================================
+# ==== Shared Options ============================================
 
   s.subspec 'SharedOptions' do |sp|
 
@@ -125,7 +137,7 @@ Collection of commonly used swift code.
     end
   end
 
-# ==== Data Structures  =====================================================================================================
+# ==== Data Structures  ============================================
 
   s.subspec 'DataStructures' do |sp|
 
