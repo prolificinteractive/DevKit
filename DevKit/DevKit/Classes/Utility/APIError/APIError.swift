@@ -8,15 +8,29 @@
 
 import Foundation
 
+/// Custom network API error model.
+///
+/// **Subspec: Utility/APIError**
+///
+/// ```
+/// APIError(code: 0, message: "Something went wrong!")
+/// ```
+///
+/// The APIError is a model that represents a network error that comes from an API response.
+///
 public struct APIError: Codable {
-    public let code: Int
-    public let message: String
-    
-    enum CodingKeys: String, CodingKey {
-        case code = "code"
-        case message = "message"
-    }
 
+    /// Network error code.
+    public let code: Int
+
+    /// Message of the network error.
+    public let message: String
+
+    /// Default initializer for the model.
+    ///
+    /// - Parameters:
+    ///   - code: Network error code.
+    ///   - message: Message of the network error.
     public init(code: Int, message: String) {
         self.code = code
         self.message = message

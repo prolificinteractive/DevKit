@@ -18,6 +18,7 @@
 		20076D81214FF910005CC155 /* WickedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D80214FF910005CC155 /* WickedError.swift */; };
 		20076D83214FFE04005CC155 /* BaseKillSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D82214FFE04005CC155 /* BaseKillSwitchView.swift */; };
 		20076D85214FFE15005CC155 /* KillSwitchProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D84214FFE15005CC155 /* KillSwitchProviderProtocol.swift */; };
+		20076D8B215036D8005CC155 /* MockHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D8A215036D8005CC155 /* MockHTTPClient.swift */; };
 		20524697209B9C250067A328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20524696209B9C250067A328 /* AppDelegate.swift */; };
 		20524699209B9C250067A328 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20524698209B9C250067A328 /* ViewController.swift */; };
 		2052469C209B9C250067A328 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2052469A209B9C250067A328 /* Main.storyboard */; };
@@ -90,6 +91,7 @@
 		20076D80214FF910005CC155 /* WickedError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WickedError.swift; sourceTree = "<group>"; };
 		20076D82214FFE04005CC155 /* BaseKillSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseKillSwitchView.swift; sourceTree = "<group>"; };
 		20076D84214FFE15005CC155 /* KillSwitchProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillSwitchProviderProtocol.swift; sourceTree = "<group>"; };
+		20076D8A215036D8005CC155 /* MockHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockHTTPClient.swift; sourceTree = "<group>"; };
 		20524693209B9C250067A328 /* DevKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20524696209B9C250067A328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20524698209B9C250067A328 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 		20076D6F214FF6CB005CC155 /* HTTPClient */ = {
 			isa = PBXGroup;
 			children = (
+				20076D8A215036D8005CC155 /* MockHTTPClient.swift */,
 				20076D80214FF910005CC155 /* WickedError.swift */,
 				20076D7E214FF8DD005CC155 /* ErrorResponse.swift */,
 				20076D70214FF6E9005CC155 /* AlamofireHTTPClient.swift */,
@@ -857,6 +860,7 @@
 				205246FF209BA8B40067A328 /* UISearchBarExtension.swift in Sources */,
 				20524721209BB3240067A328 /* ImagePickerValidator.swift in Sources */,
 				205246CB209B9D2B0067A328 /* CalendarPermissionsValidator.swift in Sources */,
+				20076D8B215036D8005CC155 /* MockHTTPClient.swift in Sources */,
 				20076D78214FF6E9005CC155 /* HTTPRequest.swift in Sources */,
 				2052471F209BB3240067A328 /* ImagePickerDelegate.swift in Sources */,
 				205246F1209BA8B40067A328 /* UIApplicationExtension.swift in Sources */,

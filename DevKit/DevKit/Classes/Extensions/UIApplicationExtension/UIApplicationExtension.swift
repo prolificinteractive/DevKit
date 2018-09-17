@@ -8,6 +8,10 @@
 
 import UIKit
 
+/// Collection of all UIApplication Extensions.
+///
+/// **Subspec: Extensions/UIApplicationExtension**
+///
 extension UIApplication {
     
     /// Opens user's settings.
