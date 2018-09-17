@@ -40,6 +40,11 @@ Collection of commonly used swift code.
     sp.source_files = 'DevKit/DevKit/Classes/Views/TransitioningNavigationView/*'
   end
 
+  # LoadingIndicator
+  s.subspec 'LoadingIndicator' do |sp|
+      sp.source_files = 'DevKit/DevKit/Classes/Views/LoadingIndicator/*'
+  end
+
 # ==== Utility ============================================
 
   s.subspec 'Utility' do |sp|

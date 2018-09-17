@@ -23,6 +23,7 @@
 		20076DA221504D0D005CC155 /* TextStyleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D9C21504D0D005CC155 /* TextStyleExtension.swift */; };
 		20076DA321504D0D005CC155 /* CALayerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D9E21504D0D005CC155 /* CALayerExtensions.swift */; };
 		20076DA421504D0D005CC155 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076DA021504D0D005CC155 /* BundleExtension.swift */; };
+		20076DA72150505B005CC155 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076DA62150505B005CC155 /* LoadingIndicator.swift */; };
 		20524697209B9C250067A328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20524696209B9C250067A328 /* AppDelegate.swift */; };
 		20524699209B9C250067A328 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20524698209B9C250067A328 /* ViewController.swift */; };
 		2052469C209B9C250067A328 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2052469A209B9C250067A328 /* Main.storyboard */; };
@@ -100,6 +101,7 @@
 		20076D9C21504D0D005CC155 /* TextStyleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextStyleExtension.swift; sourceTree = "<group>"; };
 		20076D9E21504D0D005CC155 /* CALayerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerExtensions.swift; sourceTree = "<group>"; };
 		20076DA021504D0D005CC155 /* BundleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		20076DA62150505B005CC155 /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
 		20524693209B9C250067A328 /* DevKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20524696209B9C250067A328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20524698209B9C250067A328 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -238,6 +240,14 @@
 				20076DA021504D0D005CC155 /* BundleExtension.swift */,
 			);
 			path = BundleExtension;
+			sourceTree = "<group>";
+		};
+		20076DA52150504C005CC155 /* LoadingIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				20076DA62150505B005CC155 /* LoadingIndicator.swift */,
+			);
+			path = LoadingIndicator;
 			sourceTree = "<group>";
 		};
 		2052468A209B9C250067A328 = {
@@ -492,6 +502,7 @@
 		20524718209BB2BC0067A328 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				20076DA52150504C005CC155 /* LoadingIndicator */,
 				205246D1209B9E7B0067A328 /* TransitioningNavigationView */,
 			);
 			path = Views;
@@ -890,6 +901,7 @@
 				205246F9209BA8B40067A328 /* UICollectionViewExtension.swift in Sources */,
 				205246FB209BA8B40067A328 /* UITableViewExtension.swift in Sources */,
 				205C74EF2135A3D700AF0B52 /* ReusableView.swift in Sources */,
+				20076DA72150505B005CC155 /* LoadingIndicator.swift in Sources */,
 				20076DA221504D0D005CC155 /* TextStyleExtension.swift in Sources */,
 				20076DA321504D0D005CC155 /* CALayerExtensions.swift in Sources */,
 				205246FA209BA8B40067A328 /* UIAlertControllerExtension.swift in Sources */,
