@@ -8,12 +8,12 @@
 
 import Foundation
 
-struct ErrorResponse: Codable {
-    let error: APIError?
-    let status: String?
-    let response: String?
+public struct ErrorResponse: Codable {
+    public let error: APIError?
+    public let status: String?
+    public let response: String?
     
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         status = try? container.decode(String.self, forKey: .status)
         response = try? container.decode(String.self, forKey: .response)

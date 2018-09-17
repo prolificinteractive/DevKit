@@ -8,30 +8,30 @@
 
 import Alamofire
 
-typealias Headers = [String: String]
+public typealias Headers = [String: String]
 
 /// HTTP request.
-struct HTTPRequest {
+public struct HTTPRequest {
 
 	// MARK: - Public Properties
 
     /// HTTP method.
-    let method: HTTPMethod
+    public let method: HTTPMethod
 
     /// HTTP request base URL.
-    let baseURL: URL
+    public let baseURL: URL
 
     /// HTTP request path.
-    let path: String
+    public let path: String
 
     /// HTTP Query items.
-    let queryItems: [URLQueryItem]?
+    public let queryItems: [URLQueryItem]?
 
     /// HTTP request parameters.
-    let parameters: Parameters?
+    public let parameters: Parameters?
 
     /// HTTP request headers.
-    let headers: Headers?
+    public let headers: Headers?
 
 	// MARK: - Initialization
 
@@ -44,7 +44,7 @@ struct HTTPRequest {
     ///   - query: The HTTP query items to use.
     ///   - parameters: The HTTP parameters to use.
     ///   - headers: The HTTP headers to use.
-    init(method: HTTPMethod,
+    public init(method: HTTPMethod,
          baseURL: URL,
          path: String,
          queryItems: [URLQueryItem]?,
@@ -64,7 +64,7 @@ struct HTTPRequest {
 extension HTTPRequest {
 
     /// HTTP endpoint. Combines the base URL and the path to be used for a HTTP call.
-    var endpoint: URLRequest {
+    public var endpoint: URLRequest {
         guard var components = URLComponents(url: baseURL, resolvingAgainstBaseURL: false) else {
             return URLRequest(url: baseURL.appendingPathComponent(path))
         }

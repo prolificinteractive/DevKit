@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-final class DataDecoder {
+open class DataDecoder {
 
 	// MARK: - Private Properties
 
@@ -19,7 +19,7 @@ final class DataDecoder {
 
 	// MARK: - Initialization
 
-    init(decoder: JSONDecoder = JSONDecoder(), killSwitchProvider: KillSwitchProvider? = nil) {
+    public init(decoder: JSONDecoder = JSONDecoder(), killSwitchProvider: KillSwitchProvider? = nil) {
         self.decoder = decoder
         self.killSwitchProvider = killSwitchProvider
     }
@@ -30,7 +30,7 @@ final class DataDecoder {
     ///
     /// - Parameter data: Data to deserialize.
     /// - Returns: Desired result with the deserialized object.
-    func decodeData<T: Decodable>(_ data: Data?) -> Result<T> {
+    public func decodeData<T: Decodable>(_ data: Data?) -> Result<T> {
         guard let data = data else {
             return Result.failure(APIErrorType.noDataRetreived)
         }

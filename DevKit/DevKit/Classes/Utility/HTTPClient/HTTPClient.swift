@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-protocol HTTPClient {
+public protocol HTTPClient {
     
     /// Performs a network call with the given parameters.
     ///

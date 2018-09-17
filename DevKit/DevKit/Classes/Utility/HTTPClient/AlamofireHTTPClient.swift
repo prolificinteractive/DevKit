@@ -9,7 +9,7 @@
 import Alamofire
 
 /// Alamofire HTTP client that makes network requests to the api.
-final class AlamofireHTTPClient: HTTPClient {
+open class AlamofireHTTPClient: HTTPClient {
 
 	// MARK: - Private Properties
 
@@ -17,7 +17,7 @@ final class AlamofireHTTPClient: HTTPClient {
 
     // MARK: - Initialization
 
-    init(decoder: DataDecoder) {
+    public init(decoder: DataDecoder) {
         self.decoder = decoder
     }
 
@@ -28,7 +28,7 @@ final class AlamofireHTTPClient: HTTPClient {
     /// - Parameters:
     ///   - request: HTTP request to load data.
     ///   - completion: Result handler used when the network call is completed.
-    func perform<T: Decodable>(request: HTTPRequest, completion: @escaping (_ result: Result<T>) -> Void) {
+    public func perform<T: Decodable>(request: HTTPRequest, completion: @escaping (_ result: Result<T>) -> Void) {
         Alamofire.request(request.endpoint).responseJSON { (response) in
             completion(self.decoder.decodeData(response.data))
         }

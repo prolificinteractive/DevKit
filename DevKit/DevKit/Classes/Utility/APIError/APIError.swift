@@ -16,5 +16,10 @@ public struct APIError: Codable {
         case code = "code"
         case message = "message"
     }
+
+    public init(code: Int, message: String) {
+        self.code = code
+        self.message = message
+    }
     
 }

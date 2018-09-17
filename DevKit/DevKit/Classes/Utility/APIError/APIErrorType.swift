@@ -28,7 +28,9 @@ import Bellerophon
 /// }
 /// ```
 ///
-/// When decoding the objects from an API errors can be identified with the APIErrorType. In the example above the APIErrorType is used to identify when no data is returned from the API. The other options allows for identifying failed deserializations and custom error codes through the APIError model.
+/// When decoding the objects from an API errors can be identified with the APIErrorType. In the example above the
+/// APIErrorType is used to identify when no data is returned from the API. The other options allows for identifying failed
+/// deserializations and custom error codes through the APIError model.
 ///
 /// - backend: Custom error message from backend.
 /// - noDataRetreived: Used when the data is nil from the api.
@@ -39,7 +41,7 @@ public enum APIErrorType: Error {
     case deserializationFailed
     
     /// Indicates if the error is recieved from the backend.
-    var isBackendError: Bool {
+    public var isBackendError: Bool {
         switch self {
         case .backend:
             return true
@@ -49,7 +51,7 @@ public enum APIErrorType: Error {
     }
     
     /// Localized description.
-    var localizedDescription: String {
+    public var localizedDescription: String {
         switch self {
         case .backend(let error):
             return "Error \(error.code): \(error.message)"

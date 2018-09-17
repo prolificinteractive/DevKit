@@ -15,7 +15,7 @@ open class BaseKillSwitchView: UIView {
     /// Sets the user message with the given parameter.
     ///
     /// - Parameter message: Message to display to the user.
-    public func setUserMessage(_ message: String) {
+    open func setUserMessage(_ message: String) {
         // Override in sub-class
     }
 

@@ -8,23 +8,23 @@
 
 import Foundation
 
-final class WickedError: NSObject, LocalizedError {
+open class WickedError: NSObject, LocalizedError {
     
     // MARK: - Public Properties
     
-    var reason: String? = ""
-    
-    override var description: String {
+    public var reason: String? = ""
+
+    open override var description: String {
         return reason ?? "ErrorLocalization.networkErrorBodyText"
     }
     
-    var errorDescription: String? {
+    public var errorDescription: String? {
         return description
     }
     
     // MARK: - Initialization
     
-    init(reason: String?) {
+    public init(reason: String?) {
         self.reason = reason
     }
 
