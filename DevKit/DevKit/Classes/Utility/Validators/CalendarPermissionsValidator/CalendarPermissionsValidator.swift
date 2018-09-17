@@ -9,6 +9,24 @@
 import Foundation
 import EventKit
 
+/// Validates the permissions for the app to access the calendar.
+///
+/// **Subspec: Utility/CalendarPermissionsValidator**
+///
+/// ```
+/// private lazy var calendarPermissionsValidator: CalendarPermissionsValidator = {
+///     let validator = CalendarPermissionsValidator()
+///     validator.delegate = self
+///     return validator
+/// }()
+///
+/// calendarPermissionsValidator.addEventToCalendar(eventInfo: eventCalendarInfo)
+///
+/// ```
+///
+/// The CalendarPermissionsValidator uses the default EKEventStore to add an event to a user's calendar if the necessary
+/// permissions are given.
+///
 open class CalendarPermissionsValidator {
 
     // MARK: - Public Properties
@@ -41,6 +59,11 @@ open class CalendarPermissionsValidator {
 // MARK: - Private Functions
 private extension CalendarPermissionsValidator {
 
+    /// Checks the current calendar's permissions.
+    ///
+    /// - Parameters:
+    ///   - status: Status of the calendar permissions.
+    ///   - eventInfo: User's event info to add to calendar.
     func checkCalendarPermissions(status: EKAuthorizationStatus, eventInfo: EventCalendarInfo) {
         switch status {
         case EKAuthorizationStatus.notDetermined:
@@ -52,6 +75,9 @@ private extension CalendarPermissionsValidator {
         }
     }
 
+    /// Requests the current user's permissions with the given parameter.
+    ///
+    /// - Parameter eventInfo: Event info to add to the calendar.
     func requestCalendarPemissions(eventInfo: EventCalendarInfo) {
         CalendarPermissionsValidator.eventStore.requestAccess(to: .event) { (granted, error) in
             if granted, error == nil {
@@ -60,6 +86,9 @@ private extension CalendarPermissionsValidator {
         }
     }
 
+    /// Adds the event infor to the calendar if it is not already found.
+    ///
+    /// - Parameter eventInfo: Event info to add to the calendar.
     func addToCalendar(eventInfo: EventCalendarInfo) {
         guard !eventFoundInCalendar(eventInfo: eventInfo) else {
             delegate?.calendarEventAdded(eventInfo: eventInfo)
@@ -75,6 +104,10 @@ private extension CalendarPermissionsValidator {
         }
     }
 
+    /// Determines if the event info provided is already found in the calendar.
+    ///
+    /// - Parameter eventInfo: Event info to add to the calendar.
+    /// - Returns: Flag that determines if the event was found.
     func eventFoundInCalendar(eventInfo: EventCalendarInfo) -> Bool {
         let eventStore = CalendarPermissionsValidator.eventStore
         let predicate = eventStore.predicateForEvents(withStart: eventInfo.startDate, end: eventInfo.endDate, calendars: nil)
@@ -87,6 +120,10 @@ private extension CalendarPermissionsValidator {
         return eventFound
     }
 
+    /// Generates an EKEvent from the EventCalendarInfo.
+    ///
+    /// - Parameter eventInfo: Event info used to convert to an EKEvent.
+    /// - Returns: EKEvent from the EventCalendarInfo.
     func newEvent(eventInfo: EventCalendarInfo) -> EKEvent {
         let event = EKEvent(eventStore: CalendarPermissionsValidator.eventStore)
         event.title = eventInfo.title
