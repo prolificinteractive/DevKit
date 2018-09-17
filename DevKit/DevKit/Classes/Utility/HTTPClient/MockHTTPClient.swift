@@ -8,11 +8,24 @@
 
 import Alamofire
 
-/// Mock http client handles mocks json requests.
+/// Mock http client handles mocks JSON requests.
+///
+/// **Subspec: Utility/HTTPClient**
+///
+/// ```
+/// mockHTTPClient.perform(jsonFileName: "Events") { (resposnse: Result<[Event]>) in
+///     // Handle response.
+/// }
+/// ```
+///
+/// The MockHTTPClient can load and decode the contents of a JSON file into a swift network model. The JSON file needs to be
+/// within the project directory.
+///
 open class MockHTTPClient {
 
 	// MARK: - Private Properties
 
+    /// Data decoder used to decode the JSON files.
     private static let decoder = DataDecoder()
 
     /// Containts the json file names as a key and the json string content as the value.
@@ -38,6 +51,9 @@ open class MockHTTPClient {
 // MARK: - Private Functions
 private extension MockHTTPClient {
 
+    /// Loads the JSON files in the project directory.
+    ///
+    /// - Returns: A dictionary of file names and file content.
     static func loadMockFiles() -> [String: String] {
         var mockDict = [String: String]()
 
@@ -51,6 +67,10 @@ private extension MockHTTPClient {
         return mockDict
     }
 
+    /// Parses the path given into the file name.
+    ///
+    /// - Parameter path: Path to file.
+    /// - Returns: String file name.
     private static func fileName(path: String) -> String {
         var name = path.replacingOccurrences(of: Bundle.main.resourcePath ?? "", with: "")
         name = name.replacingOccurrences(of: "/", with: "")
