@@ -9,18 +9,7 @@
 import UIKit
 import Bellerophon
 
-class BaseKillSwitchView: UIView {
-
-    /// Sets the user message with the given parameter.
-    ///
-    /// - Parameter message: Message to display to the user.
-    func setUserMessage(_ message: String) {
-        // Override in sub-class
-    }
-
-}
-
-final class KillSwitchProvider {
+open class KillSwitchProvider: KillSwitchProviderProtocol {
 
     // MARK: - Private Properties
 
@@ -36,11 +25,9 @@ final class KillSwitchProvider {
 
     private let forceUpgradeErrorCode: Int
 
-    private var error: APIError?
+    private var error: APIErrorType?
 
-    private var backendError: BackendError? {
-
-    // MARK: - Public Properties
+    private var backendError: APIError? {
         guard let error = error else {
             return nil
         }
@@ -72,12 +59,12 @@ final class KillSwitchProvider {
 
     // MARK: - Initialization
 
-    init(window: UIWindow,
-         killSwitchView: BaseKillSwitchView,
-         forceUpdateView: BaseKillSwitchView,
-         killSwitchErrorCode: Int,
-         forceUpgradeErrorCode: Int,
-         retryInterval: TimeInterval = 15) {
+    public init(window: UIWindow,
+                killSwitchView: BaseKillSwitchView,
+                forceUpdateView: BaseKillSwitchView,
+                killSwitchErrorCode: Int,
+                forceUpgradeErrorCode: Int,
+                retryInterval: TimeInterval = 15) {
         self.window = window
         self.killSwitchView = killSwitchView
         self.forceUpdateView = forceUpdateView
@@ -91,7 +78,7 @@ final class KillSwitchProvider {
     /// Called when a network error is received.
     ///
     /// - Parameter error: Api error.
-    func receivedError(_ error: APIError?) {
+    public func receivedError(_ error: APIErrorType?) {
         self.error = error
         manager.checkAppStatus()
     }
@@ -101,7 +88,12 @@ final class KillSwitchProvider {
 // MARK: - BellerophonManagerDelegate
 extension KillSwitchProvider: BellerophonManagerDelegate {
 
-    func bellerophonStatus(_ manager: BellerophonManager, completion: @escaping (BellerophonObservable?, Error?) -> Void) {
+    /// Provide Bellerophon's current status according to the status object received.
+    ///
+    /// - Parameters:
+    ///   - manager: The Bellerophon manager.
+    ///   - completion: Completion block that returns the BellerophonObservable status.
+    public func bellerophonStatus(_ manager: BellerophonManager, completion: @escaping (BellerophonObservable?, Error?) -> Void) {
         if apiInactive() {
             killSwitchView.setUserMessage(userMessage())
         } else if forceUpdate() {
@@ -115,26 +107,41 @@ extension KillSwitchProvider: BellerophonManagerDelegate {
 // MARK: - BellerophonObservable
 extension KillSwitchProvider: BellerophonObservable {
 
-    func apiInactive() -> Bool {
+    /// Called to determine if the killswitch is activated.
+    ///
+    /// - Returns: Flag if the killswitch is activated.
+    public func apiInactive() -> Bool {
         return backendError?.code == killSwitchErrorCode
     }
 
-    func forceUpdate() -> Bool {
+    /// Called to determine if the force update is activated.
+    ///
+    /// - Returns: Flag if the force update is activated.
+    public func forceUpdate() -> Bool {
         return backendError?.code == forceUpgradeErrorCode
     }
 
-    func retryInterval() -> TimeInterval {
+    /// The network retry interval before re-checking the app status.
+    ///
+    /// - Returns: Time interval for re-checking the app status.
+    public func retryInterval() -> TimeInterval {
         return networkRetryInterval
     }
 
-    func userMessage() -> String {
+    /// User message to display on the custom view.
+    ///
+    /// - Returns: User message string to display.
+    public func userMessage() -> String {
         guard let backendError = backendError else {
             return descriptionText
         }
         return backendError.message.isEmpty ? descriptionText : backendError.message
     }
 
-    func setUserMessage(_ message: String) {
+    /// Optional deprecated function to set the user's message.
+    ///
+    /// - Parameter message: Message string.
+    public func setUserMessage(_ message: String) {
         // Optional Function.
     }
 

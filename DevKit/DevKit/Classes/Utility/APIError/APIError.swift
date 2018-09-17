@@ -1,5 +1,5 @@
 //
-//  BackendError.swift
+//  APIError.swift
 //  TheWing
 //
 //  Created by Ruchi Jain on 7/25/18.
@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct BackendError: Codable {
-    let code: Int
-    let message: String
+public struct APIError: Codable {
+    public let code: Int
+    public let message: String
     
     enum CodingKeys: String, CodingKey {
         case code = "code"

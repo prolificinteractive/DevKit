@@ -9,7 +9,7 @@
 import Foundation
 
 struct ErrorResponse: Codable {
-    let error: BackendError?
+    let error: APIError?
     let status: String?
     let response: String?
     
@@ -18,10 +18,10 @@ struct ErrorResponse: Codable {
         status = try? container.decode(String.self, forKey: .status)
         response = try? container.decode(String.self, forKey: .response)
         
-        if let error = try? BackendError(from: decoder) {
+        if let error = try? APIError(from: decoder) {
             self.error = error
         } else if let response = response {
-            error = BackendError(code: 0, message: response)
+            error = APIError(code: 0, message: response)
         } else {
             error = nil
         }

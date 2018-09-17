@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		00787CE99E8D74A942F9BE85 /* Pods_DevKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8FB83E8BE3E5509A2577E0 /* Pods_DevKitTests.framework */; };
 		20076D75214FF6E9005CC155 /* AlamofireHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D70214FF6E9005CC155 /* AlamofireHTTPClient.swift */; };
-		20076D76214FF6E9005CC155 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D71214FF6E9005CC155 /* APIError.swift */; };
+		20076D76214FF6E9005CC155 /* APIErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D71214FF6E9005CC155 /* APIErrorType.swift */; };
 		20076D77214FF6E9005CC155 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D72214FF6E9005CC155 /* HTTPClient.swift */; };
 		20076D78214FF6E9005CC155 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D73214FF6E9005CC155 /* HTTPRequest.swift */; };
 		20076D79214FF6E9005CC155 /* DataDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D74214FF6E9005CC155 /* DataDecoder.swift */; };
-		20076D7D214FF8B4005CC155 /* BackendError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D7C214FF8B3005CC155 /* BackendError.swift */; };
+		20076D7D214FF8B4005CC155 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D7C214FF8B3005CC155 /* APIError.swift */; };
 		20076D7F214FF8DD005CC155 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D7E214FF8DD005CC155 /* ErrorResponse.swift */; };
 		20076D81214FF910005CC155 /* WickedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D80214FF910005CC155 /* WickedError.swift */; };
+		20076D83214FFE04005CC155 /* BaseKillSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D82214FFE04005CC155 /* BaseKillSwitchView.swift */; };
+		20076D85214FFE15005CC155 /* KillSwitchProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D84214FFE15005CC155 /* KillSwitchProviderProtocol.swift */; };
 		20524697209B9C250067A328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20524696209B9C250067A328 /* AppDelegate.swift */; };
 		20524699209B9C250067A328 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20524698209B9C250067A328 /* ViewController.swift */; };
 		2052469C209B9C250067A328 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2052469A209B9C250067A328 /* Main.storyboard */; };
@@ -78,14 +80,16 @@
 
 /* Begin PBXFileReference section */
 		20076D70214FF6E9005CC155 /* AlamofireHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireHTTPClient.swift; sourceTree = "<group>"; };
-		20076D71214FF6E9005CC155 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		20076D71214FF6E9005CC155 /* APIErrorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIErrorType.swift; sourceTree = "<group>"; };
 		20076D72214FF6E9005CC155 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		20076D73214FF6E9005CC155 /* HTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
 		20076D74214FF6E9005CC155 /* DataDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataDecoder.swift; sourceTree = "<group>"; };
 		20076D7A214FF714005CC155 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
-		20076D7C214FF8B3005CC155 /* BackendError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendError.swift; sourceTree = "<group>"; };
+		20076D7C214FF8B3005CC155 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		20076D7E214FF8DD005CC155 /* ErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		20076D80214FF910005CC155 /* WickedError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WickedError.swift; sourceTree = "<group>"; };
+		20076D82214FFE04005CC155 /* BaseKillSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseKillSwitchView.swift; sourceTree = "<group>"; };
+		20076D84214FFE15005CC155 /* KillSwitchProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillSwitchProviderProtocol.swift; sourceTree = "<group>"; };
 		20524693209B9C250067A328 /* DevKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20524696209B9C250067A328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20524698209B9C250067A328 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -176,14 +180,21 @@
 			children = (
 				20076D80214FF910005CC155 /* WickedError.swift */,
 				20076D7E214FF8DD005CC155 /* ErrorResponse.swift */,
-				20076D7C214FF8B3005CC155 /* BackendError.swift */,
 				20076D70214FF6E9005CC155 /* AlamofireHTTPClient.swift */,
-				20076D71214FF6E9005CC155 /* APIError.swift */,
 				20076D74214FF6E9005CC155 /* DataDecoder.swift */,
 				20076D72214FF6E9005CC155 /* HTTPClient.swift */,
 				20076D73214FF6E9005CC155 /* HTTPRequest.swift */,
 			);
 			path = HTTPClient;
+			sourceTree = "<group>";
+		};
+		20076D862150004C005CC155 /* APIError */ = {
+			isa = PBXGroup;
+			children = (
+				20076D71214FF6E9005CC155 /* APIErrorType.swift */,
+				20076D7C214FF8B3005CC155 /* APIError.swift */,
+			);
+			path = APIError;
 			sourceTree = "<group>";
 		};
 		2052468A209B9C250067A328 = {
@@ -451,6 +462,7 @@
 		2052471A209BB2F30067A328 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				20076D862150004C005CC155 /* APIError */,
 				20076D6F214FF6CB005CC155 /* HTTPClient */,
 				2098705E214FF194008B8B0C /* KillSwitchProvider */,
 				209955A2214AD7FC00674465 /* SessionManager */,
@@ -507,6 +519,8 @@
 			isa = PBXGroup;
 			children = (
 				2098705F214FF1A7008B8B0C /* KillSwitchProvider.swift */,
+				20076D82214FFE04005CC155 /* BaseKillSwitchView.swift */,
+				20076D84214FFE15005CC155 /* KillSwitchProviderProtocol.swift */,
 			);
 			path = KillSwitchProvider;
 			sourceTree = "<group>";
@@ -613,7 +627,6 @@
 				20524690209B9C250067A328 /* Frameworks */,
 				20524691209B9C250067A328 /* Resources */,
 				3A03E6CA07BEED7B1812EEB1 /* [CP] Embed Pods Frameworks */,
-				205246D9209BA61E0067A328 /* Moulinette */,
 			);
 			buildRules = (
 			);
@@ -751,20 +764,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		205246D9209BA61E0067A328 /* Moulinette */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Moulinette;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Moulinette/Source/Moulinette\" -projectName \"DevKit\" -projectDirectory ${SRCROOT} -authToken \"\" -silent \"true\" -verbose \"true\" -xcodePlugin \"true\"";
-		};
 		3A03E6CA07BEED7B1812EEB1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -848,7 +847,7 @@
 				205246CD209B9D2B0067A328 /* EventCalendarInfo.swift in Sources */,
 				20524699209B9C250067A328 /* ViewController.swift in Sources */,
 				205246F6209BA8B40067A328 /* UIBarButtonExtension.swift in Sources */,
-				20076D76214FF6E9005CC155 /* APIError.swift in Sources */,
+				20076D76214FF6E9005CC155 /* APIErrorType.swift in Sources */,
 				20076D77214FF6E9005CC155 /* HTTPClient.swift in Sources */,
 				20076D7F214FF8DD005CC155 /* ErrorResponse.swift in Sources */,
 				205246FC209BA8B40067A328 /* UINavigationControllerExtension.swift in Sources */,
@@ -863,12 +862,14 @@
 				205246F1209BA8B40067A328 /* UIApplicationExtension.swift in Sources */,
 				205246EF209BA8B40067A328 /* UIScrollViewExtension.swift in Sources */,
 				205246F8209BA8B40067A328 /* UIImageExtension.swift in Sources */,
-				20076D7D214FF8B4005CC155 /* BackendError.swift in Sources */,
+				20076D7D214FF8B4005CC155 /* APIError.swift in Sources */,
 				205246D5209BA3200067A328 /* TransitioningNavigationViewOptions.swift in Sources */,
+				20076D83214FFE04005CC155 /* BaseKillSwitchView.swift in Sources */,
 				8E8F4AB52138698B00E2FD66 /* LinkedListNode.swift in Sources */,
 				205246D3209B9E8F0067A328 /* TransitioningNavigationView.swift in Sources */,
 				20524697209B9C250067A328 /* AppDelegate.swift in Sources */,
 				8E8F4ABF2139C6E300E2FD66 /* Stack.swift in Sources */,
+				20076D85214FFE15005CC155 /* KillSwitchProviderProtocol.swift in Sources */,
 				20524720209BB3240067A328 /* CameraPhotoLibraryPermissionsValidator.swift in Sources */,
 				205246F3209BA8B40067A328 /* UIViewControllerExtension.swift in Sources */,
 				20987060214FF1A7008B8B0C /* KillSwitchProvider.swift in Sources */,

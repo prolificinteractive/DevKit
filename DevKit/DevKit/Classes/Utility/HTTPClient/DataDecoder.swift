@@ -32,7 +32,7 @@ final class DataDecoder {
     /// - Returns: Desired result with the deserialized object.
     func decodeData<T: Decodable>(_ data: Data?) -> Result<T> {
         guard let data = data else {
-            return Result.failure(APIError.noDataRetreived)
+            return Result.failure(APIErrorType.noDataRetreived)
         }
 
         do {
@@ -52,7 +52,7 @@ private extension DataDecoder {
         do {
             let error = try decoder.decode(ErrorResponse.self, from: data)
             if let error = error.error {
-                let apiError = APIError.backend(error: error)
+                let apiError = APIErrorType.backend(error: error)
                 killSwitchProvider?.receivedError(apiError)
                 return Result.failure(apiError)
             } else {
@@ -69,7 +69,7 @@ private extension DataDecoder {
             print(decodeError)
             print(error)
             #endif
-            return Result.failure(APIError.deserializationFailed)
+            return Result.failure(APIErrorType.deserializationFailed)
         }
     }
 

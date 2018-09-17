@@ -14,8 +14,8 @@ import Bellerophon
 /// - backend: Custom error message from backend.
 /// - noDataRetreived: Used when the data is nil from the api.
 /// - deserializationFailed: Used when the data can't be deserialized into the desired model.
-enum APIError: Error {
-    case backend(error: BackendError)
+public enum APIErrorType: Error {
+    case backend(error: APIError)
     case noDataRetreived
     case deserializationFailed
     

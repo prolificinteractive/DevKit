@@ -79,12 +79,19 @@ Collection of commonly used swift code.
     sp.subspec 'KillSwitchProvider' do |ssp|
         ssp.source_files = 'DevKit/DevKit/Classes/Utility/KillSwitchProvider/*'
         ssp.dependency 'Bellerophon', '1.2.0'
+        ssp.dependency 'DevKit/Utility/APIError'
     end
 
     # HTTPClient
     sp.subspec 'HTTPClient' do |ssp|
         ssp.source_files = 'DevKit/DevKit/Classes/Utility/HTTPClient/*'
         ssp.dependency 'Alamofire', '4.7.2'
+    end
+
+    # APIError
+    sp.subspec 'APIError' do |ssp|
+        ssp.source_files = 'DevKit/DevKit/Classes/Utility/APIError/*'
+        ssp.dependency 'Bellerophon', '1.2.0'
     end
   end
 
