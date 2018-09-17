@@ -81,6 +81,36 @@
               "3.1.0"
             ]
           }
+        },
+        {
+          "name": "KillSwitchProvider",
+          "source_files": "DevKit/DevKit/Classes/Utility/KillSwitchProvider/*",
+          "dependencies": {
+            "Bellerophon": [
+              "1.2.0"
+            ],
+            "DevKit/Utility/APIError": [
+
+            ]
+          }
+        },
+        {
+          "name": "HTTPClient",
+          "source_files": "DevKit/DevKit/Classes/Utility/HTTPClient/*",
+          "dependencies": {
+            "Alamofire": [
+              "4.7.2"
+            ]
+          }
+        },
+        {
+          "name": "APIError",
+          "source_files": "DevKit/DevKit/Classes/Utility/APIError/*",
+          "dependencies": {
+            "Bellerophon": [
+              "1.2.0"
+            ]
+          }
         }
       ]
     },
@@ -115,6 +145,10 @@
         {
           "name": "UIColorExtension",
           "source_files": "DevKit/DevKit/Classes/Extensions/UIColorExtension/*"
+        },
+        {
+          "name": "UIImageExtension",
+          "source_files": "DevKit/DevKit/Classes/Extensions/UIImageExtension/*"
         }
       ]
     },

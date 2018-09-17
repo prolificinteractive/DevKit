@@ -1,4 +1,6 @@
 PODS:
+  - Alamofire (4.7.2)
+  - Bellerophon (1.2.0)
   - DevKit (0.1.0):
     - DevKit/DataStructures (= 0.1.0)
     - DevKit/Extensions (= 0.1.0)
@@ -15,6 +17,7 @@ PODS:
     - DevKit/Extensions/UIAlertControllerExtension (= 0.1.0)
     - DevKit/Extensions/UIApplicationExtension (= 0.1.0)
     - DevKit/Extensions/UIColorExtension (= 0.1.0)
+    - DevKit/Extensions/UIImageExtension (= 0.1.0)
     - DevKit/Extensions/UITableViewExtension (= 0.1.0)
     - DevKit/Utility/ReusableView
   - DevKit/Extensions/StringExtension (0.1.0):
@@ -24,6 +27,8 @@ PODS:
   - DevKit/Extensions/UIApplicationExtension (0.1.0):
     - DevKit/Utility/ReusableView
   - DevKit/Extensions/UIColorExtension (0.1.0):
+    - DevKit/Utility/ReusableView
+  - DevKit/Extensions/UIImageExtension (0.1.0):
     - DevKit/Utility/ReusableView
   - DevKit/Extensions/UITableViewExtension (0.1.0):
     - DevKit/Utility/ReusableView
@@ -35,18 +40,28 @@ PODS:
     - Marker (~> 1.1.0)
     - PureLayout (~> 3.0.2)
   - DevKit/Utility (0.1.0):
+    - DevKit/Utility/APIError (= 0.1.0)
     - DevKit/Utility/CalendarPermissionsValidator (= 0.1.0)
+    - DevKit/Utility/HTTPClient (= 0.1.0)
     - DevKit/Utility/ImagePickerValidator (= 0.1.0)
     - DevKit/Utility/KeyboardObserver (= 0.1.0)
+    - DevKit/Utility/KillSwitchProvider (= 0.1.0)
     - DevKit/Utility/ReusableView (= 0.1.0)
     - DevKit/Utility/SessionManager (= 0.1.0)
+  - DevKit/Utility/APIError (0.1.0):
+    - Bellerophon (= 1.2.0)
   - DevKit/Utility/CalendarPermissionsValidator (0.1.0):
     - DevKit/Extensions/StringExtension
     - DevKit/Extensions/UIAlertControllerExtension
     - DevKit/Extensions/UIApplicationExtension
+  - DevKit/Utility/HTTPClient (0.1.0):
+    - Alamofire (= 4.7.2)
   - DevKit/Utility/ImagePickerValidator (0.1.0):
     - DevKit/Extensions/StringExtension
   - DevKit/Utility/KeyboardObserver (0.1.0)
+  - DevKit/Utility/KillSwitchProvider (0.1.0):
+    - Bellerophon (= 1.2.0)
+    - DevKit/Utility/APIError
   - DevKit/Utility/ReusableView (0.1.0)
   - DevKit/Utility/SessionManager (0.1.0):
     - KeychainAccess (= 3.1.0)
@@ -59,6 +74,8 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - Bellerophon
     - KeychainAccess
     - Marker
     - PureLayout
@@ -68,7 +85,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DevKit: 1c2e00ffb8fd991a57b5a1f6bbe979152b1719c4
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Bellerophon: fbeff4978425599a129ff2bebfbd8beddf06e919
+  DevKit: 9f36ce21f21408b0c39df6728a076bad43553fd0
   KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
   Marker: f35e0b5d9c97d6997d6b89b23f189e0e4cc127c7
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
