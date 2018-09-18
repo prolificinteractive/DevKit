@@ -45,6 +45,11 @@ Collection of commonly used swift code.
       sp.source_files = 'DevKit/DevKit/Classes/Views/LoadingIndicator/*'
   end
 
+  # InfinityPageControl
+  s.subspec 'InfinityPageControl' do |sp|
+      sp.source_files = 'DevKit/DevKit/Classes/Views/InfinityPageControl/*'
+  end
+
 # ==== Utility ============================================
 
   s.subspec 'Utility' do |sp|

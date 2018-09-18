@@ -9,19 +9,29 @@
 import UIKit
 
 /// A page control that shrinks/expands its dots
-final class InfinityPageControl: UIControl {
-    
+///
+/// **Subspec: Views/InfinityPageControl**
+///
+/// ```
+/// private lazy var pageControl = InfinityPageControl(activeDotImage: #imageLiteral(resourceName: "active-dot"),
+///                                                    inactiveDotImage: #imageLiteral(resourceName: "inactive-dot"))
+/// ```
+///
+/// <Real world example of how someone would use this class with code snippet>
+///
+open class InfinityPageControl: UIControl {
+
     // MARK: - Public Properties
     
     /// Number of pages
-    var numberOfPages: Int = 0 {
+    public var numberOfPages: Int = 0 {
         didSet {
             resetPagingDots()
         }
     }
     
-    /// Current page
-    var currentPage: Int = 0 {
+    /// Current page of the page control.
+    public var currentPage: Int = 0 {
         didSet {
             let direction = PageControlDirection.direction(previousPage: oldValue, currentPage: currentPage)
             currentPage = min(max(currentPage, 0), numberOfPages)
@@ -30,7 +40,7 @@ final class InfinityPageControl: UIControl {
         }
     }
     
-    override var intrinsicContentSize: CGSize {
+    open override var intrinsicContentSize: CGSize {
         return CGSize(width: 30, height: 7)
     }
     
@@ -47,17 +57,23 @@ final class InfinityPageControl: UIControl {
     private var scrollView = UIScrollView()
     
     private var dots = [PagingDot]()
+
+    private let activeDotImage: UIImage
+
+    private let inactiveDotImage: UIImage
     
     // MARK: - Initialization
     
-    public override init(frame: CGRect) {
+    public init(activeDotImage: UIImage, inactiveDotImage: UIImage) {
+        self.activeDotImage = activeDotImage
+        self.inactiveDotImage = inactiveDotImage
+
         super.init(frame: CGRect.zero)
         setup()
     }
     
     public required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setup()
+        fatalError("Interface Builder is not supported.")
     }
     
 }
@@ -80,7 +96,10 @@ private extension InfinityPageControl {
     
     func addPagingDots() {
         for index in 0..<numberOfPages {
-            let dot = PagingDot(state: defaultState(for: index))
+            let dot = PagingDot(state: defaultState(for: index),
+                                activeDotImage: activeDotImage,
+                                inactiveDotImage: inactiveDotImage)
+
             dot.update(stateMove: .noChange)
             stackView.insertArrangedSubview(dot, at: index)
             dots.append(dot)

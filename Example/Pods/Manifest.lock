@@ -4,6 +4,8 @@ PODS:
   - DevKit (0.1.0):
     - DevKit/DataStructures (= 0.1.0)
     - DevKit/Extensions (= 0.1.0)
+    - DevKit/InfinityPageControl (= 0.1.0)
+    - DevKit/LoadingIndicator (= 0.1.0)
     - DevKit/SharedOptions (= 0.1.0)
     - DevKit/TransitioningNavigationView (= 0.1.0)
     - DevKit/Utility (= 0.1.0)
@@ -13,14 +15,26 @@ PODS:
   - DevKit/DataStructures/LinkedList (0.1.0)
   - DevKit/DataStructures/Stack (0.1.0)
   - DevKit/Extensions (0.1.0):
+    - DevKit/Extensions/BundleExtension (= 0.1.0)
+    - DevKit/Extensions/CALayerExtension (= 0.1.0)
+    - DevKit/Extensions/DateFormatterExtension (= 0.1.0)
     - DevKit/Extensions/StringExtension (= 0.1.0)
+    - DevKit/Extensions/TextStyleExtension (= 0.1.0)
     - DevKit/Extensions/UIAlertControllerExtension (= 0.1.0)
     - DevKit/Extensions/UIApplicationExtension (= 0.1.0)
     - DevKit/Extensions/UIColorExtension (= 0.1.0)
     - DevKit/Extensions/UIImageExtension (= 0.1.0)
     - DevKit/Extensions/UITableViewExtension (= 0.1.0)
     - DevKit/Utility/ReusableView
+  - DevKit/Extensions/BundleExtension (0.1.0):
+    - DevKit/Utility/ReusableView
+  - DevKit/Extensions/CALayerExtension (0.1.0):
+    - DevKit/Utility/ReusableView
+  - DevKit/Extensions/DateFormatterExtension (0.1.0):
+    - DevKit/Utility/ReusableView
   - DevKit/Extensions/StringExtension (0.1.0):
+    - DevKit/Utility/ReusableView
+  - DevKit/Extensions/TextStyleExtension (0.1.0):
     - DevKit/Utility/ReusableView
   - DevKit/Extensions/UIAlertControllerExtension (0.1.0):
     - DevKit/Utility/ReusableView
@@ -32,6 +46,8 @@ PODS:
     - DevKit/Utility/ReusableView
   - DevKit/Extensions/UITableViewExtension (0.1.0):
     - DevKit/Utility/ReusableView
+  - DevKit/InfinityPageControl (0.1.0)
+  - DevKit/LoadingIndicator (0.1.0)
   - DevKit/SharedOptions (0.1.0):
     - DevKit/SharedOptions/ShadowOptions (= 0.1.0)
   - DevKit/SharedOptions/ShadowOptions (0.1.0)
@@ -87,7 +103,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   Bellerophon: fbeff4978425599a129ff2bebfbd8beddf06e919
-  DevKit: 9f36ce21f21408b0c39df6728a076bad43553fd0
+  DevKit: ccebd5d49e30754eabed0ddad1e945af2a6d5ce1
   KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
   Marker: f35e0b5d9c97d6997d6b89b23f189e0e4cc127c7
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd

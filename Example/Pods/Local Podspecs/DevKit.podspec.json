@@ -36,7 +36,16 @@
       "source_files": "DevKit/DevKit/Classes/Views/TransitioningNavigationView/*"
     },
     {
+      "name": "LoadingIndicator",
+      "source_files": "DevKit/DevKit/Classes/Views/LoadingIndicator/*"
+    },
+    {
+      "name": "InfinityPageControl",
+      "source_files": "DevKit/DevKit/Classes/Views/InfinityPageControl/*"
+    },
+    {
       "name": "Utility",
+      "source_files": "DevKit/DevKit/Classes/Utility/*",
       "subspecs": [
         {
           "name": "CalendarPermissionsValidator",
@@ -149,6 +158,22 @@
         {
           "name": "UIImageExtension",
           "source_files": "DevKit/DevKit/Classes/Extensions/UIImageExtension/*"
+        },
+        {
+          "name": "TextStyleExtension",
+          "source_files": "DevKit/DevKit/Classes/Extensions/TextStyleExtension/*"
+        },
+        {
+          "name": "DateFormatterExtension",
+          "source_files": "DevKit/DevKit/Classes/Extensions/DateFormatterExtension/*"
+        },
+        {
+          "name": "CALayerExtension",
+          "source_files": "DevKit/DevKit/Classes/Extensions/CALayerExtension/*"
+        },
+        {
+          "name": "BundleExtension",
+          "source_files": "DevKit/DevKit/Classes/Extensions/BundleExtension/*"
         }
       ]
     },

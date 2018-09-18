@@ -36,10 +36,17 @@ final class PagingDot: UIView {
     private let smallSize: CGFloat = 2.5
     
     private let hiddenSize: CGFloat = 0
+
+    private let activeDotImage: UIImage
+
+    private let inactiveDotImage: UIImage
     
     // MARK: - Initialization
     
-    required init(state: PagingDotState) {
+    required init(state: PagingDotState, activeDotImage: UIImage, inactiveDotImage: UIImage) {
+        self.activeDotImage = activeDotImage
+        self.inactiveDotImage = inactiveDotImage
+
         super.init(frame: CGRect.zero)
         setup()
         self.state = state
