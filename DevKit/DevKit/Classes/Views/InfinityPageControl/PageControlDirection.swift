@@ -8,9 +8,12 @@
 
 /// Enumerates possible directions the page control can move.
 ///
+/// **Subspec: Views/InfinityPageControl**
+///
 /// - left: Left move.
 /// - right: Right move.
 /// - none: No move.
+///
 enum PageControlDirection {
     case left
     case right
