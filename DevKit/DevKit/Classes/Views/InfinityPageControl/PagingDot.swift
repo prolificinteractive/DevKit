@@ -25,7 +25,7 @@ final class PagingDot: UIView {
     
     // MARK: - Private Properties
     
-    private let imageView = UIImageView(image: #imageLiteral(resourceName: "active-dot"))
+    private lazy var imageView = UIImageView(image: activeDotImage)
     
     private weak var sizeConstraint: NSLayoutConstraint!
     
@@ -77,7 +77,7 @@ final class PagingDot: UIView {
 private extension PagingDot {
     
     func configure(for activeState: Bool) {
-        imageView.image = activeState ? #imageLiteral(resourceName: "active-dot") : #imageLiteral(resourceName: "inactive-dot")
+        imageView.image = activeState ? activeDotImage : inactiveDotImage
         alpha = state == .hidden ? 0 : 1
     }
     

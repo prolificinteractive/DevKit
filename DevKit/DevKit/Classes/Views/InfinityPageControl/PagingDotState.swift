@@ -6,7 +6,9 @@
 //  Copyright © 2018 Prolific Interactive. All rights reserved.
 //
 
-/// PagingDotState
+/// The size state for the PagingDot
+///
+/// **Subspec: Views/InfinityPageControl**
 ///
 /// - large: Large.
 /// - medium: Medium.
@@ -18,7 +20,7 @@ enum PagingDotState {
     case small
     case hidden
     
-    /// All states.
+    /// All size states.
     static var states: [PagingDotState] {
         return [
             .large,
