@@ -24,6 +24,11 @@
 		20076DA321504D0D005CC155 /* CALayerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076D9E21504D0D005CC155 /* CALayerExtensions.swift */; };
 		20076DA421504D0D005CC155 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076DA021504D0D005CC155 /* BundleExtension.swift */; };
 		20076DA72150505B005CC155 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076DA62150505B005CC155 /* LoadingIndicator.swift */; };
+		20076DAE21513BE4005CC155 /* PagingDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076DA921513BE4005CC155 /* PagingDot.swift */; };
+		20076DAF21513BE4005CC155 /* PagingDotState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076DAA21513BE4005CC155 /* PagingDotState.swift */; };
+		20076DB021513BE4005CC155 /* InfinityPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076DAB21513BE4005CC155 /* InfinityPageControl.swift */; };
+		20076DB121513BE4005CC155 /* PagingDotStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076DAC21513BE4005CC155 /* PagingDotStateMachine.swift */; };
+		20076DB221513BE4005CC155 /* PageControlDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076DAD21513BE4005CC155 /* PageControlDirection.swift */; };
 		20524697209B9C250067A328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20524696209B9C250067A328 /* AppDelegate.swift */; };
 		20524699209B9C250067A328 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20524698209B9C250067A328 /* ViewController.swift */; };
 		2052469C209B9C250067A328 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2052469A209B9C250067A328 /* Main.storyboard */; };
@@ -102,6 +107,11 @@
 		20076D9E21504D0D005CC155 /* CALayerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerExtensions.swift; sourceTree = "<group>"; };
 		20076DA021504D0D005CC155 /* BundleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		20076DA62150505B005CC155 /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		20076DA921513BE4005CC155 /* PagingDot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingDot.swift; sourceTree = "<group>"; };
+		20076DAA21513BE4005CC155 /* PagingDotState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingDotState.swift; sourceTree = "<group>"; };
+		20076DAB21513BE4005CC155 /* InfinityPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfinityPageControl.swift; sourceTree = "<group>"; };
+		20076DAC21513BE4005CC155 /* PagingDotStateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingDotStateMachine.swift; sourceTree = "<group>"; };
+		20076DAD21513BE4005CC155 /* PageControlDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageControlDirection.swift; sourceTree = "<group>"; };
 		20524693209B9C250067A328 /* DevKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20524696209B9C250067A328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20524698209B9C250067A328 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -248,6 +258,18 @@
 				20076DA62150505B005CC155 /* LoadingIndicator.swift */,
 			);
 			path = LoadingIndicator;
+			sourceTree = "<group>";
+		};
+		20076DA821513BB2005CC155 /* InfinityPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				20076DAB21513BE4005CC155 /* InfinityPageControl.swift */,
+				20076DAD21513BE4005CC155 /* PageControlDirection.swift */,
+				20076DA921513BE4005CC155 /* PagingDot.swift */,
+				20076DAA21513BE4005CC155 /* PagingDotState.swift */,
+				20076DAC21513BE4005CC155 /* PagingDotStateMachine.swift */,
+			);
+			path = InfinityPageControl;
 			sourceTree = "<group>";
 		};
 		2052468A209B9C250067A328 = {
@@ -502,6 +524,7 @@
 		20524718209BB2BC0067A328 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				20076DA821513BB2005CC155 /* InfinityPageControl */,
 				20076DA52150504C005CC155 /* LoadingIndicator */,
 				205246D1209B9E7B0067A328 /* TransitioningNavigationView */,
 			);
@@ -891,6 +914,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20076DB021513BE4005CC155 /* InfinityPageControl.swift in Sources */,
 				205246D8209BA3480067A328 /* ShadowOptions.swift in Sources */,
 				205C74EE2135A3D700AF0B52 /* KeyboardObserver.swift in Sources */,
 				20076DA121504D0D005CC155 /* DateFormatterExtension.swift in Sources */,
@@ -911,6 +935,7 @@
 				20076D76214FF6E9005CC155 /* APIErrorType.swift in Sources */,
 				20076D77214FF6E9005CC155 /* HTTPClient.swift in Sources */,
 				20076D7F214FF8DD005CC155 /* ErrorResponse.swift in Sources */,
+				20076DAF21513BE4005CC155 /* PagingDotState.swift in Sources */,
 				205246FC209BA8B40067A328 /* UINavigationControllerExtension.swift in Sources */,
 				205246FD209BA8B40067A328 /* UIColorExtension.swift in Sources */,
 				205246F7209BA8B40067A328 /* UIStackViewExtension.swift in Sources */,
@@ -918,10 +943,13 @@
 				20076DA421504D0D005CC155 /* BundleExtension.swift in Sources */,
 				205246FF209BA8B40067A328 /* UISearchBarExtension.swift in Sources */,
 				20524721209BB3240067A328 /* ImagePickerValidator.swift in Sources */,
+				20076DB121513BE4005CC155 /* PagingDotStateMachine.swift in Sources */,
 				205246CB209B9D2B0067A328 /* CalendarPermissionsValidator.swift in Sources */,
 				20076D8B215036D8005CC155 /* MockHTTPClient.swift in Sources */,
 				20076D78214FF6E9005CC155 /* HTTPRequest.swift in Sources */,
 				2052471F209BB3240067A328 /* ImagePickerDelegate.swift in Sources */,
+				20076DB221513BE4005CC155 /* PageControlDirection.swift in Sources */,
+				20076DAE21513BE4005CC155 /* PagingDot.swift in Sources */,
 				205246F1209BA8B40067A328 /* UIApplicationExtension.swift in Sources */,
 				205246EF209BA8B40067A328 /* UIScrollViewExtension.swift in Sources */,
 				205246F8209BA8B40067A328 /* UIImageExtension.swift in Sources */,
