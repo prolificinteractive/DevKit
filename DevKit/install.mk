@@ -3,6 +3,6 @@ documentation:
             --min-acl private \
             --no-hide-documentation-coverage \
             --theme fullwidth \
-            --author "Prolific Interactive" \
-            --output ../docs
+            --output ../docs \
+            --documentation=../*.md
 	@rm -rf ./build
