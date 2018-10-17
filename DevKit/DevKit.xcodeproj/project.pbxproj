@@ -65,6 +65,7 @@
 		209955A4214AD81100674465 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209955A3214AD81100674465 /* SessionManager.swift */; };
 		209955A5214C0F5E00674465 /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F4AC12139C87300E2FD66 /* StackTests.swift */; };
 		209955A6214C0F5E00674465 /* LinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F4ABB2138731500E2FD66 /* LinkedListTests.swift */; };
+		209C586B21777DCF000F14B5 /* HapticGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C586A21777DCF000F14B5 /* HapticGenerator.swift */; };
 		329452415E472FA3C293B641 /* Pods_DevKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC5340BFE3332A9CE19D779 /* Pods_DevKit.framework */; };
 		8E8F4AB52138698B00E2FD66 /* LinkedListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F4AB42138698B00E2FD66 /* LinkedListNode.swift */; };
 		8E8F4AB7213869E000E2FD66 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F4AB6213869E000E2FD66 /* LinkedList.swift */; };
@@ -153,6 +154,7 @@
 		20987058214C4B04008B8B0C /* DevKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = DevKit.podspec; path = ../../DevKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2098705F214FF1A7008B8B0C /* KillSwitchProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillSwitchProvider.swift; sourceTree = "<group>"; };
 		209955A3214AD81100674465 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		209C586A21777DCF000F14B5 /* HapticGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticGenerator.swift; sourceTree = "<group>"; };
 		3939CE1C2FCEB6AE9D5E4974 /* Pods_DevKitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevKitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		439C165EDA375DDFA28D0AB6 /* Pods-DevKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevKit/Pods-DevKit.release.xcconfig"; sourceTree = "<group>"; };
 		4DC5340BFE3332A9CE19D779 /* Pods_DevKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -543,6 +545,7 @@
 		2052471A209BB2F30067A328 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				209C586921777DCF000F14B5 /* Haptics */,
 				20076D862150004C005CC155 /* APIError */,
 				20076D6F214FF6CB005CC155 /* HTTPClient */,
 				2098705E214FF194008B8B0C /* KillSwitchProvider */,
@@ -612,6 +615,14 @@
 				209955A3214AD81100674465 /* SessionManager.swift */,
 			);
 			path = SessionManager;
+			sourceTree = "<group>";
+		};
+		209C586921777DCF000F14B5 /* Haptics */ = {
+			isa = PBXGroup;
+			children = (
+				209C586A21777DCF000F14B5 /* HapticGenerator.swift */,
+			);
+			path = Haptics;
 			sourceTree = "<group>";
 		};
 		75AF81F4E3DEE96B43CF7CBC /* Pods */ = {
@@ -950,6 +961,7 @@
 				2052471F209BB3240067A328 /* ImagePickerDelegate.swift in Sources */,
 				20076DB221513BE4005CC155 /* PageControlDirection.swift in Sources */,
 				20076DAE21513BE4005CC155 /* PagingDot.swift in Sources */,
+				209C586B21777DCF000F14B5 /* HapticGenerator.swift in Sources */,
 				205246F1209BA8B40067A328 /* UIApplicationExtension.swift in Sources */,
 				205246EF209BA8B40067A328 /* UIScrollViewExtension.swift in Sources */,
 				205246F8209BA8B40067A328 /* UIImageExtension.swift in Sources */,
