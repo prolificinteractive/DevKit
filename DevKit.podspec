@@ -105,6 +105,11 @@ Collection of commonly used swift code.
         ssp.source_files = 'DevKit/DevKit/Classes/Utility/APIError/*'
         ssp.dependency 'Bellerophon', '1.2.0'
     end
+
+    # Haptics
+    sp.subspec 'Haptics' do |ssp|
+        ssp.source_files = 'DevKit/DevKit/Classes/Utility/Haptics/*'
+    end
   end
 
 # ==== Extensions ============================================
