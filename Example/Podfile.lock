@@ -58,6 +58,7 @@ PODS:
   - DevKit/Utility (0.1.0):
     - DevKit/Utility/APIError (= 0.1.0)
     - DevKit/Utility/CalendarPermissionsValidator (= 0.1.0)
+    - DevKit/Utility/Haptics (= 0.1.0)
     - DevKit/Utility/HTTPClient (= 0.1.0)
     - DevKit/Utility/ImagePickerValidator (= 0.1.0)
     - DevKit/Utility/KeyboardObserver (= 0.1.0)
@@ -70,6 +71,7 @@ PODS:
     - DevKit/Extensions/StringExtension
     - DevKit/Extensions/UIAlertControllerExtension
     - DevKit/Extensions/UIApplicationExtension
+  - DevKit/Utility/Haptics (0.1.0)
   - DevKit/Utility/HTTPClient (0.1.0):
     - Alamofire (= 4.7.2)
   - DevKit/Utility/ImagePickerValidator (0.1.0):
@@ -103,7 +105,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   Bellerophon: fbeff4978425599a129ff2bebfbd8beddf06e919
-  DevKit: ccebd5d49e30754eabed0ddad1e945af2a6d5ce1
+  DevKit: 74f19177b05d41e261614da45289fd59eb895871
   KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
   Marker: f35e0b5d9c97d6997d6b89b23f189e0e4cc127c7
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd

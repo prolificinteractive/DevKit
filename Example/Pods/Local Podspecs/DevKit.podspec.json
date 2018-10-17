@@ -120,6 +120,10 @@
               "1.2.0"
             ]
           }
+        },
+        {
+          "name": "Haptics",
+          "source_files": "DevKit/DevKit/Classes/Utility/Haptics/*"
         }
       ]
     },
