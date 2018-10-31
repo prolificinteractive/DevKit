@@ -31,9 +31,14 @@ extension String {
         return whitespaceTrimmed.isEmpty ? nil : self
     }
 
+    /// Returns a string with leading and trailing whitespace and new lines trimmed.
+    public var whitespaceNewLinesTrimmed: String {
+        return trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+
     /// Returns a string with leading and trailing whitespace trimmed.
     public var whitespaceTrimmed: String {
-        return trimmingCharacters(in: .whitespacesAndNewlines)
+        return trimmingCharacters(in: .whitespaces)
     }
 
     /// New string, capitalizes first letter
