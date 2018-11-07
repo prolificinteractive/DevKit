@@ -331,6 +331,7 @@
 		205246C4209B9D2B0067A328 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				20AEC61021936EE400FFB140 /* Components */,
 				8E8F4AB22138696E00E2FD66 /* Data Structures */,
 				20524718209BB2BC0067A328 /* Views */,
 				2052471A209BB2F30067A328 /* Utility */,
@@ -623,6 +624,13 @@
 				209C586A21777DCF000F14B5 /* HapticGenerator.swift */,
 			);
 			path = Haptics;
+			sourceTree = "<group>";
+		};
+		20AEC61021936EE400FFB140 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		75AF81F4E3DEE96B43CF7CBC /* Pods */ = {
