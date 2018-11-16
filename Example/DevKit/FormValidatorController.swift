@@ -24,9 +24,8 @@ class FormValidatorController: UIViewController {
             let password = passwordTextField.text else {
                 return
         }
-        print(password)
         let isValidEmail = FormValidator.isValid(email)
-        let isValidPassword = FormValidator.isValid(password, passwordType: .alphabetNumberSpecialCharacter, minCharacters: 0)
+        let isValidPassword = FormValidator.isValid(password, validators: [.lowercasedLetters, .numbers, .uppercasedLetters, .specialCharacters], minCharacters: 5)
         print("Email: \(isValidEmail)")
         print("Password: \(isValidPassword)")
     }
