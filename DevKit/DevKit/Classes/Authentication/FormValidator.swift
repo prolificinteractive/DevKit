@@ -11,31 +11,55 @@ import Foundation
 /// FormValidator used to validate sign up forms.
 public class FormValidator {
     
-    // Validates the password.
+    /// Validates the password with the given validation types and minimum Characters.
     /// - Parameters:
     ///   - password: The email given.
     ///   - passwordType: The type of password.
-    public static func isValid(_ password: String, passwordType: PasswordType, minCharacters: Int) -> Bool {
-        return isValid(password, passwordRegex: passwordType.type(minCharacters))
+    public static func isValid(_ password: String, validators: [ValidationType], minCharacters: Int) -> Bool {
+        return isValid(password, passwordRegex: ValidationType.getRegexCode(with: validators, and: minCharacters))
     }
     
-    /// Validates the form.
+    /// Validates the email and password with the given validation types and minimum characters.
     /// - Parameters:
     ///   - email: the email given.
     ///   - password: The password given.
     ///   - passwordType: The type of password.
     ///   - minCharacters: The minimum characters for the password.
-    public static func isValid(_ email: String, password: String, passwordType: PasswordType, minCharacters: Int) -> Bool {
-        return isValid(email) && isValid(password, passwordType: passwordType, minCharacters: minCharacters)
+    public static func isValid(_ email: String, password: String, validators: [ValidationType], minCharacters: Int) -> Bool {
+        return isValid(email) && isValid(password, validators: validators, minCharacters: minCharacters)
     }
     
-    /// Validates the form.
+    /// Validates the email, password and confirmation password with the given validation types and minimum characters.
+    /// - Parameters:
+    ///   - email: the email given.
+    ///   - password: The password given.
+    ///   - confirmationPassword: The confirmation password given.
+    ///   - passwordType: The type of password.
+    ///   - minCharacters: The minimum characters for the password.
+    public static func isValid(_ email: String, password: String, confirmationPassword: String, validators: [ValidationType], minCharacters: Int) -> Bool {
+        return isValid(email)
+            && password == confirmationPassword
+            && isValid(password, validators: validators, minCharacters: minCharacters)
+    }
+    
+    /// Validates the email and password with the given password regex code.
     /// - Parameters:
     ///   - email: the email given.
     ///   - password: The password given.
     ///   - passwordRegex: The password regex code.
     public static func isValid(_ email: String, password: String, passwordRegex: String) -> Bool {
         return isValid(email) && isValid(password, passwordRegex: passwordRegex)
+    }
+    
+    /// Validates the email, password and confirmation password with the given password regex code.
+    /// - Parameters:
+    ///   - email: the email given.
+    ///   - password: The password given.
+    ///   - passwordRegex: The password regex code.
+    public static func isValid(_ email: String, password: String, confirmationPassword: String, passwordRegex: String) -> Bool {
+        return isValid(email)
+            && password == confirmationPassword
+            && isValid(password, passwordRegex: passwordRegex)
     }
     
     /// Validates the password with the given regex code.
