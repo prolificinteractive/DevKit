@@ -67,6 +67,8 @@
 		209955A6214C0F5E00674465 /* LinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F4ABB2138731500E2FD66 /* LinkedListTests.swift */; };
 		209C586B21777DCF000F14B5 /* HapticGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C586A21777DCF000F14B5 /* HapticGenerator.swift */; };
 		329452415E472FA3C293B641 /* Pods_DevKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC5340BFE3332A9CE19D779 /* Pods_DevKit.framework */; };
+		567682352199FA9400641276 /* FormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567682342199FA9400641276 /* FormValidator.swift */; };
+		56768237219A087F00641276 /* PasswordType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56768236219A087F00641276 /* PasswordType.swift */; };
 		8E8F4AB52138698B00E2FD66 /* LinkedListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F4AB42138698B00E2FD66 /* LinkedListNode.swift */; };
 		8E8F4AB7213869E000E2FD66 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F4AB6213869E000E2FD66 /* LinkedList.swift */; };
 		8E8F4ABF2139C6E300E2FD66 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F4ABE2139C6E300E2FD66 /* Stack.swift */; };
@@ -158,6 +160,8 @@
 		3939CE1C2FCEB6AE9D5E4974 /* Pods_DevKitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevKitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		439C165EDA375DDFA28D0AB6 /* Pods-DevKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevKit/Pods-DevKit.release.xcconfig"; sourceTree = "<group>"; };
 		4DC5340BFE3332A9CE19D779 /* Pods_DevKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		567682342199FA9400641276 /* FormValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidator.swift; sourceTree = "<group>"; };
+		56768236219A087F00641276 /* PasswordType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordType.swift; sourceTree = "<group>"; };
 		61E76AB64DDE67385EB88E7F /* Pods-DevKitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevKitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DevKitUITests/Pods-DevKitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8E8F4AB42138698B00E2FD66 /* LinkedListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListNode.swift; sourceTree = "<group>"; };
 		8E8F4AB6213869E000E2FD66 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
@@ -331,7 +335,7 @@
 		205246C4209B9D2B0067A328 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				20AEC61021936EE400FFB140 /* Components */,
+				567682332199F92E00641276 /* Authentication */,
 				8E8F4AB22138696E00E2FD66 /* Data Structures */,
 				20524718209BB2BC0067A328 /* Views */,
 				2052471A209BB2F30067A328 /* Utility */,
@@ -626,11 +630,13 @@
 			path = Haptics;
 			sourceTree = "<group>";
 		};
-		20AEC61021936EE400FFB140 /* Components */ = {
+		567682332199F92E00641276 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				567682342199FA9400641276 /* FormValidator.swift */,
+				56768236219A087F00641276 /* PasswordType.swift */,
 			);
-			path = Components;
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		75AF81F4E3DEE96B43CF7CBC /* Pods */ = {
@@ -936,6 +942,7 @@
 				20076DB021513BE4005CC155 /* InfinityPageControl.swift in Sources */,
 				205246D8209BA3480067A328 /* ShadowOptions.swift in Sources */,
 				205C74EE2135A3D700AF0B52 /* KeyboardObserver.swift in Sources */,
+				56768237219A087F00641276 /* PasswordType.swift in Sources */,
 				20076DA121504D0D005CC155 /* DateFormatterExtension.swift in Sources */,
 				205246CC209B9D2B0067A328 /* CalendarPermissionsValidatorDelegate.swift in Sources */,
 				8E8F4AB7213869E000E2FD66 /* LinkedList.swift in Sources */,
@@ -965,6 +972,7 @@
 				20076DB121513BE4005CC155 /* PagingDotStateMachine.swift in Sources */,
 				205246CB209B9D2B0067A328 /* CalendarPermissionsValidator.swift in Sources */,
 				20076D8B215036D8005CC155 /* MockHTTPClient.swift in Sources */,
+				567682352199FA9400641276 /* FormValidator.swift in Sources */,
 				20076D78214FF6E9005CC155 /* HTTPRequest.swift in Sources */,
 				2052471F209BB3240067A328 /* ImagePickerDelegate.swift in Sources */,
 				20076DB221513BE4005CC155 /* PageControlDirection.swift in Sources */,

@@ -2,6 +2,7 @@ PODS:
   - Alamofire (4.7.2)
   - Bellerophon (1.2.0)
   - DevKit (0.1.0):
+    - DevKit/Authentication (= 0.1.0)
     - DevKit/DataStructures (= 0.1.0)
     - DevKit/Extensions (= 0.1.0)
     - DevKit/InfinityPageControl (= 0.1.0)
@@ -9,6 +10,7 @@ PODS:
     - DevKit/SharedOptions (= 0.1.0)
     - DevKit/TransitioningNavigationView (= 0.1.0)
     - DevKit/Utility (= 0.1.0)
+  - DevKit/Authentication (0.1.0)
   - DevKit/DataStructures (0.1.0):
     - DevKit/DataStructures/LinkedList (= 0.1.0)
     - DevKit/DataStructures/Stack (= 0.1.0)
@@ -91,7 +93,7 @@ DEPENDENCIES:
   - DevKit (from `../`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - Alamofire
     - Bellerophon
     - KeychainAccess
@@ -105,11 +107,11 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   Bellerophon: fbeff4978425599a129ff2bebfbd8beddf06e919
-  DevKit: 74f19177b05d41e261614da45289fd59eb895871
+  DevKit: 20a84aab60fe27f035bc077360419601a9ff2c6b
   KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
   Marker: f35e0b5d9c97d6997d6b89b23f189e0e4cc127c7
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
 
 PODFILE CHECKSUM: 0c967073f397fab04e915fc4700c2c7fed74867b
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3

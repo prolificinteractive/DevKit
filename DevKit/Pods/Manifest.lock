@@ -15,7 +15,7 @@ DEPENDENCIES:
   - PureLayout (= 3.0.2)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - Alamofire
     - Bellerophon
     - KeychainAccess
@@ -33,4 +33,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 810fbc7381c21368a02117b4ece71039158e6c88
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3

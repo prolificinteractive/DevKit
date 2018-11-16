@@ -50,9 +50,11 @@ Collection of commonly used swift code.
       sp.source_files = 'DevKit/DevKit/Classes/Views/InfinityPageControl/*'
   end
 
-# ==== Components ============================================
+# ==== Authentication =====================================
 
-# Stanle TODO
+  s.subspec 'Authentication' do |sp|
+     sp.source_files = 'DevKit/DevKit/Classes/Authentication/*'
+  end
 
 # ==== Utility ============================================
 
