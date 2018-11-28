@@ -14,7 +14,9 @@ class FormValidatorController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var validateButton: UIButton!
-    
+
+    private var validator = FormValidator()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "FormValidator"
@@ -24,13 +26,12 @@ class FormValidatorController: UIViewController {
             let password = passwordTextField.text else {
                 return
         }
-        let isValidEmail = FormValidator.isValid(email)
-        let isValidPassword = FormValidator.isValid(password, validators: [.lowercasedLetters(num: 1),
-                                                                           .numbers(num: 1),
-                                                                           .uppercasedLetters(num: 1),
-                                                                           .specialCharacters(num: 1),
-                                                                           .minCharacters(num: 1)])
-        
+        let isValidEmail = validator.isValid(email)
+        let isValidPassword = validator.isValid(password, validators: [.lowercasedLetters(num: 1),
+                                                                       .numbers(num: 1),
+                                                                       .uppercasedLetters(num: 1),
+                                                                       .specialCharacters(num: 1),
+                                                                       .minCharacters(num: 1)])
         print("Email: \(isValidEmail)")
         print("Password: \(isValidPassword)")
     }

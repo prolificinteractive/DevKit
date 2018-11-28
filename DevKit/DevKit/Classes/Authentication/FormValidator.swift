@@ -24,12 +24,14 @@ import Foundation
 /// The FormValidator allows to evaluate sign up forms easily. Simply provide email, password and the type of validation you want to specify for the given password.
 /// FormValidator is only mean't to be used for Sign up forms.
 public class FormValidator {
+
+    public init() { }
     
     /// Validates the password with the given validation types and minimum Characters.
     /// - Parameters:
     ///   - password: The email given.
     ///   - passwordType: The type of password.
-    public static func isValid(_ password: String, validators: [ValidationType]) -> Bool {
+    public func isValid(_ password: String, validators: [ValidationType]) -> Bool {
         return isValid(password, passwordRegex: ValidationType.getRegexCode(with: validators))
     }
     
@@ -38,7 +40,7 @@ public class FormValidator {
     ///   - email: the email given.
     ///   - password: The password given.
     ///   - passwordType: The type of password.
-    public static func isValid(_ email: String, password: String, validators: [ValidationType]) -> Bool {
+    public func isValid(_ email: String, password: String, validators: [ValidationType]) -> Bool {
         return isValid(email) && isValid(password, validators: validators)
     }
     
@@ -49,7 +51,7 @@ public class FormValidator {
     ///   - confirmationPassword: The confirmation password given.
     ///   - passwordType: The type of password.
     ///   - minCharacters: The minimum characters for the password.
-    public static func isValid(_ email: String,
+    public func isValid(_ email: String,
                                password: String,
                                confirmationPassword: String,
                                validators: [ValidationType]) -> Bool {
@@ -63,7 +65,7 @@ public class FormValidator {
     ///   - email: the email given.
     ///   - password: The password given.
     ///   - passwordRegex: The password regex code.
-    public static func isValid(_ email: String, password: String, passwordRegex: String) -> Bool {
+    public func isValid(_ email: String, password: String, passwordRegex: String) -> Bool {
         return isValid(email) && isValid(password, passwordRegex: passwordRegex)
     }
     
@@ -72,7 +74,7 @@ public class FormValidator {
     ///   - email: the email given.
     ///   - password: The password given.
     ///   - passwordRegex: The password regex code.
-    public static func isValid(_ email: String,
+    public func isValid(_ email: String,
                                password: String,
                                confirmationPassword: String,
                                passwordRegex: String) -> Bool {
@@ -85,23 +87,24 @@ public class FormValidator {
     /// - Parameters:
     ///   - password: The password given.
     ///   - passwordRegex: The password regex code.
-    public static func isValid(_ password: String, passwordRegex: String) -> Bool {
+    public func isValid(_ password: String, passwordRegex: String) -> Bool {
         return NSPredicate(format: "SELF MATCHES %@", passwordRegex).evaluate(with: password)
     }
     
     /// Validates the Email.
     /// - Parameters:
     ///   - email: the email given.
-    public static func isValid(_ email: String) -> Bool {
-        let dataDetector = try? NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue)
-        let start = 0
-        let end = email.count
-        let range = NSRange(location: start, length: end)
-        guard let match = dataDetector?.matches(in: email, options: [], range: range).first else {
-            return false
-        }
-        return match.url?.absoluteString.starts(with: "mailto:") ?? false
-            && match.range.location == start
-            && match.range.length == end
+    public func isValid(_ email: String) -> Bool {
+//        let dataDetector = try? NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue)
+//        let start = 0
+//        let end = email.count
+//        let range = NSRange(location: start, length: end)
+//        guard let match = dataDetector?.matches(in: email, options: [], range: range).first else {
+//            return false
+//        }
+//        return match.url?.absoluteString.starts(with: "mailto:") ?? false
+//            && match.range.location == start
+//            && match.range.length == end
+        return true
     }
 }
