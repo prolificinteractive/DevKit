@@ -15,19 +15,21 @@
 /// - specialCharacters
 /// - numbers
 ///
-public enum ValidationType: String {
+public enum ValidationType {
     
     /// Password contains lowercased letters.
-    case lowercasedLetters = "(?=.*[a-z])"
+    case lowercasedLetters(num: Int)
     
     /// Password contains uppercased letters.
-    case uppercasedLetters = "(?=.*[A-Z])"
+    case uppercasedLetters(num: Int)
     
     /// Password contains numbers.
-    case numbers = "(?=.*[0-9])"
+    case numbers(num: Int)
     
     /// Password contains special characters.
-    case specialCharacters = "(?=.*[!@#$&*])"
+    case specialCharacters(num: Int)
+
+    case minCharacters(num: Int)
     
     /// function that handles the type of Password and return the regex.
     ///
@@ -35,21 +37,22 @@ public enum ValidationType: String {
     ///   - validators: Validation types required.
     ///   - minCharacters: The minimum characters for the given password.
     /// - Returns: Regex code.
-    public static func getRegexCode(with validators: [ValidationType], and minCharacters: Int) -> String {
+    public static func getRegexCode(with validators: [ValidationType]) -> String {
         var regexCode = "^"
         validators.forEach { type in
             switch type {
             case .lowercasedLetters:
-                regexCode += ValidationType.lowercasedLetters.rawValue
+                regexCode += "(?=.*[a-z])"
             case .uppercasedLetters:
-                regexCode += ValidationType.uppercasedLetters.rawValue
+                regexCode += "(?=.*[A-Z])"
             case .numbers:
-                regexCode += ValidationType.numbers.rawValue
+                regexCode += "(?=.*[0-9])"
             case .specialCharacters:
-                regexCode += ValidationType.specialCharacters.rawValue
+                regexCode += "(?=.*[!@#$&*])"
+            case .minCharacters(let num):
+                regexCode += ".{\(num),}$"
             }
         }
-        regexCode += ".{\(minCharacters),}$"
         return regexCode
     }
 }

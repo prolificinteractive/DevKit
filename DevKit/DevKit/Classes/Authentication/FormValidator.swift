@@ -29,8 +29,8 @@ public class FormValidator {
     /// - Parameters:
     ///   - password: The email given.
     ///   - passwordType: The type of password.
-    public static func isValid(_ password: String, validators: [ValidationType], minCharacters: Int) -> Bool {
-        return isValid(password, passwordRegex: ValidationType.getRegexCode(with: validators, and: minCharacters))
+    public static func isValid(_ password: String, validators: [ValidationType]) -> Bool {
+        return isValid(password, passwordRegex: ValidationType.getRegexCode(with: validators))
     }
     
     /// Validates the email and password with the given validation types and minimum characters.
@@ -38,9 +38,8 @@ public class FormValidator {
     ///   - email: the email given.
     ///   - password: The password given.
     ///   - passwordType: The type of password.
-    ///   - minCharacters: The minimum characters for the password.
-    public static func isValid(_ email: String, password: String, validators: [ValidationType], minCharacters: Int) -> Bool {
-        return isValid(email) && isValid(password, validators: validators, minCharacters: minCharacters)
+    public static func isValid(_ email: String, password: String, validators: [ValidationType]) -> Bool {
+        return isValid(email) && isValid(password, validators: validators)
     }
     
     /// Validates the email, password and confirmation password with the given validation types and minimum characters.
@@ -50,10 +49,13 @@ public class FormValidator {
     ///   - confirmationPassword: The confirmation password given.
     ///   - passwordType: The type of password.
     ///   - minCharacters: The minimum characters for the password.
-    public static func isValid(_ email: String, password: String, confirmationPassword: String, validators: [ValidationType], minCharacters: Int) -> Bool {
+    public static func isValid(_ email: String,
+                               password: String,
+                               confirmationPassword: String,
+                               validators: [ValidationType]) -> Bool {
         return isValid(email)
             && password == confirmationPassword
-            && isValid(password, validators: validators, minCharacters: minCharacters)
+            && isValid(password, validators: validators)
     }
     
     /// Validates the email and password with the given password regex code.
@@ -70,7 +72,10 @@ public class FormValidator {
     ///   - email: the email given.
     ///   - password: The password given.
     ///   - passwordRegex: The password regex code.
-    public static func isValid(_ email: String, password: String, confirmationPassword: String, passwordRegex: String) -> Bool {
+    public static func isValid(_ email: String,
+                               password: String,
+                               confirmationPassword: String,
+                               passwordRegex: String) -> Bool {
         return isValid(email)
             && password == confirmationPassword
             && isValid(password, passwordRegex: passwordRegex)
