@@ -9,6 +9,20 @@
 import Foundation
 
 /// FormValidator used to validate sign up forms.
+///
+/// **Subspec: Authentication/FormValidator**
+///
+/// ```
+//    func isValidForm(_ email: String, password: String, validators: [ValidationType]) -> Bool {
+//        return FormValidator.isValid(email,
+//                                     password: password,
+//                                     validators: validators,
+//                                     minCharacters: 6)
+//    }
+/// ```
+///
+/// The FormValidator allows to evaluate sign up forms easily. Simply provide email, password and the type of validation you want to specify for the given password.
+/// FormValidator is only mean't to be used for Sign up forms.
 public class FormValidator {
     
     /// Validates the password with the given validation types and minimum Characters.

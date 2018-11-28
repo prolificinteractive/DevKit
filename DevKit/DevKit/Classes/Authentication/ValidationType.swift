@@ -7,6 +7,14 @@
 //
 
 /// Enum to determine the password type.
+///
+/// **Subspec: Authentication/ValidationType**
+///
+/// - lowercasedLetters
+/// - uppercasedLetters
+/// - specialCharacters
+/// - numbers
+///
 public enum ValidationType: String {
     
     /// Password contains lowercased letters.
@@ -22,6 +30,11 @@ public enum ValidationType: String {
     case specialCharacters = "(?=.*[!@#$&*])"
     
     /// function that handles the type of Password and return the regex.
+    ///
+    /// - Parameters:
+    ///   - validators: Validation types required.
+    ///   - minCharacters: The minimum characters for the given password.
+    /// - Returns: Regex code.
     public static func getRegexCode(with validators: [ValidationType], and minCharacters: Int) -> String {
         var regexCode = "^"
         validators.forEach { type in
