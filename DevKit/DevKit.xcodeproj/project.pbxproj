@@ -29,6 +29,7 @@
 		20076DB021513BE4005CC155 /* InfinityPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076DAB21513BE4005CC155 /* InfinityPageControl.swift */; };
 		20076DB121513BE4005CC155 /* PagingDotStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076DAC21513BE4005CC155 /* PagingDotStateMachine.swift */; };
 		20076DB221513BE4005CC155 /* PageControlDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076DAD21513BE4005CC155 /* PageControlDirection.swift */; };
+		2042306021AF458000BD5274 /* ValidationTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2042305F21AF458000BD5274 /* ValidationTypeTests.swift */; };
 		20524697209B9C250067A328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20524696209B9C250067A328 /* AppDelegate.swift */; };
 		20524699209B9C250067A328 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20524698209B9C250067A328 /* ViewController.swift */; };
 		2052469C209B9C250067A328 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2052469A209B9C250067A328 /* Main.storyboard */; };
@@ -115,6 +116,7 @@
 		20076DAB21513BE4005CC155 /* InfinityPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfinityPageControl.swift; sourceTree = "<group>"; };
 		20076DAC21513BE4005CC155 /* PagingDotStateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingDotStateMachine.swift; sourceTree = "<group>"; };
 		20076DAD21513BE4005CC155 /* PageControlDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageControlDirection.swift; sourceTree = "<group>"; };
+		2042305F21AF458000BD5274 /* ValidationTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationTypeTests.swift; sourceTree = "<group>"; };
 		20524693209B9C250067A328 /* DevKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20524696209B9C250067A328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20524698209B9C250067A328 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -276,6 +278,14 @@
 				20076DAC21513BE4005CC155 /* PagingDotStateMachine.swift */,
 			);
 			path = InfinityPageControl;
+			sourceTree = "<group>";
+		};
+		2042305E21AF455500BD5274 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				2042305F21AF458000BD5274 /* ValidationTypeTests.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		2052468A209B9C250067A328 = {
@@ -673,6 +683,7 @@
 		8E8F4AB8213872F200E2FD66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2042305E21AF455500BD5274 /* Authentication */,
 				8E8F4AB9213872F900E2FD66 /* Data Structures */,
 			);
 			path = Classes;
@@ -1004,6 +1015,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				209955A6214C0F5E00674465 /* LinkedListTests.swift in Sources */,
+				2042306021AF458000BD5274 /* ValidationTypeTests.swift in Sources */,
 				209955A5214C0F5E00674465 /* StackTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
