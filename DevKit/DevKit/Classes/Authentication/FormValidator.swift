@@ -95,16 +95,15 @@ public class FormValidator {
     /// - Parameters:
     ///   - email: the email given.
     public func isValid(_ email: String) -> Bool {
-//        let dataDetector = try? NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue)
-//        let start = 0
-//        let end = email.count
-//        let range = NSRange(location: start, length: end)
-//        guard let match = dataDetector?.matches(in: email, options: [], range: range).first else {
-//            return false
-//        }
-//        return match.url?.absoluteString.starts(with: "mailto:") ?? false
-//            && match.range.location == start
-//            && match.range.length == end
-        return true
+        let dataDetector = try? NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue)
+        let start = 0
+        let end = email.count
+        let range = NSRange(location: start, length: end)
+        guard let match = dataDetector?.matches(in: email, options: [], range: range).first else {
+            return false
+        }
+        return match.url?.absoluteString.starts(with: "mailto:") ?? false
+            && match.range.location == start
+            && match.range.length == end
     }
 }
