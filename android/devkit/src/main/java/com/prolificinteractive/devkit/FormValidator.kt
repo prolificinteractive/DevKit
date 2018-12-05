@@ -1,5 +1,7 @@
 package com.prolificinteractive.devkit
 
+import android.util.Patterns.EMAIL_ADDRESS
+
 class FormValidator {
 
     fun isValid(password: String, validators: Array<ValidationInfo>): Boolean {
@@ -37,6 +39,6 @@ class FormValidator {
     }
 
     fun isValid(email: String): Boolean {
-        return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches();
+        return EMAIL_ADDRESS.matcher(email).matches()
     }
 }

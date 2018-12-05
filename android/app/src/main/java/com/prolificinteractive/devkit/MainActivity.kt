@@ -1,18 +1,29 @@
 package com.prolificinteractive.devkit
 
+import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    val formValidator = FormValidator()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Example of a call to a native method
-        sample_text.text = stringFromJNI()
+        loginButton.setOnClickListener {
+            val validators = arrayOf(ValidationInfo(ValidationType.MIN_CHARACTERS, 5))
 
+            if (formValidator.isValid(emailEditText.text.toString(), passwordEditText.text.toString(), validators)) {
+                errorTextView.setTextColor(Color.GREEN)
+                errorTextView.text = "Valid Credentials"
+            } else {
+                errorTextView.setTextColor(Color.RED)
+                errorTextView.text = "Invalid Email or Password!"
+            }
+        }
     }
 
     /**
