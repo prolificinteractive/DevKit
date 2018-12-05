@@ -22,6 +22,28 @@
         <option name="PROJECT_TYPE" value="1" />
       </configuration>
     </facet>
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.6" useProjectSettings="false">
+        <compilerSettings />
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/build/tmp/kotlin-classes/debug" />
+          <option name="classpath" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.10/4d147bf43060dc43d61b096e24da1e67dfe0c032/kotlin-stdlib-jdk7-1.3.10.jar:/Users/jonathansamudio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/1ba449d9d0968105f75cd7e6fa8a38b8/jars/classes.jar:/Users/jonathansamudio/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.10/b178c1501609c6e4ee8be635513cb023a466457d/kotlin-stdlib-1.3.10.jar:/Users/jonathansamudio/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/33dadec3b9165b78a1c115c49d53ef03/jars/classes.jar:/Users/jonathansamudio/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/85ccbc8f8ca4e2af85da1bf849f4ba68/jars/classes.jar:/Users/jonathansamudio/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/bfa7bd2db1b106586d929e2a02cd17fc/jars/classes.jar:/Users/jonathansamudio/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/0665b3e2b5123642403263760732691d/jars/classes.jar:/Users/jonathansamudio/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/d30db437c2d8b2a424b9883a7bf4469d/jars/classes.jar:/Users/jonathansamudio/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/8f1edab3a6f008719c8ef6e44407c2ab/jars/classes.jar:/Users/jonathansamudio/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/e41f332611ac78ec8265af05179b91a2/jars/classes.jar:/Users/jonathansamudio/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/e61b0cf588220483c2392d7835aa54b6/jars/classes.jar:/Users/jonathansamudio/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/787bdc984c4e77f4db96b81f619355d5/jars/classes.jar:/Users/jonathansamudio/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/952bde9c6a320b7967ef935d59db3cbf/jars/classes.jar:/Users/jonathansamudio/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/341fddbc1b1ec600067f25564c792ec4/jars/classes.jar:/Users/jonathansamudio/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/026c7f1ce6eeb77d97bcaac0ff9881c4/jars/classes.jar:/Users/jonathansamudio/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/acc033b6e4aeed7e9539d4052f798614/jars/classes.jar:/Users/jonathansamudio/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/2bb8d700401f846905b8d004df49af27/jars/classes.jar:/Users/jonathansamudio/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/0721b2739bf5ca2e7dc4ea7832dd3fed/jars/classes.jar:/Users/jonathansamudio/.gradle/caches/modules-2/files-2.1/com.android.support/collections/28.0.0/c1bcdade4d3cc2836130424a3f3e4182c666a745/collections-28.0.0.jar:/Users/jonathansamudio/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/27219bec1dc2eaacd04fc5f45209424c/jars/classes.jar:/Users/jonathansamudio/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/494d3e72ce7b99d036248043b592199a/jars/classes.jar:/Users/jonathansamudio/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/573faf1e0b0b466b200751e61c63a5bf/jars/classes.jar:/Users/jonathansamudio/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/255ec81f3baf461cefddee3cd529ae82/jars/classes.jar:/Users/jonathansamudio/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/970a5167b1f28d95cb4e2df32390a17f/jars/classes.jar:/Users/jonathansamudio/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/204ed7dd8cf628826671efe68bdfe602/jars/classes.jar:/Users/jonathansamudio/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/6321015bbebbda3c0eeee7718f6e045a/jars/classes.jar:/Users/jonathansamudio/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/3a5b8b2bf10bcf1cc0ff95fde0101cc2/jars/classes.jar:/Users/jonathansamudio/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.1/207a6efae6a3555e326de41f76bdadd9a239cbce/common-1.1.1.jar:/Users/jonathansamudio/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/28c7f8577abd270487d53fab5f13ea02/jars/classes.jar:/Users/jonathansamudio/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.1/e55b70d1f5620db124b3e85a7f4bdc7bd48d9f95/common-1.1.1.jar:/Users/jonathansamudio/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/ee79dafe18ffcf8192df4bd04341e4ff/jars/classes.jar:/Users/jonathansamudio/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/28.0.0/ed73f5337a002d1fd24339d5fb08c2c9d9ca60d8/support-annotations-28.0.0.jar:/Users/jonathansamudio/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.10/1b19d99229dcedad7caf50534dce38fe82845269/kotlin-stdlib-common-1.3.10.jar:/Users/jonathansamudio/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/jonathansamudio/Library/Android/sdk/platforms/android-28/android.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="devkit_debug" />
+          <option name="addCompilerBuiltIns" value="true" />
+          <option name="loadBuiltInsFromDependencies" value="true" />
+          <option name="languageVersion" value="1.3" />
+          <option name="apiVersion" value="1.3" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
     <output url="file://$MODULE_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes" />
@@ -103,6 +125,7 @@
     <orderEntry type="library" name="Gradle: com.android.support:localbroadcastmanager-28.0.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:runner-1.0.2" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-vector-drawable-28.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.3.10@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:interpolator-28.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-core-utils-28.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-core-ui-28.0.0" level="project" />
@@ -114,11 +137,14 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.squareup:javawriter:2.1.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:documentfile-28.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:swiperefreshlayout-28.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:cursoradapter-28.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:asynclayoutinflater-28.0.0" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:livedata-1.1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.code.findbugs:jsr305:2.0.1@jar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.10@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test.espresso:espresso-core-3.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.10@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: javax.inject:javax.inject:1@jar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.core:common:1.1.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:versionedparcelable-28.0.0" level="project" />
