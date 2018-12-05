@@ -2,18 +2,18 @@ package com.prolificinteractive.devkit
 
 class FormValidator {
 
-    fun isValid(password: String, validators: Array<ValidationType>): Boolean {
-        return isValid(password, ValidationType.getRegexCode(validators))
+    fun isValid(password: String, validators: Array<ValidationInfo>): Boolean {
+        return isValid(password, ValidationInfo.getRegexCode(validators))
     }
 
-    fun isValid(email: String, password: String, validators: Array<ValidationType>): Boolean {
+    fun isValid(email: String, password: String, validators: Array<ValidationInfo>): Boolean {
         return isValid(email) && isValid(password, validators)
     }
 
     fun isValid(email: String,
                 password: String,
                 confirmationPassword: String,
-                validators: Array<ValidationType>): Boolean {
+                validators: Array<ValidationInfo>): Boolean {
         return isValid(email)
                 && password == confirmationPassword
                 && isValid(password, validators)
