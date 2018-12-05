@@ -16,8 +16,7 @@ import Foundation
 //    func isValidForm(_ email: String, password: String, validators: [ValidationType]) -> Bool {
 //        return FormValidator.isValid(email,
 //                                     password: password,
-//                                     validators: validators,
-//                                     minCharacters: 6)
+//                                     validators: validators)
 //    }
 /// ```
 ///
@@ -52,7 +51,6 @@ public class FormValidator {
     ///   - password: The password given.
     ///   - confirmationPassword: The confirmation password given.
     ///   - validators: The validators for your password.
-    ///   - minCharacters: The minimum characters for the password.
     public func isValid(_ email: String,
                                password: String,
                                confirmationPassword: String,
@@ -75,6 +73,7 @@ public class FormValidator {
     /// - Parameters:
     ///   - email: the email given.
     ///   - password: The password given.
+    ///   - confirmationPassword: The confirmation password given.
     ///   - passwordRegex: The password regex code.
     public func isValid(_ email: String,
                                password: String,

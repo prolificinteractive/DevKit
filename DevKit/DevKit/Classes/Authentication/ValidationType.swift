@@ -29,6 +29,7 @@ public enum ValidationType {
     /// Password contains special characters.
     case specialCharacters(count: Int)
 
+    /// Password minimun characters
     case minCharacters(count: Int)
     
     /// function that handles the type of Password and return the regex.
@@ -39,6 +40,7 @@ public enum ValidationType {
     /// - Returns: Regex code.
     internal static func getRegexCode(with validators: [ValidationType]) -> String {
         var regexCode = "^"
+        var didProvideMinCharacters = false
         validators.forEach { type in
             switch type {
             case .lowercasedLetters(let count):
@@ -50,8 +52,12 @@ public enum ValidationType {
             case .specialCharacters(let count):
                 regexCode += generateRegex(from: "(?=.*[!@#$&*])", and: count)
             case .minCharacters(let num):
+                didProvideMinCharacters = true
                 regexCode += ".{\(num),}$"
             }
+        }
+        if !didProvideMinCharacters {
+            regexCode += ".{1,}$"
         }
         return regexCode
     }
