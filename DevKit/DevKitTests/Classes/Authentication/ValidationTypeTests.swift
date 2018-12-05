@@ -19,7 +19,7 @@ class ValidationTypeTests: XCTestCase {
 
     func testGetRegexCode_LowercaseLetters_Single() {
         // Given
-        let validationType = ValidationType.lowercasedLetters(num: 1)
+        let validationType = ValidationType.lowercasedLetters(count: 1)
 
         // When
         let result = ValidationType.getRegexCode(with: [validationType])
@@ -30,7 +30,7 @@ class ValidationTypeTests: XCTestCase {
 
     func testGetRegexCode_UppercasedLetters_Single() {
         // Given
-        let validationType = ValidationType.uppercasedLetters(num: 1)
+        let validationType = ValidationType.uppercasedLetters(count: 1)
 
         // When
         let result = ValidationType.getRegexCode(with: [validationType])
@@ -41,7 +41,7 @@ class ValidationTypeTests: XCTestCase {
 
     func testGetRegexCode_Numbers_Single() {
         // Given
-        let validationType = ValidationType.numbers(num: 1)
+        let validationType = ValidationType.numbers(count: 1)
 
         // When
         let result = ValidationType.getRegexCode(with: [validationType])
@@ -52,7 +52,7 @@ class ValidationTypeTests: XCTestCase {
 
     func testGetRegexCode_SpecialCharacters_Single() {
         // Given
-        let validationType = ValidationType.specialCharacters(num: 1)
+        let validationType = ValidationType.specialCharacters(count: 1)
 
         // When
         let result = ValidationType.getRegexCode(with: [validationType])
@@ -64,7 +64,7 @@ class ValidationTypeTests: XCTestCase {
     func testGetRegexCode_MinCharacters_Single() {
         // Given
         let num = 1
-        let validationType = ValidationType.minCharacters(num: num)
+        let validationType = ValidationType.minCharacters(count: num)
 
         // When
         let result = ValidationType.getRegexCode(with: [validationType])
@@ -77,52 +77,52 @@ class ValidationTypeTests: XCTestCase {
 
     func testGetRegexCode_LowercaseLetters_Multiple() {
         // Given
-        let validationType = ValidationType.lowercasedLetters(num: 2)
+        let validationType = ValidationType.lowercasedLetters(count: 2)
 
         // When
         let result = ValidationType.getRegexCode(with: [validationType])
 
         // Then
-        XCTAssertEqual(result, "^(?=.*[a-z])")
+        XCTAssertEqual(result, "^(?=.*[a-z].*[a-z])")
     }
 
     func testGetRegexCode_UppercasedLetters_Multiple() {
         // Given
-        let validationType = ValidationType.uppercasedLetters(num: 2)
+        let validationType = ValidationType.uppercasedLetters(count: 2)
 
         // When
         let result = ValidationType.getRegexCode(with: [validationType])
 
         // Then
-        XCTAssertEqual(result, "^(?=.*[A-Z])")
+        XCTAssertEqual(result, "^(?=.*[A-Z].*[A-Z])")
     }
 
     func testGetRegexCode_Numbers_Multiple() {
         // Given
-        let validationType = ValidationType.numbers(num: 2)
+        let validationType = ValidationType.numbers(count: 2)
 
         // When
         let result = ValidationType.getRegexCode(with: [validationType])
 
         // Then
-        XCTAssertEqual(result, "^(?=.*[0-9])")
+        XCTAssertEqual(result, "^(?=.*[0-9].*[0-9])")
     }
 
     func testGetRegexCode_SpecialCharacters_Multiple() {
         // Given
-        let validationType = ValidationType.specialCharacters(num: 2)
+        let validationType = ValidationType.specialCharacters(count: 2)
 
         // When
         let result = ValidationType.getRegexCode(with: [validationType])
 
         // Then
-        XCTAssertEqual(result, "^(?=.*[!@#$&*])")
+        XCTAssertEqual(result, "^(?=.*[!@#$&*].*[!@#$&*])")
     }
 
     func testGetRegexCode_MinCharacters_Multiple() {
         // Given
         let num = 2
-        let validationType = ValidationType.minCharacters(num: num)
+        let validationType = ValidationType.minCharacters(count: num)
 
         // When
         let result = ValidationType.getRegexCode(with: [validationType])
@@ -132,36 +132,40 @@ class ValidationTypeTests: XCTestCase {
     }
 
     // MARK: - All Regex Codes
-
+    
     func testGetRegexCode_AllCodes_Single() {
         // Given
         let num = 1
-        let validationTypes = [ValidationType.lowercasedLetters(num: num),
-                              ValidationType.numbers(num: num),
-                              ValidationType.uppercasedLetters(num: num),
-                              ValidationType.specialCharacters(num: num),
-                              ValidationType.minCharacters(num: num)]
-
+        let validationTypes = [ValidationType.lowercasedLetters(count: num),
+                               ValidationType.numbers(count: num),
+                               ValidationType.uppercasedLetters(count: num),
+                               ValidationType.specialCharacters(count: num),
+                               ValidationType.minCharacters(count: num)]
+        
         // When
         let result = ValidationType.getRegexCode(with: validationTypes)
-
+        
         // Then
         XCTAssertEqual(result, "^(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z])(?=.*[!@#$&*]).{\(num),}$")
     }
 
     func testGetRegexCode_AllCodes_Multiple() {
         // Given
-        let num = 2
-        let validationTypes = [ValidationType.lowercasedLetters(num: num),
-                              ValidationType.numbers(num: num),
-                              ValidationType.uppercasedLetters(num: num),
-                              ValidationType.specialCharacters(num: num),
-                              ValidationType.minCharacters(num: num)]
+        let lowercasedLettersCount = 1
+        let numbersCount = 2
+        let uppercasedLettersCount = 3
+        let specialCharactersCount = 2
+        let minCharacters = 10
+        let validationTypes = [ValidationType.lowercasedLetters(count: lowercasedLettersCount),
+                              ValidationType.numbers(count: numbersCount),
+                              ValidationType.uppercasedLetters(count: uppercasedLettersCount),
+                              ValidationType.specialCharacters(count: specialCharactersCount),
+                              ValidationType.minCharacters(count: minCharacters)]
 
         // When
         let result = ValidationType.getRegexCode(with: validationTypes)
 
         // Then
-        XCTAssertEqual(result, "^(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z])(?=.*[!@#$&*]).{\(num),}$")
+        XCTAssertEqual(result, "^(?=.*[a-z])(?=.*[0-9].*[0-9])(?=.*[A-Z].*[A-Z].*[A-Z])(?=.*[!@#$&*].*[!@#$&*]).{\(minCharacters),}$")
     }
 }

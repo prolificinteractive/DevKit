@@ -25,13 +25,14 @@ import Foundation
 /// want to specify for the given password.
 /// FormValidator is only mean't to be used for Sign up forms.
 public class FormValidator {
-
-    public init() { }
+    
+    /// Empty constructor.
+    public init() {}
     
     /// Validates the password with the given validation types and minimum Characters.
     /// - Parameters:
     ///   - password: The email given.
-    ///   - passwordType: The type of password.
+    ///   - validators: The validators for your password.
     public func isValid(_ password: String, validators: [ValidationType]) -> Bool {
         return isValid(password, passwordRegex: ValidationType.getRegexCode(with: validators))
     }
@@ -40,7 +41,7 @@ public class FormValidator {
     /// - Parameters:
     ///   - email: the email given.
     ///   - password: The password given.
-    ///   - passwordType: The type of password.
+    ///   - validators: The validators for your password.
     public func isValid(_ email: String, password: String, validators: [ValidationType]) -> Bool {
         return isValid(email) && isValid(password, validators: validators)
     }
@@ -50,7 +51,7 @@ public class FormValidator {
     ///   - email: the email given.
     ///   - password: The password given.
     ///   - confirmationPassword: The confirmation password given.
-    ///   - passwordType: The type of password.
+    ///   - validators: The validators for your password.
     ///   - minCharacters: The minimum characters for the password.
     public func isValid(_ email: String,
                                password: String,
