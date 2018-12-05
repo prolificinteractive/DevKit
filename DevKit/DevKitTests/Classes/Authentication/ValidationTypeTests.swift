@@ -25,7 +25,7 @@ class ValidationTypeTests: XCTestCase {
         let result = ValidationType.getRegexCode(with: [validationType])
 
         // Then
-        XCTAssertEqual(result, "^(?=.*[a-z])")
+        XCTAssertEqual(result, "^(?=.*[a-z]).{1,}$")
     }
 
     func testGetRegexCode_UppercasedLetters_Single() {
@@ -36,7 +36,7 @@ class ValidationTypeTests: XCTestCase {
         let result = ValidationType.getRegexCode(with: [validationType])
 
         // Then
-        XCTAssertEqual(result, "^(?=.*[A-Z])")
+        XCTAssertEqual(result, "^(?=.*[A-Z]).{1,}$")
     }
 
     func testGetRegexCode_Numbers_Single() {
@@ -47,7 +47,7 @@ class ValidationTypeTests: XCTestCase {
         let result = ValidationType.getRegexCode(with: [validationType])
 
         // Then
-        XCTAssertEqual(result, "^(?=.*[0-9])")
+        XCTAssertEqual(result, "^(?=.*[0-9]).{1,}$")
     }
 
     func testGetRegexCode_SpecialCharacters_Single() {
@@ -58,7 +58,7 @@ class ValidationTypeTests: XCTestCase {
         let result = ValidationType.getRegexCode(with: [validationType])
 
         // Then
-        XCTAssertEqual(result, "^(?=.*[!@#$&*])")
+        XCTAssertEqual(result, "^(?=.*[!@#$&*]).{1,}$")
     }
 
     func testGetRegexCode_MinCharacters_Single() {
@@ -83,7 +83,7 @@ class ValidationTypeTests: XCTestCase {
         let result = ValidationType.getRegexCode(with: [validationType])
 
         // Then
-        XCTAssertEqual(result, "^(?=.*[a-z].*[a-z])")
+        XCTAssertEqual(result, "^(?=.*[a-z].*[a-z]).{1,}$")
     }
 
     func testGetRegexCode_UppercasedLetters_Multiple() {
@@ -94,7 +94,7 @@ class ValidationTypeTests: XCTestCase {
         let result = ValidationType.getRegexCode(with: [validationType])
 
         // Then
-        XCTAssertEqual(result, "^(?=.*[A-Z].*[A-Z])")
+        XCTAssertEqual(result, "^(?=.*[A-Z].*[A-Z]).{1,}$")
     }
 
     func testGetRegexCode_Numbers_Multiple() {
@@ -105,7 +105,7 @@ class ValidationTypeTests: XCTestCase {
         let result = ValidationType.getRegexCode(with: [validationType])
 
         // Then
-        XCTAssertEqual(result, "^(?=.*[0-9].*[0-9])")
+        XCTAssertEqual(result, "^(?=.*[0-9].*[0-9]).{1,}$")
     }
 
     func testGetRegexCode_SpecialCharacters_Multiple() {
@@ -116,7 +116,7 @@ class ValidationTypeTests: XCTestCase {
         let result = ValidationType.getRegexCode(with: [validationType])
 
         // Then
-        XCTAssertEqual(result, "^(?=.*[!@#$&*].*[!@#$&*])")
+        XCTAssertEqual(result, "^(?=.*[!@#$&*].*[!@#$&*]).{1,}$")
     }
 
     func testGetRegexCode_MinCharacters_Multiple() {
