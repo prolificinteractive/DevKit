@@ -21,7 +21,8 @@ import Foundation
 //    }
 /// ```
 ///
-/// The FormValidator allows to evaluate sign up forms easily. Simply provide email, password and the type of validation you want to specify for the given password.
+/// The FormValidator allows to evaluate sign up forms easily. Simply provide email, password and the type of validation you
+/// want to specify for the given password.
 /// FormValidator is only mean't to be used for Sign up forms.
 public class FormValidator {
 
