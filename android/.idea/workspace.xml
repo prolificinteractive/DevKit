@@ -2457,8 +2457,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1773" />
-    <option name="y" value="58" />
+    <option name="x" value="1714" />
+    <option name="y" value="43" />
     <option name="width" value="1680" />
     <option name="height" value="961" />
   </component>
@@ -2485,6 +2485,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="device.picker.selection" value="Pixel_2_XL_API_28" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
@@ -2520,7 +2521,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
