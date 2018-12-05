@@ -33,12 +33,10 @@ class FormValidator {
     }
 
     fun isValid(password: String, passwordRegex: String): Boolean {
-        // TODO: Regex
-        return true
+        return password.matches(Regex(passwordRegex))
     }
 
     fun isValid(email: String): Boolean {
-        // TODO: Regex
-        return true
+        return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches();
     }
 }
