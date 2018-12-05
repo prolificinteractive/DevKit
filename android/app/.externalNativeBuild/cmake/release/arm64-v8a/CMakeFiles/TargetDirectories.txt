@@ -1,0 +1,3 @@
+/Users/jonathansamudio/Prolific-Projects/DevKit/android/app/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/jonathansamudio/Prolific-Projects/DevKit/android/app/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/Users/jonathansamudio/Prolific-Projects/DevKit/android/app/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/native-lib.dir
