@@ -13,8 +13,6 @@ class MainActivity : AppCompatActivity() {
         // Example of a call to a native method
         sample_text.text = stringFromJNI()
 
-        var sampleClass = SampleClass()
-        sampleClass.doSomething()
     }
 
     /**
