@@ -11,10 +11,6 @@ import XCTest
 
 class ValidationTypeTests: XCTestCase {
 
-    override func setUp() {
-        // DO IT HERE
-    }
-
     // MARK: - Single
 
     func testGetRegexCode_LowercaseLetters_Single() {

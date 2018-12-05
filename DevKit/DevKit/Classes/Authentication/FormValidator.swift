@@ -14,7 +14,8 @@ import Foundation
 ///
 /// ```
 //    func isValidForm(_ email: String, password: String, validators: [ValidationType]) -> Bool {
-//        return FormValidator.isValid(email,
+//        let formValidator = FormValidator()
+//        return formValidator.isValid(email,
 //                                     password: password,
 //                                     validators: validators)
 //    }
