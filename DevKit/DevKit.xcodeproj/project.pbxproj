@@ -348,7 +348,7 @@
 		205246C4209B9D2B0067A328 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				567682332199F92E00641276 /* Authentication */,
+				567682332199F92E00641276 /* Validation */,
 				8E8F4AB22138696E00E2FD66 /* Data Structures */,
 				20524718209BB2BC0067A328 /* Views */,
 				2052471A209BB2F30067A328 /* Utility */,
@@ -643,13 +643,13 @@
 			path = Haptics;
 			sourceTree = "<group>";
 		};
-		567682332199F92E00641276 /* Authentication */ = {
+		567682332199F92E00641276 /* Validation */ = {
 			isa = PBXGroup;
 			children = (
 				567682342199FA9400641276 /* FormValidator.swift */,
 				56768236219A087F00641276 /* ValidationType.swift */,
 			);
-			path = Authentication;
+			path = Validation;
 			sourceTree = "<group>";
 		};
 		75AF81F4E3DEE96B43CF7CBC /* Pods */ = {

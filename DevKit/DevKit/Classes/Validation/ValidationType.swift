@@ -8,7 +8,7 @@
 
 /// Enum to determine the password type.
 ///
-/// **Subspec: Authentication/ValidationType**
+/// **Subspec: Validation/ValidationType**
 ///
 /// - lowercasedLetters
 /// - uppercasedLetters

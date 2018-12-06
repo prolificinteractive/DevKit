@@ -10,7 +10,7 @@ import Foundation
 
 /// FormValidator used to validate sign up forms.
 ///
-/// **Subspec: Authentication/FormValidator**
+/// **Subspec: Validation/FormValidator**
 ///
 /// ```
 //    func isValidForm(_ email: String, password: String, validators: [ValidationType]) -> Bool {
