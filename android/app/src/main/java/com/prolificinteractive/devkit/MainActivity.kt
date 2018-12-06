@@ -1,8 +1,11 @@
 package com.prolificinteractive.devkit
 
 import android.graphics.Color
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.prolificinteractive.devkit.all.FormValidator
+import com.prolificinteractive.devkit.all.ValidationInfo
+import com.prolificinteractive.devkit.all.ValidationType
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

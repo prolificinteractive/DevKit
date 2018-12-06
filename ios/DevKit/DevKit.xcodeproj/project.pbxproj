@@ -118,7 +118,7 @@
 		20076DAC21513BE4005CC155 /* PagingDotStateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingDotStateMachine.swift; sourceTree = "<group>"; };
 		20076DAD21513BE4005CC155 /* PageControlDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageControlDirection.swift; sourceTree = "<group>"; };
 		202FB3F121B82B280048C96A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../README.md; sourceTree = "<group>"; };
-		202FB3F221B82B280048C96A /* DevKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = DevKit.podspec; path = ../../../DevKit.podspec; sourceTree = "<group>"; };
+		202FB3F221B82B280048C96A /* DevKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = DevKit.podspec; path = ../../../DevKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2042305F21AF458000BD5274 /* ValidationTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationTypeTests.swift; sourceTree = "<group>"; };
 		20524693209B9C250067A328 /* DevKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20524696209B9C250067A328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };

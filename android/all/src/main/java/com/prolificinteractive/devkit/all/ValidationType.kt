@@ -1,4 +1,4 @@
-package com.prolificinteractive.devkit
+package com.prolificinteractive.devkit.all
 
 enum class ValidationType {
     LOWERCASE_LETTERS,

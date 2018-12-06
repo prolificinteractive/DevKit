@@ -90,7 +90,7 @@ PODS:
   - PureLayout (3.0.2)
 
 DEPENDENCIES:
-  - DevKit (from `../`)
+  - DevKit (from `../../`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -102,16 +102,16 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   DevKit:
-    :path: "../"
+    :path: "../../"
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   Bellerophon: fbeff4978425599a129ff2bebfbd8beddf06e919
-  DevKit: 20a84aab60fe27f035bc077360419601a9ff2c6b
+  DevKit: c39f9d5c5ce40ab92a61cd38e14d1b285ba2f1aa
   KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
   Marker: f35e0b5d9c97d6997d6b89b23f189e0e4cc127c7
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
 
-PODFILE CHECKSUM: 0c967073f397fab04e915fc4700c2c7fed74867b
+PODFILE CHECKSUM: f667d31c8be4aff66b75171a9e34fb3dce48c268
 
 COCOAPODS: 1.5.3

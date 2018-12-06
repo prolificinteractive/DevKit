@@ -1,4 +1,4 @@
-package com.prolificinteractive.devkit
+package com.prolificinteractive.devkit.all
 
 import android.util.Patterns.EMAIL_ADDRESS
 

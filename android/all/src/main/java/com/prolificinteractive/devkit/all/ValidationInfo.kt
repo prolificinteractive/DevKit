@@ -1,4 +1,4 @@
-package com.prolificinteractive.devkit
+package com.prolificinteractive.devkit.all
 
 class ValidationInfo(val validationType: ValidationType, val num: Int) {
 

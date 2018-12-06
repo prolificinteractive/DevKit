@@ -1,4 +1,4 @@
-package com.prolificinteractive.devkit;
+package com.prolificinteractive.devkit.all;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -16,11 +16,11 @@ import static org.junit.Assert.*;
  */
 @RunWith(AndroidJUnit4.class)
 public class ExampleInstrumentedTest {
-    @Test
-    public void useAppContext() {
-        // Context of the app under test.
-        Context appContext = InstrumentationRegistry.getTargetContext();
+  @Test
+  public void useAppContext() {
+    // Context of the app under test.
+    Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.prolificinteractive.devkit.test", appContext.getPackageName());
-    }
+    assertEquals("com.prolificinteractive.devkit.all.test", appContext.getPackageName());
+  }
 }

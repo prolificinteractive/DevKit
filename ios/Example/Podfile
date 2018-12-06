@@ -8,7 +8,7 @@ inhibit_all_warnings!
 
 target 'DevKit_Example' do
 
-  pod 'DevKit', :path => '../'
+    pod 'DevKit', :path => '../../'
 
   target 'DevKit_Tests' do
     inherit! :search_paths

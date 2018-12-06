@@ -1,1 +1,1 @@
-include ':app', ':devkit'
+include ':app', ':all'
