@@ -3,7 +3,7 @@
 //  DevKit
 //
 //  Created by Stanle De La Cruz on 11/12/18.
-//  Copyright © 2018 Jonathan Samudio. All rights reserved.
+//  Copyright © 2018 Prolific Interactive. All rights reserved.
 //
 
 import Foundation
@@ -28,7 +28,7 @@ public class FormValidator {
     
     /// Empty constructor.
     public init() {}
-    
+        
     /// Validates the password with the given validation types and minimum Characters.
     /// - Parameters:
     ///   - password: The email given.

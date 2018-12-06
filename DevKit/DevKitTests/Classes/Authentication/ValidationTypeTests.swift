@@ -2,8 +2,8 @@
 //  ValidationTypeTests.swift
 //  DevKitTests
 //
-//  Created by Jonathan Samudio on 11/28/18.
-//  Copyright © 2018 Jonathan Samudio. All rights reserved.
+//  Created by Stanle De La Cruz on 11/28/18.
+//  Copyright © 2018 Prolific Interactive. All rights reserved.
 //
 
 import XCTest

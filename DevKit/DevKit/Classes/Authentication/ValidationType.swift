@@ -3,7 +3,7 @@
 //  DevKit
 //
 //  Created by Stanle De La Cruz on 11/12/18.
-//  Copyright © 2018 Jonathan Samudio. All rights reserved.
+//  Copyright © 2018 Prolific Interactive. All rights reserved.
 //
 
 /// Enum to determine the password type.
@@ -32,7 +32,7 @@ public enum ValidationType {
     /// Password minimun characters
     case minCharacters(count: Int)
     
-    /// function that handles the type of Password and return the regex.
+    // Function returns a constructed regex code from the given validators.
     ///
     /// - Parameters:
     ///   - validators: Validation types required.
@@ -62,7 +62,7 @@ public enum ValidationType {
         return regexCode
     }
     
-    /// function that constructs the regex code
+    // Function generates a regex code from the given validation .
     ///
     /// - Parameters:
     ///   - code: The regex code for the Validation type.
