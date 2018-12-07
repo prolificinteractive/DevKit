@@ -29,6 +29,7 @@
 		20076DB021513BE4005CC155 /* InfinityPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076DAB21513BE4005CC155 /* InfinityPageControl.swift */; };
 		20076DB121513BE4005CC155 /* PagingDotStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076DAC21513BE4005CC155 /* PagingDotStateMachine.swift */; };
 		20076DB221513BE4005CC155 /* PageControlDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20076DAD21513BE4005CC155 /* PageControlDirection.swift */; };
+		2042306021AF458000BD5274 /* ValidationTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2042305F21AF458000BD5274 /* ValidationTypeTests.swift */; };
 		20524697209B9C250067A328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20524696209B9C250067A328 /* AppDelegate.swift */; };
 		20524699209B9C250067A328 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20524698209B9C250067A328 /* ViewController.swift */; };
 		2052469C209B9C250067A328 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2052469A209B9C250067A328 /* Main.storyboard */; };
@@ -67,6 +68,9 @@
 		209955A6214C0F5E00674465 /* LinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F4ABB2138731500E2FD66 /* LinkedListTests.swift */; };
 		209C586B21777DCF000F14B5 /* HapticGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C586A21777DCF000F14B5 /* HapticGenerator.swift */; };
 		329452415E472FA3C293B641 /* Pods_DevKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC5340BFE3332A9CE19D779 /* Pods_DevKit.framework */; };
+		5655545F21B86ABE0035F55E /* FormValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5655545E21B86ABE0035F55E /* FormValidatorTests.swift */; };
+		567682352199FA9400641276 /* FormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567682342199FA9400641276 /* FormValidator.swift */; };
+		56768237219A087F00641276 /* ValidationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56768236219A087F00641276 /* ValidationType.swift */; };
 		8E8F4AB52138698B00E2FD66 /* LinkedListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F4AB42138698B00E2FD66 /* LinkedListNode.swift */; };
 		8E8F4AB7213869E000E2FD66 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F4AB6213869E000E2FD66 /* LinkedList.swift */; };
 		8E8F4ABF2139C6E300E2FD66 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F4ABE2139C6E300E2FD66 /* Stack.swift */; };
@@ -113,6 +117,7 @@
 		20076DAB21513BE4005CC155 /* InfinityPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfinityPageControl.swift; sourceTree = "<group>"; };
 		20076DAC21513BE4005CC155 /* PagingDotStateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingDotStateMachine.swift; sourceTree = "<group>"; };
 		20076DAD21513BE4005CC155 /* PageControlDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageControlDirection.swift; sourceTree = "<group>"; };
+		2042305F21AF458000BD5274 /* ValidationTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationTypeTests.swift; sourceTree = "<group>"; };
 		20524693209B9C250067A328 /* DevKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20524696209B9C250067A328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20524698209B9C250067A328 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +163,9 @@
 		3939CE1C2FCEB6AE9D5E4974 /* Pods_DevKitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevKitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		439C165EDA375DDFA28D0AB6 /* Pods-DevKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevKit/Pods-DevKit.release.xcconfig"; sourceTree = "<group>"; };
 		4DC5340BFE3332A9CE19D779 /* Pods_DevKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5655545E21B86ABE0035F55E /* FormValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidatorTests.swift; sourceTree = "<group>"; };
+		567682342199FA9400641276 /* FormValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidator.swift; sourceTree = "<group>"; };
+		56768236219A087F00641276 /* ValidationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationType.swift; sourceTree = "<group>"; };
 		61E76AB64DDE67385EB88E7F /* Pods-DevKitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevKitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DevKitUITests/Pods-DevKitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8E8F4AB42138698B00E2FD66 /* LinkedListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListNode.swift; sourceTree = "<group>"; };
 		8E8F4AB6213869E000E2FD66 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
@@ -274,6 +282,15 @@
 			path = InfinityPageControl;
 			sourceTree = "<group>";
 		};
+		2042305E21AF455500BD5274 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				2042305F21AF458000BD5274 /* ValidationTypeTests.swift */,
+				5655545E21B86ABE0035F55E /* FormValidatorTests.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
 		2052468A209B9C250067A328 = {
 			isa = PBXGroup;
 			children = (
@@ -331,7 +348,7 @@
 		205246C4209B9D2B0067A328 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				20AEC61021936EE400FFB140 /* Components */,
+				567682332199F92E00641276 /* Validation */,
 				8E8F4AB22138696E00E2FD66 /* Data Structures */,
 				20524718209BB2BC0067A328 /* Views */,
 				2052471A209BB2F30067A328 /* Utility */,
@@ -626,11 +643,13 @@
 			path = Haptics;
 			sourceTree = "<group>";
 		};
-		20AEC61021936EE400FFB140 /* Components */ = {
+		567682332199F92E00641276 /* Validation */ = {
 			isa = PBXGroup;
 			children = (
+				567682342199FA9400641276 /* FormValidator.swift */,
+				56768236219A087F00641276 /* ValidationType.swift */,
 			);
-			path = Components;
+			path = Validation;
 			sourceTree = "<group>";
 		};
 		75AF81F4E3DEE96B43CF7CBC /* Pods */ = {
@@ -667,6 +686,7 @@
 		8E8F4AB8213872F200E2FD66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2042305E21AF455500BD5274 /* Validation */,
 				8E8F4AB9213872F900E2FD66 /* Data Structures */,
 			);
 			path = Classes;
@@ -936,6 +956,7 @@
 				20076DB021513BE4005CC155 /* InfinityPageControl.swift in Sources */,
 				205246D8209BA3480067A328 /* ShadowOptions.swift in Sources */,
 				205C74EE2135A3D700AF0B52 /* KeyboardObserver.swift in Sources */,
+				56768237219A087F00641276 /* ValidationType.swift in Sources */,
 				20076DA121504D0D005CC155 /* DateFormatterExtension.swift in Sources */,
 				205246CC209B9D2B0067A328 /* CalendarPermissionsValidatorDelegate.swift in Sources */,
 				8E8F4AB7213869E000E2FD66 /* LinkedList.swift in Sources */,
@@ -965,6 +986,7 @@
 				20076DB121513BE4005CC155 /* PagingDotStateMachine.swift in Sources */,
 				205246CB209B9D2B0067A328 /* CalendarPermissionsValidator.swift in Sources */,
 				20076D8B215036D8005CC155 /* MockHTTPClient.swift in Sources */,
+				567682352199FA9400641276 /* FormValidator.swift in Sources */,
 				20076D78214FF6E9005CC155 /* HTTPRequest.swift in Sources */,
 				2052471F209BB3240067A328 /* ImagePickerDelegate.swift in Sources */,
 				20076DB221513BE4005CC155 /* PageControlDirection.swift in Sources */,
@@ -995,7 +1017,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5655545F21B86ABE0035F55E /* FormValidatorTests.swift in Sources */,
 				209955A6214C0F5E00674465 /* LinkedListTests.swift in Sources */,
+				2042306021AF458000BD5274 /* ValidationTypeTests.swift in Sources */,
 				209955A5214C0F5E00674465 /* StackTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

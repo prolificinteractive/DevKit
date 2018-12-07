@@ -44,6 +44,10 @@
       "source_files": "DevKit/DevKit/Classes/Views/InfinityPageControl/*"
     },
     {
+      "name": "Authentication",
+      "source_files": "DevKit/DevKit/Classes/Authentication/*"
+    },
+    {
       "name": "Utility",
       "source_files": "DevKit/DevKit/Classes/Utility/*",
       "subspecs": [

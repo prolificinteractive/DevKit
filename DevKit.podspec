@@ -50,9 +50,11 @@ Collection of commonly used swift code.
       sp.source_files = 'DevKit/DevKit/Classes/Views/InfinityPageControl/*'
   end
 
-# ==== Components ============================================
+# ==== Validation =====================================
 
-# Stanle TODO
+  s.subspec 'Validation' do |sp|
+     sp.source_files = 'DevKit/DevKit/Classes/Validation/*'
+  end
 
 # ==== Utility ============================================
 
