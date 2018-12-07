@@ -50,10 +50,10 @@ Collection of commonly used swift code.
       sp.source_files = 'DevKit/DevKit/Classes/Views/InfinityPageControl/*'
   end
 
-# ==== Authentication =====================================
+# ==== Validation =====================================
 
   s.subspec 'Authentication' do |sp|
-     sp.source_files = 'DevKit/DevKit/Classes/Authentication/*'
+     sp.source_files = 'DevKit/DevKit/Classes/Validation/*'
   end
 
 # ==== Utility ============================================

@@ -3,7 +3,7 @@
 //  DevKit_Example
 //
 //  Created by Stanle De La Cruz on 11/13/18.
-//  Copyright © 2018 CocoaPods. All rights reserved.
+//  Copyright © 2018 Prolific Interactive. All rights reserved.
 //
 
 import UIKit
