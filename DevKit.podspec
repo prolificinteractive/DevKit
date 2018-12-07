@@ -52,7 +52,7 @@ Collection of commonly used swift code.
 
 # ==== Validation =====================================
 
-  s.subspec 'Authentication' do |sp|
+  s.subspec 'Validation' do |sp|
      sp.source_files = 'DevKit/DevKit/Classes/Validation/*'
   end
 

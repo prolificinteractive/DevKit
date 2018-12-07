@@ -282,13 +282,13 @@
 			path = InfinityPageControl;
 			sourceTree = "<group>";
 		};
-		2042305E21AF455500BD5274 /* Authentication */ = {
+		2042305E21AF455500BD5274 /* Validation */ = {
 			isa = PBXGroup;
 			children = (
 				2042305F21AF458000BD5274 /* ValidationTypeTests.swift */,
 				5655545E21B86ABE0035F55E /* FormValidatorTests.swift */,
 			);
-			path = Authentication;
+			path = Validation;
 			sourceTree = "<group>";
 		};
 		2052468A209B9C250067A328 = {
@@ -686,7 +686,7 @@
 		8E8F4AB8213872F200E2FD66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2042305E21AF455500BD5274 /* Authentication */,
+				2042305E21AF455500BD5274 /* Validation */,
 				8E8F4AB9213872F900E2FD66 /* Data Structures */,
 			);
 			path = Classes;
