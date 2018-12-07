@@ -14,6 +14,7 @@
 /// - uppercasedLetters
 /// - specialCharacters
 /// - numbers
+/// - minCharacters
 ///
 public enum ValidationType {
     
