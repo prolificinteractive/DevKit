@@ -2,7 +2,6 @@ PODS:
   - Alamofire (4.7.2)
   - Bellerophon (1.2.0)
   - DevKit (0.1.0):
-    - DevKit/Authentication (= 0.1.0)
     - DevKit/DataStructures (= 0.1.0)
     - DevKit/Extensions (= 0.1.0)
     - DevKit/InfinityPageControl (= 0.1.0)
@@ -10,7 +9,7 @@ PODS:
     - DevKit/SharedOptions (= 0.1.0)
     - DevKit/TransitioningNavigationView (= 0.1.0)
     - DevKit/Utility (= 0.1.0)
-  - DevKit/Authentication (0.1.0)
+    - DevKit/Validation (= 0.1.0)
   - DevKit/DataStructures (0.1.0):
     - DevKit/DataStructures/LinkedList (= 0.1.0)
     - DevKit/DataStructures/Stack (= 0.1.0)
@@ -85,6 +84,7 @@ PODS:
   - DevKit/Utility/ReusableView (0.1.0)
   - DevKit/Utility/SessionManager (0.1.0):
     - KeychainAccess (= 3.1.0)
+  - DevKit/Validation (0.1.0)
   - KeychainAccess (3.1.0)
   - Marker (1.1.0)
   - PureLayout (3.0.2)
@@ -107,7 +107,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   Bellerophon: fbeff4978425599a129ff2bebfbd8beddf06e919
-  DevKit: c39f9d5c5ce40ab92a61cd38e14d1b285ba2f1aa
+  DevKit: 07006093a04d71c747631e67d0aa737d13958f98
   KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
   Marker: f35e0b5d9c97d6997d6b89b23f189e0e4cc127c7
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
