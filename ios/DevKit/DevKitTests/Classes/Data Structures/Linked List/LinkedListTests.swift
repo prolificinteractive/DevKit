@@ -15,8 +15,10 @@ class LinkedListTests: XCTestCase {
         // Given
         let linkedList = LinkedList<Int>()
         XCTAssertNil(linkedList.peek())
+
         // When
         linkedList.push(1)
+
         // Then
         XCTAssertEqual(linkedList.peek(), 1)
     }
@@ -25,8 +27,10 @@ class LinkedListTests: XCTestCase {
         // Given
         let linkedList = LinkedList<Int>()
         XCTAssertNil(linkedList.tail)
+
         // When
         linkedList.append(4)
+
         // Then
         XCTAssertEqual(linkedList.tail!.value, 4)
     }
@@ -38,8 +42,10 @@ class LinkedListTests: XCTestCase {
         linkedList.push(2)
         linkedList.push(1)
         XCTAssertEqual(linkedList.tail!.value, 3)
+
         // When
         linkedList.append(4)
+
         // Then
         XCTAssertEqual(linkedList.tail!.value, 4)
     }
@@ -55,6 +61,7 @@ class LinkedListTests: XCTestCase {
             return
         }
         XCTAssertEqual(nodeAtIndex1.value, 2)
+
         // When
         linkedList.insert(value: 4, after: nodeAtIndex1)
     }
@@ -70,6 +77,7 @@ class LinkedListTests: XCTestCase {
             return
         }
         XCTAssertEqual(nodeAtIndex2.value, linkedList.tail!.value)
+
         // When
         linkedList.insert(value: 4, after: nodeAtIndex2)
     }
@@ -77,8 +85,10 @@ class LinkedListTests: XCTestCase {
     func test_linkedList_PopWhenEmpty() {
         // Given
         let linkedList = LinkedList<Int>()
+
         // When
         let value = linkedList.pop()
+
         // Then
         XCTAssertNil(value)
     }
@@ -89,8 +99,10 @@ class LinkedListTests: XCTestCase {
         linkedList.push(3)
         linkedList.push(2)
         linkedList.push(1)
+
         // When
         let value = linkedList.pop()
+
         // Then
         XCTAssertEqual(value!, 1)
     }
@@ -98,8 +110,10 @@ class LinkedListTests: XCTestCase {
     func test_linkedList_RemoveLastWhenEmpty() {
         // Given
         let linkedList = LinkedList<Int>()
+
         // When
         let value = linkedList.removeLast()
+
         // Then
         XCTAssertNil(value)
     }
@@ -108,8 +122,10 @@ class LinkedListTests: XCTestCase {
         // Given
         let linkedList = LinkedList<Int>()
         linkedList.push(1)
+
         // When
         let value = linkedList.removeLast()
+
         // Then
         XCTAssertEqual(value!, 1)
     }
@@ -120,8 +136,10 @@ class LinkedListTests: XCTestCase {
         linkedList.push(3)
         linkedList.push(2)
         linkedList.push(1)
+
         // When
         let value = linkedList.removeLast()
+
         // Then
         XCTAssertEqual(value!, 3)
     }
@@ -132,8 +150,10 @@ class LinkedListTests: XCTestCase {
         linkedList.push(3)
         linkedList.push(2)
         linkedList.push(1)
+
         // When
         let value = linkedList.remove(after: linkedList.head!)
+        
         // Then
         XCTAssertEqual(value, 2)
         XCTAssertEqual(linkedList.head!.value, 1)

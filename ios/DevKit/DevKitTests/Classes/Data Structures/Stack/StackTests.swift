@@ -15,8 +15,10 @@ class StackTests: XCTestCase {
         // Given
         let stack = Stack<Int>()
         XCTAssertTrue(stack.isEmpty)
+        
         // When
         stack.push(1)
+
         // Then
         XCTAssertFalse(stack.isEmpty)
     }
@@ -24,9 +26,11 @@ class StackTests: XCTestCase {
     func test_stack_push() {
         // Given
         let stack = Stack<Int>()
+
         // When
         stack.push(1)
         stack.push(2)
+
         // Then
         XCTAssertFalse(stack.isEmpty)
         XCTAssertEqual(stack.peek(), 2)
@@ -35,11 +39,13 @@ class StackTests: XCTestCase {
     func test_stack_pop() {
         // Given
         let stack = Stack<Int>()
+
         // When
         stack.push(1)
         stack.push(2)
         stack.push(3)
         let poppedValue = stack.pop()
+
         // Then
         XCTAssertFalse(stack.isEmpty)
         XCTAssertEqual(poppedValue, 3)

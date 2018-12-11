@@ -3,7 +3,7 @@
 //  DevKit
 //
 //  Created by jgsamudio on 05/03/2018.
-//  Copyright (c) 2018 jgsamudio. All rights reserved.
+//  Copyright (c) 2018 Prolific Interactive. All rights reserved.
 //
 
 import UIKit

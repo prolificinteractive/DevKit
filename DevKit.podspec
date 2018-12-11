@@ -52,10 +52,10 @@ Collection of commonly used swift code.
       sp.source_files = "#{root_path}/Views/InfinityPageControl/*"
   end
 
-# ==== Authentication =====================================
+# ==== Validation =====================================
 
-  s.subspec 'Authentication' do |sp|
-     sp.source_files = "#{root_path}/Authentication/*"
+  s.subspec 'Validation' do |sp|
+     sp.source_files = "#{root_path}/Validation/*"
   end
 
 # ==== Utility ============================================
