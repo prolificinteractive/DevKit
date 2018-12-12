@@ -4,11 +4,11 @@ xcode_workspace: DevKit.xcworkspace # path to your xcodeproj folder
 xcode_scheme: DevKit
 xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
 before_install:
-    - cd DevKit && pod install
+    - cd ios/DevKit && pod install
 after_success:
     - gem install jazzy
     - make documentation
-    - cd ..
+    - cd ../../
 deploy:
   provider: pages
   skip-cleanup: true

@@ -1,0 +1,41 @@
+
+{
+	"buildFiles" : 
+	[
+		"/Users/jonathansamudio/Prolific-Projects/DevKit/android/app/CMakeLists.txt"
+	],
+	"cleanCommands" : 
+	[
+		"/Users/jonathansamudio/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/jonathansamudio/Prolific-Projects/DevKit/android/app/.externalNativeBuild/cmake/release/x86 --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"native-lib-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "native-lib",
+			"buildCommand" : "/Users/jonathansamudio/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/jonathansamudio/Prolific-Projects/DevKit/android/app/.externalNativeBuild/cmake/release/x86 --target native-lib",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=/Users/jonathansamudio/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/jonathansamudio/Library/Android/sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -isystem /Users/jonathansamudio/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /Users/jonathansamudio/Library/Android/sdk/ndk-bundle/sources/android/support/include -isystem /Users/jonathansamudio/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /Users/jonathansamudio/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "/Users/jonathansamudio/Prolific-Projects/DevKit/android/app/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "/Users/jonathansamudio/Prolific-Projects/DevKit/android/app/.externalNativeBuild/cmake/release/x86"
+				}
+			],
+			"output" : "/Users/jonathansamudio/Prolific-Projects/DevKit/android/app/build/intermediates/cmake/release/obj/x86/libnative-lib.so",
+			"toolchain" : "12733140887508423928"
+		}
+	},
+	"toolchains" : 
+	{
+		"12733140887508423928" : 
+		{
+			"cCompilerExecutable" : "/Users/jonathansamudio/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/Users/jonathansamudio/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+		}
+	}
+}
