@@ -17,7 +17,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         loginButton.setOnClickListener {
-            val validators = arrayOf(ValidationInfo(ValidationType.MIN_CHARACTERS, 5))
+            val validators = arrayOf(ValidationInfo(ValidationType.MIN_CHARACTERS, 5),
+                ValidationInfo(ValidationType.NUMBERS, num = 2))
 
             if (formValidator.isValid(emailEditText.text.toString(), passwordEditText.text.toString(), validators)) {
                 errorTextView.setTextColor(Color.GREEN)
