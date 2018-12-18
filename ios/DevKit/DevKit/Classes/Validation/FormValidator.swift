@@ -35,6 +35,7 @@ public class FormValidator {
     ///   - validators: The validators for your password.
     public func isValid(_ password: String, validators: [ValidationType]) -> Bool {
         return isValid(password, passwordRegex: ValidationType.getRegexCode(with: validators))
+               || ValidationType.checkForOnlyMinCharacters(password, validators: validators)
     }
     
     /// Validates the email and password with the given validation types and minimum characters.

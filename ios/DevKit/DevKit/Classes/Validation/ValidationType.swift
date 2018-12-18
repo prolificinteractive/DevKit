@@ -39,7 +39,7 @@ public enum ValidationType {
     ///   - validators: Validation types required.
     ///   - minCharacters: The minimum characters for the given password.
     /// - Returns: Regex code.
-    internal static func getRegexCode(with validators: [ValidationType]) -> String {
+    static func getRegexCode(with validators: [ValidationType]) -> String {
         var regexCode = "^"
         var didProvideMinCharacters = false
         validators.forEach { type in
@@ -61,6 +61,22 @@ public enum ValidationType {
             regexCode += ".{1,}$"
         }
         return regexCode
+    }
+    
+    static func checkForOnlyMinCharacters(_ password: String, validators: [ValidationType]) -> Bool {
+        guard let firstValidator = validators.first else {
+            return password.count > 0
+        }
+        if validators.count == 1 {
+            switch firstValidator {
+            case .minCharacters(let count):
+                return password.count > count
+            default:
+                // Should never happen, consider assert
+                return false
+            }
+        }
+        return false
     }
     
     // Function generates a regex code from the given validation .
