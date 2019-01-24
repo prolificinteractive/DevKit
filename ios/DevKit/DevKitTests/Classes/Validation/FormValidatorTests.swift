@@ -132,6 +132,38 @@ class FormValidatorTests: XCTestCase {
         XCTAssertFalse(valid)
     }
     
+    func testValidPassword_WithValidationType_MinCharacters() {
+        let password = "h2ss1"
+        let validators: [ValidationType] = [.minCharacters(count: 1)]
+        let valid = sut.isValid(password, validators: validators)
+        
+        XCTAssertTrue(valid)
+    }
+    
+    func testInValidPassword_WithValidationType_MinCharacters() {
+        let password = "h2ss1"
+        let validators: [ValidationType] = [.minCharacters(count: password.count + 1)]
+        let valid = sut.isValid(password, validators: validators)
+        
+        XCTAssertFalse(valid)
+    }
+    
+    func testValidPassword_WithValidationType_EmptyValidator() {
+        let password = "h2ss1"
+        let validators: [ValidationType] = []
+        let valid = sut.isValid(password, validators: validators)
+        
+        XCTAssertTrue(valid)
+    }
+    
+    func testInValidPassword_WithValidationType_EmptyValidator() {
+        let password = ""
+        let validators: [ValidationType] = []
+        let valid = sut.isValid(password, validators: validators)
+        
+        XCTAssertFalse(valid)
+    }
+    
     // MARK:- Password with Regex code.
     
     func testValidPassword_WithRegexCode() {

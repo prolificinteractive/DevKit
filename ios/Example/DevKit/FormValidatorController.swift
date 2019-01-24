@@ -27,7 +27,6 @@ class FormValidatorController: UIViewController {
                 return
         }
         let isValidEmail = validator.isValid(email)
-        // Two things: Only MinCharacters? and Empty ValidationType
         let isValidPassword = validator.isValid(password, validators: [.lowercasedLetters(count: 2),
                                                                        .numbers(count: 1),
                                                                        .uppercasedLetters(count: 2),
