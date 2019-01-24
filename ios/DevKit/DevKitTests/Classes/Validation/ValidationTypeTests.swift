@@ -164,4 +164,74 @@ class ValidationTypeTests: XCTestCase {
         // Then
         XCTAssertEqual(result, "^(?=.*[a-z])(?=.*[0-9].*[0-9])(?=.*[A-Z].*[A-Z].*[A-Z])(?=.*[!@#$&*].*[!@#$&*]).{\(minCharacters),}$")
     }
+    
+    // MARK: Only Min Characters
+    
+    func testcheckForOnlyMinCharacter_Single_Success() {
+        // Given
+        let password = "a"
+        
+        // When
+        let isMinCharacter = ValidationType.checkForOnlyMinCharacters(password, validators: [.minCharacters(count: 1)])
+        
+        // Then
+        XCTAssertTrue(isMinCharacter)
+    }
+    
+    func testcheckForOnlyMinCharacter_Single_Fail() {
+        // Given
+        let password = "a"
+        
+        // When
+        let isMinCharacter = ValidationType.checkForOnlyMinCharacters(password, validators: [.minCharacters(count: 2)])
+        
+        // Then
+        XCTAssertFalse(isMinCharacter)
+    }
+    
+    func testcheckForOnlyMinCharacters_Multiple_Success() {
+        // Given
+        let password = "hello123"
+        
+        // When
+        let isMinCharacter = ValidationType.checkForOnlyMinCharacters(password, validators: [.minCharacters(count: password.count)])
+        
+        // Then
+        XCTAssertTrue(isMinCharacter)
+    }
+    
+    func testcheckForOnlyMinCharacters_Multiple_Fail() {
+        // Given
+        let password = "hello123"
+        
+        // When
+        let isMinCharacter = ValidationType.checkForOnlyMinCharacters(password, validators: [.minCharacters(count: password.count + 1)])
+        
+        // Then
+        XCTAssertFalse(isMinCharacter)
+    }
+    
+    // MARK: Empty Validator
+    
+    func testEmptyValidator_Success() {
+        // Given
+        let password = "a"
+        
+        // When
+        let isMinCharacter = ValidationType.checkForOnlyMinCharacters(password, validators: [])
+        
+        // Then
+        XCTAssertTrue(isMinCharacter)
+    }
+    
+    func testEmptyValidator_Failure() {
+        // Given
+        let password = ""
+        
+        // When
+        let isMinCharacter = ValidationType.checkForOnlyMinCharacters(password, validators: [])
+        
+        // Then
+        XCTAssertFalse(isMinCharacter)
+    }
 }

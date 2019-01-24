@@ -70,7 +70,7 @@ public enum ValidationType {
         if validators.count == 1 {
             switch firstValidator {
             case .minCharacters(let count):
-                return password.count > count
+                return password.count >= count
             default:
                 // Should never happen, consider assert
                 return false
